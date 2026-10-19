@@ -1,0 +1,9 @@
+benchmark_id,benchmark_name,threshold,observed_value,evaluation_dataset,status,evidence_file
+BM-01,Ordinary Holdout Accuracy (Random Forest Real-Only),>= 0.8500,1.0000,REAL_TEST.csv (440 samples),PASS,results/phase2d/PHASE2D_TEST_RESULTS.csv
+BM-02,Ordinary Holdout Accuracy (XGBoost Real-Only),>= 0.8500,1.0000,REAL_TEST.csv (440 samples),PASS,results/phase2d/PHASE2D_TEST_RESULTS.csv
+BM-03,Ordinary Holdout Accuracy (TabNet Real + Mode B),>= 0.8500,0.9932,REAL_TEST.csv (440 samples),PASS,results/phase2d/PHASE2D_TEST_RESULTS.csv
+BM-04,Test Set Zero Contamination / Quarantine,0 duplicate rows,0 duplicate rows (SHA-256 verified),REAL_TEST.csv vs REAL_TRAIN.csv,PASS,audit/test_set_independence_audit.md
+BM-05,Tree Model Raw Feature Routing Integrity,Scaled Inference Removed,Raw features routed to RF/XGB,Phase 2F Inference Pipeline,PASS,src/phase2f_calibration_and_xai.py
+BM-06,TreeSHAP Local Additivity Tolerance,< 1e-5 residual,3.8e-7 max residual,Phase 2F TreeSHAP attributions,PASS,results/phase2f/PHASE2F_VALIDATION_REPORT.md
+BM-07,Internal Validation Split Disjointness,0 overlap,"0 overlap (1408 train, 352 val)",INTERNAL_TRAIN.csv vs INTERNAL_VAL.csv,PASS,audit/data_lineage.md
+BM-08,Tidy Robustness Advantage Schema Integrity,"9 explicit columns, 0 NaNs","9 explicit columns, 0 NaNs",PHASE2E_ROBUSTNESS_ADVANTAGE_TIDY.csv,PASS,results/phase2e/PHASE2E_ROBUSTNESS_ADVANTAGE_TIDY.csv

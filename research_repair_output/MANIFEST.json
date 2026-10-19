@@ -7,6 +7,20 @@
     "category": "root"
   },
   {
+    "path": "DEFECT_REPAIR_CHANGELOG.md",
+    "filename": "DEFECT_REPAIR_CHANGELOG.md",
+    "size_bytes": 4162,
+    "sha256": "1132fdc5c3308deec8a1f21ecfc9f685a471773771a51a5d28f0df62deab0402",
+    "category": "root"
+  },
+  {
+    "path": "DEFECT_REPAIR_REPORT.md",
+    "filename": "DEFECT_REPAIR_REPORT.md",
+    "size_bytes": 18216,
+    "sha256": "b4685912475ef9f896021a9274541ccd834ca58f6b6634c08a342377c16c7f35",
+    "category": "root"
+  },
+  {
     "path": "FINAL_AUDIT_REPORT.md",
     "filename": "FINAL_AUDIT_REPORT.md",
     "size_bytes": 5720,
@@ -16,8 +30,8 @@
   {
     "path": "MANIFEST.json",
     "filename": "MANIFEST.json",
-    "size_bytes": 19971,
-    "sha256": "ecd17f29295ad31fec496b05abf1072ab2e458644fb3be0ad4e72c8736587d98",
+    "size_bytes": 21724,
+    "sha256": "da1cc9af082cede57a772027b916fd95c586497714dbd2d403723b9313ab4cfc",
     "category": "root"
   },
   {
@@ -26,6 +40,20 @@
     "size_bytes": 5188,
     "sha256": "fc66aa4377ff45aee163c5c1beae691f4834df32dc14d247fd8a25ec35f7be08",
     "category": "root"
+  },
+  {
+    "path": "audit/DEFECT_REPAIR_BENCHMARKS.csv",
+    "filename": "DEFECT_REPAIR_BENCHMARKS.csv",
+    "size_bytes": 1402,
+    "sha256": "7a144610ea3e8a8f22864f319f78a8540947265c69133a7a73bd9de939ce9fff",
+    "category": "audit"
+  },
+  {
+    "path": "audit/DEFECT_REPAIR_TEST_RESULTS.csv",
+    "filename": "DEFECT_REPAIR_TEST_RESULTS.csv",
+    "size_bytes": 3020,
+    "sha256": "ef0dbffd52d46716b91c06d717c02361dadbf1c554d41174ecb985d298ef0c21",
+    "category": "audit"
   },
   {
     "path": "audit/automated_validation_results.txt",
@@ -429,8 +457,8 @@
   {
     "path": "results/phase2e/PHASE2E_ROBUSTNESS_ADVANTAGE_TIDY.csv",
     "filename": "PHASE2E_ROBUSTNESS_ADVANTAGE_TIDY.csv",
-    "size_bytes": 2096,
-    "sha256": "3016b38b5742fcdcb2430599e42e550ff7fa9279cb75033c11c783049ce165d4",
+    "size_bytes": 2286,
+    "sha256": "c62c911624998e1dade1b11aabcfbe15d5dec0c28edb88241fd5fa5e22a943c0",
     "category": "results"
   },
   {
