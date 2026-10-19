@@ -1,0 +1,13 @@
+model_name,cm_total,cm_diagonal_trace,off_diagonal_errors,recalculated_accuracy,is_100_percent
+TabNet (Real-Only),440,422,18,0.959091,False
+TabNet (Real + Mode A),440,436,4,0.990909,False
+TabNet (Real + Mode B),440,437,3,0.993182,False
+TabNet (Real + Mode C),440,436,4,0.990909,False
+Random Forest (Real-Only),440,440,0,1.0,True
+Random Forest (Real + Mode A),440,405,35,0.920455,False
+Random Forest (Real + Mode B),440,401,39,0.911364,False
+Random Forest (Real + Mode C),440,404,36,0.918182,False
+XGBoost (Real-Only),440,440,0,1.0,True
+XGBoost (Real + Mode A),440,440,0,1.0,True
+XGBoost (Real + Mode B),440,440,0,1.0,True
+XGBoost (Real + Mode C),440,440,0,1.0,True

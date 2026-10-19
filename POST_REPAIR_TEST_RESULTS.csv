@@ -1,0 +1,11 @@
+test_id,requirement,executed_check,result,evidence
+TEST-01,REAL_TEST.csv record count & balance,assert len(df_test)==440 and all(counts==20),PASS,research_repair_output/data/REAL_TEST.csv
+TEST-02,Confusion matrix row total verification,assert cm.sum() == 440 for all 12 models,PASS,POST_REPAIR_CONFUSION_MATRIX_AUDIT.csv
+TEST-03,Confusion matrix diagonal accuracy reproduction,assert trace(cm)/440 == accuracy for all 12 models,PASS,POST_REPAIR_METRIC_RECALCULATION.csv
+TEST-04,Investigation of 100% accuracy claims,Verify exact 440/440 correct predictions with 0 errors on real data,PASS,POST_REPAIR_CONFUSION_MATRIX_AUDIT.csv
+TEST-05,Reconcile 90.91% vs 91.14% discrepancy,400/440 (90.91%) rounding artifact vs 401/440 (91.14%) true measured artifact,PASS,POST_REPAIR_METRIC_RECALCULATION.csv (RF Mode B: 401/440 = 91.1364%)
+TEST-06,Model artifact serialization & cryptographic hashes,Calculated SHA-256 for all 12 models and verified loading,PASS,POST_REPAIR_MODEL_DATA_LINEAGE.csv
+TEST-07,Internal train/val split isolation (DEF-03),"assert overlap(INTERNAL_TRAIN, INTERNAL_VAL) == 0 (1408 vs 352 rows)",PASS,research_repair_output/audit/data_lineage.md
+TEST-08,TreeSHAP explanation additivity & float input preservation,Verified exact TreeExplainer additivity residual < 1e-6 and exact float reproduction,PASS,research_repair_output/results/phase2f/PHASE2F_SHAP_ATTRIBUTIONS.csv
+TEST-09,Tidy Phase 2E schema & unshifted baseline alignment,"Checked 10 tidy columns, 0 NaNs, and baseline matching Phase 2D",PASS,research_repair_output/results/phase2e/PHASE2E_ROBUSTNESS_ADVANTAGE_TIDY.csv
+TEST-10,Disclosure of test-set reuse history,Explicit disclosure of historical test evaluation during development,PASS,POST_REPAIR_INDEPENDENT_VERIFICATION.md
