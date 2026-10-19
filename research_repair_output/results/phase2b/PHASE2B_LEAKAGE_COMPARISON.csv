@@ -1,0 +1,4 @@
+Mode,Total Evaluated,Exact Matches,Rounded 3-Dec Matches,Rounded 2-Dec Matches,Proximity Risk Verdict
+Mode A (Pure Copula),10000,0,0,0,SAFE (Empirical Dispersion Maintained)
+Mode B (TNAU/ICAR Constraints),10000,0,0,0,SAFE (Empirical Dispersion Maintained)
+Mode C (Envelope Expansion),10000,0,0,0,SAFE (Empirical Dispersion Maintained)

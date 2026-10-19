@@ -1,0 +1,529 @@
+sample_index,canonical_crop,botanical_category,condition,model,architecture,training_regime,true_crop,predicted_crop,confidence,N,P,K,temperature,humidity,ph,rainfall
+0,apple,Temperate Fruit,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,apple,0.5883,38.0,135.0,203.0,23.76,93.66,5.97,100.83
+0,apple,Temperate Fruit,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,apple,0.9997,38.0,135.0,203.0,23.76,93.66,5.97,100.83
+0,apple,Temperate Fruit,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,apple,1.0,38.0,135.0,203.0,23.76,93.66,5.97,100.83
+1,apple,Temperate Fruit,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,grapes,0.5583,38.0,135.0,203.0,23.76,79.61,5.97,65.54
+1,apple,Temperate Fruit,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,grapes,0.9995,38.0,135.0,203.0,23.76,79.61,5.97,65.54
+1,apple,Temperate Fruit,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,grapes,1.0,38.0,135.0,203.0,23.76,79.61,5.97,65.54
+2,apple,Temperate Fruit,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,grapes,0.4425,38.0,135.0,203.0,28.76,84.3,5.97,100.83
+2,apple,Temperate Fruit,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,apple,0.9664,38.0,135.0,203.0,28.76,84.3,5.97,100.83
+2,apple,Temperate Fruit,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,apple,0.9787,38.0,135.0,203.0,28.76,84.3,5.97,100.83
+3,apple,Temperate Fruit,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,chickpea,0.2392,22.8,81.0,121.8,23.76,93.66,5.97,100.83
+3,apple,Temperate Fruit,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,apple,0.8398,22.8,81.0,121.8,23.76,93.66,5.97,100.83
+3,apple,Temperate Fruit,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,papaya,0.4954,22.8,81.0,121.8,23.76,93.66,5.97,100.83
+4,apple,Temperate Fruit,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,apple,0.589,51.3,145.0,205.0,23.76,93.66,5.97,100.83
+4,apple,Temperate Fruit,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,apple,0.9995,51.3,145.0,205.0,23.76,93.66,5.97,100.83
+4,apple,Temperate Fruit,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,apple,1.0,51.3,145.0,205.0,23.76,93.66,5.97,100.83
+5,apple,Temperate Fruit,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,apple,0.5872,38.0,135.0,203.0,23.76,93.66,4.47,100.83
+5,apple,Temperate Fruit,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,apple,0.9997,38.0,135.0,203.0,23.76,93.66,4.47,100.83
+5,apple,Temperate Fruit,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,apple,1.0,38.0,135.0,203.0,23.76,93.66,4.47,100.83
+6,apple,Temperate Fruit,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,apple,0.4156,38.0,135.0,203.0,23.76,93.66,7.47,100.83
+6,apple,Temperate Fruit,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,apple,0.9968,38.0,135.0,203.0,23.76,93.66,7.47,100.83
+6,apple,Temperate Fruit,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,apple,1.0,38.0,135.0,203.0,23.76,93.66,7.47,100.83
+7,apple,Temperate Fruit,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,apple,apple,0.5768,38.0,135.0,203.0,23.76,100.0,5.97,151.24
+7,apple,Temperate Fruit,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,apple,apple,0.9997,38.0,135.0,203.0,23.76,100.0,5.97,151.24
+7,apple,Temperate Fruit,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,apple,apple,0.9997,38.0,135.0,203.0,23.76,100.0,5.97,151.24
+100,banana,Fruit,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.4121,101.0,92.0,45.0,28.23,80.64,5.76,98.0
+100,banana,Fruit,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,banana,0.9996,101.0,92.0,45.0,28.23,80.64,5.76,98.0
+100,banana,Fruit,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,banana,0.9919,101.0,92.0,45.0,28.23,80.64,5.76,98.0
+101,banana,Fruit,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.3738,101.0,92.0,45.0,28.23,68.55,5.76,63.7
+101,banana,Fruit,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,banana,0.9637,101.0,92.0,45.0,28.23,68.55,5.76,63.7
+101,banana,Fruit,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,grapes,0.9998,101.0,92.0,45.0,28.23,68.55,5.76,63.7
+102,banana,Fruit,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.3786,101.0,92.0,45.0,33.23,72.58,5.76,98.0
+102,banana,Fruit,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,banana,0.9996,101.0,92.0,45.0,33.23,72.58,5.76,98.0
+102,banana,Fruit,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,banana,0.9933,101.0,92.0,45.0,33.23,72.58,5.76,98.0
+103,banana,Fruit,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.168,60.6,55.2,27.0,28.23,80.64,5.76,98.0
+103,banana,Fruit,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,rice,0.2831,60.6,55.2,27.0,28.23,80.64,5.76,98.0
+103,banana,Fruit,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,banana,0.8866,60.6,55.2,27.0,28.23,80.64,5.76,98.0
+104,banana,Fruit,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.3449,136.35,124.2,60.75,28.23,80.64,5.76,98.0
+104,banana,Fruit,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,banana,0.9989,136.35,124.2,60.75,28.23,80.64,5.76,98.0
+104,banana,Fruit,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,banana,0.9993,136.35,124.2,60.75,28.23,80.64,5.76,98.0
+105,banana,Fruit,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.4093,101.0,92.0,45.0,28.23,80.64,4.26,98.0
+105,banana,Fruit,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,banana,0.9996,101.0,92.0,45.0,28.23,80.64,4.26,98.0
+105,banana,Fruit,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,banana,0.9919,101.0,92.0,45.0,28.23,80.64,4.26,98.0
+106,banana,Fruit,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.1981,101.0,92.0,45.0,28.23,80.64,7.26,98.0
+106,banana,Fruit,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,banana,0.9983,101.0,92.0,45.0,28.23,80.64,7.26,98.0
+106,banana,Fruit,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,banana,0.9982,101.0,92.0,45.0,28.23,80.64,7.26,98.0
+107,banana,Fruit,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,banana,banana,0.3326,101.0,92.0,45.0,28.23,92.74,5.76,147.01
+107,banana,Fruit,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,banana,banana,0.976,101.0,92.0,45.0,28.23,92.74,5.76,147.01
+107,banana,Fruit,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,banana,coconut,0.6592,101.0,92.0,45.0,28.23,92.74,5.76,147.01
+200,blackgram,Legume / Pulse,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,blackgram,0.2123,23.0,70.0,15.0,34.6,63.11,7.4,60.42
+200,blackgram,Legume / Pulse,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,blackgram,0.9971,23.0,70.0,15.0,34.6,63.11,7.4,60.42
+200,blackgram,Legume / Pulse,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,blackgram,0.9845,23.0,70.0,15.0,34.6,63.11,7.4,60.42
+201,blackgram,Legume / Pulse,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,blackgram,0.1718,23.0,70.0,15.0,34.6,53.65,7.4,39.27
+201,blackgram,Legume / Pulse,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,mothbeans,0.5709,23.0,70.0,15.0,34.6,53.65,7.4,39.27
+201,blackgram,Legume / Pulse,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,mothbeans,0.8207,23.0,70.0,15.0,34.6,53.65,7.4,39.27
+202,blackgram,Legume / Pulse,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,blackgram,0.1979,23.0,70.0,15.0,39.6,56.8,7.4,60.42
+202,blackgram,Legume / Pulse,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,blackgram,0.6743,23.0,70.0,15.0,39.6,56.8,7.4,60.42
+202,blackgram,Legume / Pulse,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,blackgram,0.9796,23.0,70.0,15.0,39.6,56.8,7.4,60.42
+203,blackgram,Legume / Pulse,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,blackgram,0.1681,13.8,42.0,9.0,34.6,63.11,7.4,60.42
+203,blackgram,Legume / Pulse,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,mothbeans,0.995,13.8,42.0,9.0,34.6,63.11,7.4,60.42
+203,blackgram,Legume / Pulse,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,mothbeans,0.9997,13.8,42.0,9.0,34.6,63.11,7.4,60.42
+204,blackgram,Legume / Pulse,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,blackgram,0.2123,31.05,94.5,20.25,34.6,63.11,7.4,60.42
+204,blackgram,Legume / Pulse,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,blackgram,0.9367,31.05,94.5,20.25,34.6,63.11,7.4,60.42
+204,blackgram,Legume / Pulse,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,blackgram,0.9983,31.05,94.5,20.25,34.6,63.11,7.4,60.42
+205,blackgram,Legume / Pulse,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,pigeonpeas,0.1453,23.0,70.0,15.0,34.6,63.11,5.9,60.42
+205,blackgram,Legume / Pulse,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,blackgram,0.8361,23.0,70.0,15.0,34.6,63.11,5.9,60.42
+205,blackgram,Legume / Pulse,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,blackgram,0.9605,23.0,70.0,15.0,34.6,63.11,5.9,60.42
+206,blackgram,Legume / Pulse,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,blackgram,0.205,23.0,70.0,15.0,34.6,63.11,8.9,60.42
+206,blackgram,Legume / Pulse,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,blackgram,0.9617,23.0,70.0,15.0,34.6,63.11,8.9,60.42
+206,blackgram,Legume / Pulse,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,blackgram,0.9924,23.0,70.0,15.0,34.6,63.11,8.9,60.42
+207,blackgram,Legume / Pulse,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,blackgram,blackgram,0.2001,23.0,70.0,15.0,34.6,72.58,7.4,90.63
+207,blackgram,Legume / Pulse,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,blackgram,pigeonpeas,0.8726,23.0,70.0,15.0,34.6,72.58,7.4,90.63
+207,blackgram,Legume / Pulse,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,blackgram,pigeonpeas,0.9206,23.0,70.0,15.0,34.6,72.58,7.4,90.63
+300,chickpea,Legume / Pulse,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.6897,40.0,58.0,75.0,18.59,14.78,7.17,89.61
+300,chickpea,Legume / Pulse,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9998,40.0,58.0,75.0,18.59,14.78,7.17,89.61
+300,chickpea,Legume / Pulse,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,chickpea,0.9996,40.0,58.0,75.0,18.59,14.78,7.17,89.61
+301,chickpea,Legume / Pulse,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.6379,40.0,58.0,75.0,18.59,15.0,7.17,58.25
+301,chickpea,Legume / Pulse,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9989,40.0,58.0,75.0,18.59,15.0,7.17,58.25
+301,chickpea,Legume / Pulse,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,chickpea,0.9998,40.0,58.0,75.0,18.59,15.0,7.17,58.25
+302,chickpea,Legume / Pulse,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.6018,40.0,58.0,75.0,23.59,15.0,7.17,89.61
+302,chickpea,Legume / Pulse,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9996,40.0,58.0,75.0,23.59,15.0,7.17,89.61
+302,chickpea,Legume / Pulse,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,chickpea,0.9967,40.0,58.0,75.0,23.59,15.0,7.17,89.61
+303,chickpea,Legume / Pulse,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.3008,24.0,34.8,45.0,18.59,14.78,7.17,89.61
+303,chickpea,Legume / Pulse,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9399,24.0,34.8,45.0,18.59,14.78,7.17,89.61
+303,chickpea,Legume / Pulse,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,kidneybeans,0.9954,24.0,34.8,45.0,18.59,14.78,7.17,89.61
+304,chickpea,Legume / Pulse,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.7289,54.0,78.3,101.25,18.59,14.78,7.17,89.61
+304,chickpea,Legume / Pulse,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9998,54.0,78.3,101.25,18.59,14.78,7.17,89.61
+304,chickpea,Legume / Pulse,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,chickpea,1.0,54.0,78.3,101.25,18.59,14.78,7.17,89.61
+305,chickpea,Legume / Pulse,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.4782,40.0,58.0,75.0,18.59,14.78,5.67,89.61
+305,chickpea,Legume / Pulse,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9938,40.0,58.0,75.0,18.59,14.78,5.67,89.61
+305,chickpea,Legume / Pulse,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,chickpea,0.9996,40.0,58.0,75.0,18.59,14.78,5.67,89.61
+306,chickpea,Legume / Pulse,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.7211,40.0,58.0,75.0,18.59,14.78,8.67,89.61
+306,chickpea,Legume / Pulse,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9997,40.0,58.0,75.0,18.59,14.78,8.67,89.61
+306,chickpea,Legume / Pulse,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,chickpea,0.9997,40.0,58.0,75.0,18.59,14.78,8.67,89.61
+307,chickpea,Legume / Pulse,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,chickpea,chickpea,0.6296,40.0,58.0,75.0,18.59,17.0,7.17,134.41
+307,chickpea,Legume / Pulse,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,chickpea,chickpea,0.9993,40.0,58.0,75.0,18.59,17.0,7.17,134.41
+307,chickpea,Legume / Pulse,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,chickpea,chickpea,0.9996,40.0,58.0,75.0,18.59,17.0,7.17,134.41
+400,coconut,Plantation Crop,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,coconut,0.1925,27.0,8.0,30.0,26.45,98.3,6.01,221.23
+400,coconut,Plantation Crop,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.9998,27.0,8.0,30.0,26.45,98.3,6.01,221.23
+400,coconut,Plantation Crop,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,coconut,1.0,27.0,8.0,30.0,26.45,98.3,6.01,221.23
+401,coconut,Plantation Crop,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,coconut,0.1629,27.0,8.0,30.0,26.45,83.55,6.01,143.8
+401,coconut,Plantation Crop,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.5583,27.0,8.0,30.0,26.45,83.55,6.01,143.8
+401,coconut,Plantation Crop,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,pomegranate,0.4451,27.0,8.0,30.0,26.45,83.55,6.01,143.8
+402,coconut,Plantation Crop,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,coconut,0.2006,27.0,8.0,30.0,31.45,88.47,6.01,221.23
+402,coconut,Plantation Crop,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.4775,27.0,8.0,30.0,31.45,88.47,6.01,221.23
+402,coconut,Plantation Crop,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,coconut,0.9973,27.0,8.0,30.0,31.45,88.47,6.01,221.23
+403,coconut,Plantation Crop,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,coconut,0.1697,16.2,5.0,18.0,26.45,98.3,6.01,221.23
+403,coconut,Plantation Crop,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.9986,16.2,5.0,18.0,26.45,98.3,6.01,221.23
+403,coconut,Plantation Crop,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,coconut,1.0,16.2,5.0,18.0,26.45,98.3,6.01,221.23
+404,coconut,Plantation Crop,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,coconut,0.1925,36.45,10.8,40.5,26.45,98.3,6.01,221.23
+404,coconut,Plantation Crop,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.9928,36.45,10.8,40.5,26.45,98.3,6.01,221.23
+404,coconut,Plantation Crop,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,coconut,1.0,36.45,10.8,40.5,26.45,98.3,6.01,221.23
+405,coconut,Plantation Crop,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,coconut,0.2119,27.0,8.0,30.0,26.45,98.3,4.51,221.23
+405,coconut,Plantation Crop,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.9998,27.0,8.0,30.0,26.45,98.3,4.51,221.23
+405,coconut,Plantation Crop,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,coconut,1.0,27.0,8.0,30.0,26.45,98.3,4.51,221.23
+406,coconut,Plantation Crop,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,orange,0.1281,27.0,8.0,30.0,26.45,98.3,7.51,221.23
+406,coconut,Plantation Crop,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.9991,27.0,8.0,30.0,26.45,98.3,7.51,221.23
+406,coconut,Plantation Crop,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,coconut,1.0,27.0,8.0,30.0,26.45,98.3,7.51,221.23
+407,coconut,Plantation Crop,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coconut,coconut,0.1925,27.0,8.0,30.0,26.45,100.0,6.01,331.84
+407,coconut,Plantation Crop,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coconut,coconut,0.9998,27.0,8.0,30.0,26.45,100.0,6.01,331.84
+407,coconut,Plantation Crop,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,coconut,coconut,0.913,27.0,8.0,30.0,26.45,100.0,6.01,331.84
+500,coffee,Beverage / Cash Crop,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,coffee,0.1751,87.0,28.0,30.0,25.6,68.66,6.54,168.84
+500,coffee,Beverage / Cash Crop,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,coffee,0.9995,87.0,28.0,30.0,25.6,68.66,6.54,168.84
+500,coffee,Beverage / Cash Crop,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,coffee,0.9998,87.0,28.0,30.0,25.6,68.66,6.54,168.84
+501,coffee,Beverage / Cash Crop,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,coffee,0.1614,87.0,28.0,30.0,25.6,58.36,6.54,109.74
+501,coffee,Beverage / Cash Crop,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,coffee,0.5958,87.0,28.0,30.0,25.6,58.36,6.54,109.74
+501,coffee,Beverage / Cash Crop,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,maize,0.4916,87.0,28.0,30.0,25.6,58.36,6.54,109.74
+502,coffee,Beverage / Cash Crop,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,coffee,0.151,87.0,28.0,30.0,30.6,61.8,6.54,168.84
+502,coffee,Beverage / Cash Crop,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,coffee,0.9992,87.0,28.0,30.0,30.6,61.8,6.54,168.84
+502,coffee,Beverage / Cash Crop,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,coffee,0.9998,87.0,28.0,30.0,30.6,61.8,6.54,168.84
+503,coffee,Beverage / Cash Crop,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,blackgram,0.121,52.2,16.8,18.0,25.6,68.66,6.54,168.84
+503,coffee,Beverage / Cash Crop,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,coffee,0.2794,52.2,16.8,18.0,25.6,68.66,6.54,168.84
+503,coffee,Beverage / Cash Crop,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,banana,0.7542,52.2,16.8,18.0,25.6,68.66,6.54,168.84
+504,coffee,Beverage / Cash Crop,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,jute,0.1449,117.45,37.8,40.5,25.6,68.66,6.54,168.84
+504,coffee,Beverage / Cash Crop,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,coffee,0.9381,117.45,37.8,40.5,25.6,68.66,6.54,168.84
+504,coffee,Beverage / Cash Crop,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,coffee,0.9795,117.45,37.8,40.5,25.6,68.66,6.54,168.84
+505,coffee,Beverage / Cash Crop,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,coffee,0.2015,87.0,28.0,30.0,25.6,68.66,5.04,168.84
+505,coffee,Beverage / Cash Crop,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,coffee,0.9996,87.0,28.0,30.0,25.6,68.66,5.04,168.84
+505,coffee,Beverage / Cash Crop,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,coffee,0.9997,87.0,28.0,30.0,25.6,68.66,5.04,168.84
+506,coffee,Beverage / Cash Crop,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,coffee,0.1637,87.0,28.0,30.0,25.6,68.66,8.04,168.84
+506,coffee,Beverage / Cash Crop,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,coffee,0.9996,87.0,28.0,30.0,25.6,68.66,8.04,168.84
+506,coffee,Beverage / Cash Crop,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,coffee,0.9988,87.0,28.0,30.0,25.6,68.66,8.04,168.84
+507,coffee,Beverage / Cash Crop,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,coffee,watermelon,0.1485,87.0,28.0,30.0,25.6,78.96,6.54,253.26
+507,coffee,Beverage / Cash Crop,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,coffee,rice,0.7837,87.0,28.0,30.0,25.6,78.96,6.54,253.26
+507,coffee,Beverage / Cash Crop,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,coffee,rice,0.7495,87.0,28.0,30.0,25.6,78.96,6.54,253.26
+600,cotton,Fiber Crop,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,cotton,0.163,140.0,45.0,15.0,25.53,80.05,5.8,99.4
+600,cotton,Fiber Crop,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,cotton,0.9997,140.0,45.0,15.0,25.53,80.05,5.8,99.4
+600,cotton,Fiber Crop,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,cotton,0.9999,140.0,45.0,15.0,25.53,80.05,5.8,99.4
+601,cotton,Fiber Crop,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,maize,0.1894,140.0,45.0,15.0,25.53,68.04,5.8,64.61
+601,cotton,Fiber Crop,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,maize,0.5583,140.0,45.0,15.0,25.53,68.04,5.8,64.61
+601,cotton,Fiber Crop,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,cotton,0.5586,140.0,45.0,15.0,25.53,68.04,5.8,64.61
+602,cotton,Fiber Crop,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,banana,0.1282,140.0,45.0,15.0,30.53,72.04,5.8,99.4
+602,cotton,Fiber Crop,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,cotton,0.8489,140.0,45.0,15.0,30.53,72.04,5.8,99.4
+602,cotton,Fiber Crop,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,cotton,0.5575,140.0,45.0,15.0,30.53,72.04,5.8,99.4
+603,cotton,Fiber Crop,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,maize,0.1296,84.0,27.0,9.0,25.53,80.05,5.8,99.4
+603,cotton,Fiber Crop,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,orange,0.7993,84.0,27.0,9.0,25.53,80.05,5.8,99.4
+603,cotton,Fiber Crop,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,maize,0.9986,84.0,27.0,9.0,25.53,80.05,5.8,99.4
+604,cotton,Fiber Crop,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,cotton,0.1563,140.0,60.75,20.25,25.53,80.05,5.8,99.4
+604,cotton,Fiber Crop,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,cotton,0.9997,140.0,60.75,20.25,25.53,80.05,5.8,99.4
+604,cotton,Fiber Crop,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,cotton,0.9996,140.0,60.75,20.25,25.53,80.05,5.8,99.4
+605,cotton,Fiber Crop,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,cotton,0.1625,140.0,45.0,15.0,25.53,80.05,4.3,99.4
+605,cotton,Fiber Crop,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,cotton,0.9997,140.0,45.0,15.0,25.53,80.05,4.3,99.4
+605,cotton,Fiber Crop,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,maize,0.695,140.0,45.0,15.0,25.53,80.05,4.3,99.4
+606,cotton,Fiber Crop,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,cotton,0.3045,140.0,45.0,15.0,25.53,80.05,7.3,99.4
+606,cotton,Fiber Crop,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,cotton,0.9998,140.0,45.0,15.0,25.53,80.05,7.3,99.4
+606,cotton,Fiber Crop,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,cotton,1.0,140.0,45.0,15.0,25.53,80.05,7.3,99.4
+607,cotton,Fiber Crop,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,cotton,cotton,0.1395,140.0,45.0,15.0,25.53,92.05,5.8,149.09
+607,cotton,Fiber Crop,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,cotton,cotton,0.5689,140.0,45.0,15.0,25.53,92.05,5.8,149.09
+607,cotton,Fiber Crop,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,cotton,coffee,0.9931,140.0,45.0,15.0,25.53,92.05,5.8,149.09
+700,grapes,Fruit,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,grapes,0.5895,33.0,120.0,205.0,35.12,82.27,5.55,69.72
+700,grapes,Fruit,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,grapes,0.9998,33.0,120.0,205.0,35.12,82.27,5.55,69.72
+700,grapes,Fruit,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,grapes,1.0,33.0,120.0,205.0,35.12,82.27,5.55,69.72
+701,grapes,Fruit,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,grapes,0.5593,33.0,120.0,205.0,35.12,69.93,5.55,45.31
+701,grapes,Fruit,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,grapes,0.9972,33.0,120.0,205.0,35.12,69.93,5.55,45.31
+701,grapes,Fruit,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,grapes,1.0,33.0,120.0,205.0,35.12,69.93,5.55,45.31
+702,grapes,Fruit,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,grapes,0.5834,33.0,120.0,205.0,40.12,74.04,5.55,69.72
+702,grapes,Fruit,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,grapes,0.9996,33.0,120.0,205.0,40.12,74.04,5.55,69.72
+702,grapes,Fruit,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,grapes,1.0,33.0,120.0,205.0,40.12,74.04,5.55,69.72
+703,grapes,Fruit,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,chickpea,0.2378,19.8,72.0,123.0,35.12,82.27,5.55,69.72
+703,grapes,Fruit,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,grapes,0.4467,19.8,72.0,123.0,35.12,82.27,5.55,69.72
+703,grapes,Fruit,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,grapes,0.996,19.8,72.0,123.0,35.12,82.27,5.55,69.72
+704,grapes,Fruit,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,grapes,0.5488,44.55,145.0,205.0,35.12,82.27,5.55,69.72
+704,grapes,Fruit,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,grapes,0.9992,44.55,145.0,205.0,35.12,82.27,5.55,69.72
+704,grapes,Fruit,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,grapes,1.0,44.55,145.0,205.0,35.12,82.27,5.55,69.72
+705,grapes,Fruit,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,grapes,0.5886,33.0,120.0,205.0,35.12,82.27,4.05,69.72
+705,grapes,Fruit,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,grapes,0.9998,33.0,120.0,205.0,35.12,82.27,4.05,69.72
+705,grapes,Fruit,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,grapes,1.0,33.0,120.0,205.0,35.12,82.27,4.05,69.72
+706,grapes,Fruit,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,grapes,0.4769,33.0,120.0,205.0,35.12,82.27,7.05,69.72
+706,grapes,Fruit,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,grapes,0.9991,33.0,120.0,205.0,35.12,82.27,7.05,69.72
+706,grapes,Fruit,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,grapes,1.0,33.0,120.0,205.0,35.12,82.27,7.05,69.72
+707,grapes,Fruit,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,grapes,apple,0.4168,33.0,120.0,205.0,35.12,94.61,5.55,104.57
+707,grapes,Fruit,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,grapes,apple,0.9994,33.0,120.0,205.0,35.12,94.61,5.55,104.57
+707,grapes,Fruit,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,grapes,apple,1.0,33.0,120.0,205.0,35.12,94.61,5.55,104.57
+800,jute,Fiber Crop,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,coffee,0.1545,95.0,57.0,41.0,23.25,73.65,6.43,184.77
+800,jute,Fiber Crop,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,jute,0.9934,95.0,57.0,41.0,23.25,73.65,6.43,184.77
+800,jute,Fiber Crop,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,jute,0.9643,95.0,57.0,41.0,23.25,73.65,6.43,184.77
+801,jute,Fiber Crop,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,coffee,0.1608,95.0,57.0,41.0,23.25,62.61,6.43,120.1
+801,jute,Fiber Crop,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,coffee,0.7806,95.0,57.0,41.0,23.25,62.61,6.43,120.1
+801,jute,Fiber Crop,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,coffee,0.9498,95.0,57.0,41.0,23.25,62.61,6.43,120.1
+802,jute,Fiber Crop,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,coffee,0.1429,95.0,57.0,41.0,28.25,66.29,6.43,184.77
+802,jute,Fiber Crop,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,jute,0.6176,95.0,57.0,41.0,28.25,66.29,6.43,184.77
+802,jute,Fiber Crop,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,jute,0.8505,95.0,57.0,41.0,28.25,66.29,6.43,184.77
+803,jute,Fiber Crop,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,pomegranate,0.1017,57.0,34.2,24.6,23.25,73.65,6.43,184.77
+803,jute,Fiber Crop,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,jute,0.4218,57.0,34.2,24.6,23.25,73.65,6.43,184.77
+803,jute,Fiber Crop,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,jute,0.9607,57.0,34.2,24.6,23.25,73.65,6.43,184.77
+804,jute,Fiber Crop,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,banana,0.1933,128.25,76.95,55.35,23.25,73.65,6.43,184.77
+804,jute,Fiber Crop,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,banana,0.5235,128.25,76.95,55.35,23.25,73.65,6.43,184.77
+804,jute,Fiber Crop,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,jute,0.7496,128.25,76.95,55.35,23.25,73.65,6.43,184.77
+805,jute,Fiber Crop,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,rice,0.1732,95.0,57.0,41.0,23.25,73.65,4.93,184.77
+805,jute,Fiber Crop,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,jute,0.797,95.0,57.0,41.0,23.25,73.65,4.93,184.77
+805,jute,Fiber Crop,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,jute,0.7832,95.0,57.0,41.0,23.25,73.65,4.93,184.77
+806,jute,Fiber Crop,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,jute,0.1993,95.0,57.0,41.0,23.25,73.65,7.93,184.77
+806,jute,Fiber Crop,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,jute,0.8966,95.0,57.0,41.0,23.25,73.65,7.93,184.77
+806,jute,Fiber Crop,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,jute,0.9716,95.0,57.0,41.0,23.25,73.65,7.93,184.77
+807,jute,Fiber Crop,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,jute,rice,0.1587,95.0,57.0,41.0,23.25,84.7,6.43,277.15
+807,jute,Fiber Crop,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,jute,rice,0.9973,95.0,57.0,41.0,23.25,84.7,6.43,277.15
+807,jute,Fiber Crop,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,jute,rice,0.9999,95.0,57.0,41.0,23.25,84.7,6.43,277.15
+900,kidneybeans,Legume / Pulse,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.4925,27.0,80.0,15.0,19.07,21.21,5.79,86.22
+900,kidneybeans,Legume / Pulse,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.9998,27.0,80.0,15.0,19.07,21.21,5.79,86.22
+900,kidneybeans,Legume / Pulse,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9976,27.0,80.0,15.0,19.07,21.21,5.79,86.22
+901,kidneybeans,Legume / Pulse,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.385,27.0,80.0,15.0,19.07,18.03,5.79,56.04
+901,kidneybeans,Legume / Pulse,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.9997,27.0,80.0,15.0,19.07,18.03,5.79,56.04
+901,kidneybeans,Legume / Pulse,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9974,27.0,80.0,15.0,19.07,18.03,5.79,56.04
+902,kidneybeans,Legume / Pulse,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.474,27.0,80.0,15.0,24.07,19.09,5.79,86.22
+902,kidneybeans,Legume / Pulse,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.9998,27.0,80.0,15.0,24.07,19.09,5.79,86.22
+902,kidneybeans,Legume / Pulse,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9973,27.0,80.0,15.0,24.07,19.09,5.79,86.22
+903,kidneybeans,Legume / Pulse,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.4405,16.2,48.0,9.0,19.07,21.21,5.79,86.22
+903,kidneybeans,Legume / Pulse,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.9991,16.2,48.0,9.0,19.07,21.21,5.79,86.22
+903,kidneybeans,Legume / Pulse,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9992,16.2,48.0,9.0,19.07,21.21,5.79,86.22
+904,kidneybeans,Legume / Pulse,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.3697,36.45,108.0,20.25,19.07,21.21,5.79,86.22
+904,kidneybeans,Legume / Pulse,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.9994,36.45,108.0,20.25,19.07,21.21,5.79,86.22
+904,kidneybeans,Legume / Pulse,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9899,36.45,108.0,20.25,19.07,21.21,5.79,86.22
+905,kidneybeans,Legume / Pulse,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.4919,27.0,80.0,15.0,19.07,21.21,4.29,86.22
+905,kidneybeans,Legume / Pulse,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.9998,27.0,80.0,15.0,19.07,21.21,4.29,86.22
+905,kidneybeans,Legume / Pulse,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9981,27.0,80.0,15.0,19.07,21.21,4.29,86.22
+906,kidneybeans,Legume / Pulse,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.2351,27.0,80.0,15.0,19.07,21.21,7.29,86.22
+906,kidneybeans,Legume / Pulse,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.8971,27.0,80.0,15.0,19.07,21.21,7.29,86.22
+906,kidneybeans,Legume / Pulse,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9973,27.0,80.0,15.0,19.07,21.21,7.29,86.22
+907,kidneybeans,Legume / Pulse,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,kidneybeans,kidneybeans,0.5069,27.0,80.0,15.0,19.07,24.39,5.79,129.33
+907,kidneybeans,Legume / Pulse,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,kidneybeans,kidneybeans,0.9997,27.0,80.0,15.0,19.07,24.39,5.79,129.33
+907,kidneybeans,Legume / Pulse,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,kidneybeans,kidneybeans,0.9935,27.0,80.0,15.0,19.07,24.39,5.79,129.33
+1000,lentil,Legume / Pulse,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,lentil,0.2219,3.0,78.0,18.0,20.21,68.65,6.89,50.9
+1000,lentil,Legume / Pulse,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,lentil,0.9996,3.0,78.0,18.0,20.21,68.65,6.89,50.9
+1000,lentil,Legume / Pulse,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,lentil,0.9985,3.0,78.0,18.0,20.21,68.65,6.89,50.9
+1001,lentil,Legume / Pulse,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,lentil,0.1965,3.0,78.0,18.0,20.21,58.35,6.89,33.08
+1001,lentil,Legume / Pulse,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,lentil,0.731,3.0,78.0,18.0,20.21,58.35,6.89,33.08
+1001,lentil,Legume / Pulse,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,lentil,0.914,3.0,78.0,18.0,20.21,58.35,6.89,33.08
+1002,lentil,Legume / Pulse,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,lentil,0.2104,3.0,78.0,18.0,25.21,61.79,6.89,50.9
+1002,lentil,Legume / Pulse,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,lentil,0.9994,3.0,78.0,18.0,25.21,61.79,6.89,50.9
+1002,lentil,Legume / Pulse,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,lentil,0.9908,3.0,78.0,18.0,25.21,61.79,6.89,50.9
+1003,lentil,Legume / Pulse,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,lentil,0.2025,5.0,46.8,10.8,20.21,68.65,6.89,50.9
+1003,lentil,Legume / Pulse,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,lentil,0.8076,5.0,46.8,10.8,20.21,68.65,6.89,50.9
+1003,lentil,Legume / Pulse,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,mothbeans,0.5804,5.0,46.8,10.8,20.21,68.65,6.89,50.9
+1004,lentil,Legume / Pulse,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,lentil,0.2058,4.05,105.3,24.3,20.21,68.65,6.89,50.9
+1004,lentil,Legume / Pulse,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,lentil,0.9819,4.05,105.3,24.3,20.21,68.65,6.89,50.9
+1004,lentil,Legume / Pulse,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,lentil,0.9864,4.05,105.3,24.3,20.21,68.65,6.89,50.9
+1005,lentil,Legume / Pulse,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,kidneybeans,0.1589,3.0,78.0,18.0,20.21,68.65,5.39,50.9
+1005,lentil,Legume / Pulse,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,lentil,0.9907,3.0,78.0,18.0,20.21,68.65,5.39,50.9
+1005,lentil,Legume / Pulse,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,lentil,0.999,3.0,78.0,18.0,20.21,68.65,5.39,50.9
+1006,lentil,Legume / Pulse,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,lentil,0.229,3.0,78.0,18.0,20.21,68.65,8.39,50.9
+1006,lentil,Legume / Pulse,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,lentil,0.9946,3.0,78.0,18.0,20.21,68.65,8.39,50.9
+1006,lentil,Legume / Pulse,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,lentil,0.9943,3.0,78.0,18.0,20.21,68.65,8.39,50.9
+1007,lentil,Legume / Pulse,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,lentil,lentil,0.0994,3.0,78.0,18.0,20.21,78.95,6.89,76.35
+1007,lentil,Legume / Pulse,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,lentil,cotton,0.247,3.0,78.0,18.0,20.21,78.95,6.89,76.35
+1007,lentil,Legume / Pulse,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,lentil,mungbean,0.5598,3.0,78.0,18.0,20.21,78.95,6.89,76.35
+1100,maize,Cereal / Grain,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,maize,0.2343,67.0,60.0,25.0,24.92,66.79,5.75,109.22
+1100,maize,Cereal / Grain,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,maize,0.9992,67.0,60.0,25.0,24.92,66.79,5.75,109.22
+1100,maize,Cereal / Grain,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,maize,0.9962,67.0,60.0,25.0,24.92,66.79,5.75,109.22
+1101,maize,Cereal / Grain,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,maize,0.2329,67.0,60.0,25.0,24.92,56.77,5.75,70.99
+1101,maize,Cereal / Grain,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,maize,0.9992,67.0,60.0,25.0,24.92,56.77,5.75,70.99
+1101,maize,Cereal / Grain,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,maize,0.9972,67.0,60.0,25.0,24.92,56.77,5.75,70.99
+1102,maize,Cereal / Grain,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,maize,0.1485,67.0,60.0,25.0,29.92,60.11,5.75,109.22
+1102,maize,Cereal / Grain,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,maize,0.9404,67.0,60.0,25.0,29.92,60.11,5.75,109.22
+1102,maize,Cereal / Grain,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,maize,0.9945,67.0,60.0,25.0,29.92,60.11,5.75,109.22
+1103,maize,Cereal / Grain,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,kidneybeans,0.1218,40.2,36.0,15.0,24.92,66.79,5.75,109.22
+1103,maize,Cereal / Grain,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,maize,0.664,40.2,36.0,15.0,24.92,66.79,5.75,109.22
+1103,maize,Cereal / Grain,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,maize,0.8578,40.2,36.0,15.0,24.92,66.79,5.75,109.22
+1104,maize,Cereal / Grain,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,maize,0.1601,90.45,81.0,33.75,24.92,66.79,5.75,109.22
+1104,maize,Cereal / Grain,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,banana,0.7095,90.45,81.0,33.75,24.92,66.79,5.75,109.22
+1104,maize,Cereal / Grain,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,maize,0.685,90.45,81.0,33.75,24.92,66.79,5.75,109.22
+1105,maize,Cereal / Grain,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,maize,0.2318,67.0,60.0,25.0,24.92,66.79,4.25,109.22
+1105,maize,Cereal / Grain,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,maize,0.999,67.0,60.0,25.0,24.92,66.79,4.25,109.22
+1105,maize,Cereal / Grain,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,maize,0.9907,67.0,60.0,25.0,24.92,66.79,4.25,109.22
+1106,maize,Cereal / Grain,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,maize,0.1754,67.0,60.0,25.0,24.92,66.79,7.25,109.22
+1106,maize,Cereal / Grain,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,maize,0.981,67.0,60.0,25.0,24.92,66.79,7.25,109.22
+1106,maize,Cereal / Grain,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,maize,0.9876,67.0,60.0,25.0,24.92,66.79,7.25,109.22
+1107,maize,Cereal / Grain,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,maize,rice,0.1493,67.0,60.0,25.0,24.92,76.8,5.75,163.82
+1107,maize,Cereal / Grain,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,maize,jute,0.331,67.0,60.0,25.0,24.92,76.8,5.75,163.82
+1107,maize,Cereal / Grain,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,maize,jute,0.9421,67.0,60.0,25.0,24.92,76.8,5.75,163.82
+1200,mango,Fruit,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,mango,0.2111,38.0,15.0,30.0,28.92,48.14,5.08,97.01
+1200,mango,Fruit,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,mango,0.9998,38.0,15.0,30.0,28.92,48.14,5.08,97.01
+1200,mango,Fruit,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,mango,1.0,38.0,15.0,30.0,28.92,48.14,5.08,97.01
+1201,mango,Fruit,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,mango,0.1998,38.0,15.0,30.0,28.92,40.92,5.08,63.06
+1201,mango,Fruit,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,mothbeans,0.9855,38.0,15.0,30.0,28.92,40.92,5.08,63.06
+1201,mango,Fruit,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,mango,0.9686,38.0,15.0,30.0,28.92,40.92,5.08,63.06
+1202,mango,Fruit,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,mango,0.2398,38.0,15.0,30.0,33.92,43.33,5.08,97.01
+1202,mango,Fruit,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,mango,0.9996,38.0,15.0,30.0,33.92,43.33,5.08,97.01
+1202,mango,Fruit,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,mango,1.0,38.0,15.0,30.0,33.92,43.33,5.08,97.01
+1203,mango,Fruit,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,mango,0.1707,22.8,9.0,18.0,28.92,48.14,5.08,97.01
+1203,mango,Fruit,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,mango,0.9416,22.8,9.0,18.0,28.92,48.14,5.08,97.01
+1203,mango,Fruit,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,mango,1.0,22.8,9.0,18.0,28.92,48.14,5.08,97.01
+1204,mango,Fruit,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,mango,0.1868,51.3,20.25,40.5,28.92,48.14,5.08,97.01
+1204,mango,Fruit,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,mango,0.9974,51.3,20.25,40.5,28.92,48.14,5.08,97.01
+1204,mango,Fruit,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,mango,1.0,51.3,20.25,40.5,28.92,48.14,5.08,97.01
+1205,mango,Fruit,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,mango,0.2111,38.0,15.0,30.0,28.92,48.14,3.8,97.01
+1205,mango,Fruit,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,mango,0.9998,38.0,15.0,30.0,28.92,48.14,3.8,97.01
+1205,mango,Fruit,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,mango,1.0,38.0,15.0,30.0,28.92,48.14,3.8,97.01
+1206,mango,Fruit,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,mango,0.1758,38.0,15.0,30.0,28.92,48.14,6.58,97.01
+1206,mango,Fruit,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,mango,0.9998,38.0,15.0,30.0,28.92,48.14,6.58,97.01
+1206,mango,Fruit,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,mango,1.0,38.0,15.0,30.0,28.92,48.14,6.58,97.01
+1207,mango,Fruit,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mango,coconut,0.194,38.0,15.0,30.0,28.92,55.36,5.08,145.52
+1207,mango,Fruit,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mango,coconut,0.3687,38.0,15.0,30.0,28.92,55.36,5.08,145.52
+1207,mango,Fruit,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,mango,pigeonpeas,0.625,38.0,15.0,30.0,28.92,55.36,5.08,145.52
+1300,mothbeans,Legume / Pulse,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,mothbeans,0.162,27.0,43.0,23.0,31.7,56.85,5.88,44.94
+1300,mothbeans,Legume / Pulse,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,mothbeans,0.9997,27.0,43.0,23.0,31.7,56.85,5.88,44.94
+1300,mothbeans,Legume / Pulse,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,1.0,27.0,43.0,23.0,31.7,56.85,5.88,44.94
+1301,mothbeans,Legume / Pulse,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,muskmelon,0.34,27.0,43.0,23.0,31.7,48.33,5.88,29.21
+1301,mothbeans,Legume / Pulse,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,mothbeans,0.9996,27.0,43.0,23.0,31.7,48.33,5.88,29.21
+1301,mothbeans,Legume / Pulse,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,1.0,27.0,43.0,23.0,31.7,48.33,5.88,29.21
+1302,mothbeans,Legume / Pulse,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,mothbeans,0.162,27.0,43.0,23.0,36.7,51.17,5.88,44.94
+1302,mothbeans,Legume / Pulse,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,mothbeans,0.9996,27.0,43.0,23.0,36.7,51.17,5.88,44.94
+1302,mothbeans,Legume / Pulse,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,1.0,27.0,43.0,23.0,36.7,51.17,5.88,44.94
+1303,mothbeans,Legume / Pulse,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,mango,0.1638,16.2,25.8,13.8,31.7,56.85,5.88,44.94
+1303,mothbeans,Legume / Pulse,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,mothbeans,0.9816,16.2,25.8,13.8,31.7,56.85,5.88,44.94
+1303,mothbeans,Legume / Pulse,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,0.9989,16.2,25.8,13.8,31.7,56.85,5.88,44.94
+1304,mothbeans,Legume / Pulse,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,mango,0.1456,36.45,58.05,31.05,31.7,56.85,5.88,44.94
+1304,mothbeans,Legume / Pulse,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,mothbeans,0.9962,36.45,58.05,31.05,31.7,56.85,5.88,44.94
+1304,mothbeans,Legume / Pulse,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,0.8915,36.45,58.05,31.05,31.7,56.85,5.88,44.94
+1305,mothbeans,Legume / Pulse,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,mothbeans,0.1675,27.0,43.0,23.0,31.7,56.85,4.38,44.94
+1305,mothbeans,Legume / Pulse,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,mothbeans,0.9998,27.0,43.0,23.0,31.7,56.85,4.38,44.94
+1305,mothbeans,Legume / Pulse,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,1.0,27.0,43.0,23.0,31.7,56.85,4.38,44.94
+1306,mothbeans,Legume / Pulse,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,mothbeans,0.1893,27.0,43.0,23.0,31.7,56.85,7.38,44.94
+1306,mothbeans,Legume / Pulse,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,mothbeans,0.9993,27.0,43.0,23.0,31.7,56.85,7.38,44.94
+1306,mothbeans,Legume / Pulse,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,1.0,27.0,43.0,23.0,31.7,56.85,7.38,44.94
+1307,mothbeans,Legume / Pulse,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mothbeans,mothbeans,0.1264,27.0,43.0,23.0,31.7,65.38,5.88,67.41
+1307,mothbeans,Legume / Pulse,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mothbeans,blackgram,0.4183,27.0,43.0,23.0,31.7,65.38,5.88,67.41
+1307,mothbeans,Legume / Pulse,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,mothbeans,mothbeans,0.9915,27.0,43.0,23.0,31.7,65.38,5.88,67.41
+1400,mungbean,Legume / Pulse,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.1986,31.0,40.0,22.0,29.41,86.16,6.37,53.35
+1400,mungbean,Legume / Pulse,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,mungbean,0.9997,31.0,40.0,22.0,29.41,86.16,6.37,53.35
+1400,mungbean,Legume / Pulse,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,1.0,31.0,40.0,22.0,29.41,86.16,6.37,53.35
+1401,mungbean,Legume / Pulse,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.1597,31.0,40.0,22.0,29.41,73.24,6.37,34.68
+1401,mungbean,Legume / Pulse,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,mungbean,0.426,31.0,40.0,22.0,29.41,73.24,6.37,34.68
+1401,mungbean,Legume / Pulse,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,0.9636,31.0,40.0,22.0,29.41,73.24,6.37,34.68
+1402,mungbean,Legume / Pulse,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.19,31.0,40.0,22.0,34.41,77.54,6.37,53.35
+1402,mungbean,Legume / Pulse,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,mungbean,0.4635,31.0,40.0,22.0,34.41,77.54,6.37,53.35
+1402,mungbean,Legume / Pulse,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,0.9997,31.0,40.0,22.0,34.41,77.54,6.37,53.35
+1403,mungbean,Legume / Pulse,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.1566,18.6,24.0,13.2,29.41,86.16,6.37,53.35
+1403,mungbean,Legume / Pulse,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,mungbean,0.9443,18.6,24.0,13.2,29.41,86.16,6.37,53.35
+1403,mungbean,Legume / Pulse,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,1.0,18.6,24.0,13.2,29.41,86.16,6.37,53.35
+1404,mungbean,Legume / Pulse,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.1518,41.85,54.0,29.7,29.41,86.16,6.37,53.35
+1404,mungbean,Legume / Pulse,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,mungbean,0.3986,41.85,54.0,29.7,29.41,86.16,6.37,53.35
+1404,mungbean,Legume / Pulse,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,0.9999,41.85,54.0,29.7,29.41,86.16,6.37,53.35
+1405,mungbean,Legume / Pulse,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.1684,31.0,40.0,22.0,29.41,86.16,4.87,53.35
+1405,mungbean,Legume / Pulse,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,mungbean,0.9983,31.0,40.0,22.0,29.41,86.16,4.87,53.35
+1405,mungbean,Legume / Pulse,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,1.0,31.0,40.0,22.0,29.41,86.16,4.87,53.35
+1406,mungbean,Legume / Pulse,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.2192,31.0,40.0,22.0,29.41,86.16,7.87,53.35
+1406,mungbean,Legume / Pulse,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,mungbean,0.9981,31.0,40.0,22.0,29.41,86.16,7.87,53.35
+1406,mungbean,Legume / Pulse,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,1.0,31.0,40.0,22.0,29.41,86.16,7.87,53.35
+1407,mungbean,Legume / Pulse,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,mungbean,mungbean,0.1277,31.0,40.0,22.0,29.41,99.08,6.37,80.03
+1407,mungbean,Legume / Pulse,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,mungbean,papaya,0.8876,31.0,40.0,22.0,29.41,99.08,6.37,80.03
+1407,mungbean,Legume / Pulse,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,mungbean,mungbean,0.9413,31.0,40.0,22.0,29.41,99.08,6.37,80.03
+1500,muskmelon,Fruit (Cucurbit),Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.7244,100.0,17.0,48.0,29.73,94.3,6.37,26.52
+1500,muskmelon,Fruit (Cucurbit),Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,muskmelon,0.9998,100.0,17.0,48.0,29.73,94.3,6.37,26.52
+1500,muskmelon,Fruit (Cucurbit),Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,muskmelon,0.9999,100.0,17.0,48.0,29.73,94.3,6.37,26.52
+1501,muskmelon,Fruit (Cucurbit),Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.6223,100.0,17.0,48.0,29.73,80.15,6.37,17.24
+1501,muskmelon,Fruit (Cucurbit),Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,muskmelon,0.9933,100.0,17.0,48.0,29.73,80.15,6.37,17.24
+1501,muskmelon,Fruit (Cucurbit),Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,watermelon,0.9607,100.0,17.0,48.0,29.73,80.15,6.37,17.24
+1502,muskmelon,Fruit (Cucurbit),Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.6112,100.0,17.0,48.0,34.73,84.87,6.37,26.52
+1502,muskmelon,Fruit (Cucurbit),Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,muskmelon,0.9935,100.0,17.0,48.0,34.73,84.87,6.37,26.52
+1502,muskmelon,Fruit (Cucurbit),Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,watermelon,0.9098,100.0,17.0,48.0,34.73,84.87,6.37,26.52
+1503,muskmelon,Fruit (Cucurbit),Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.6271,60.0,10.2,28.8,29.73,94.3,6.37,26.52
+1503,muskmelon,Fruit (Cucurbit),Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,muskmelon,0.9941,60.0,10.2,28.8,29.73,94.3,6.37,26.52
+1503,muskmelon,Fruit (Cucurbit),Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,muskmelon,1.0,60.0,10.2,28.8,29.73,94.3,6.37,26.52
+1504,muskmelon,Fruit (Cucurbit),Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.7226,135.0,22.95,64.8,29.73,94.3,6.37,26.52
+1504,muskmelon,Fruit (Cucurbit),Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,muskmelon,0.9997,135.0,22.95,64.8,29.73,94.3,6.37,26.52
+1504,muskmelon,Fruit (Cucurbit),Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,muskmelon,0.9891,135.0,22.95,64.8,29.73,94.3,6.37,26.52
+1505,muskmelon,Fruit (Cucurbit),Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.6237,100.0,17.0,48.0,29.73,94.3,4.87,26.52
+1505,muskmelon,Fruit (Cucurbit),Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,muskmelon,0.9998,100.0,17.0,48.0,29.73,94.3,4.87,26.52
+1505,muskmelon,Fruit (Cucurbit),Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,muskmelon,0.9999,100.0,17.0,48.0,29.73,94.3,4.87,26.52
+1506,muskmelon,Fruit (Cucurbit),Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.6191,100.0,17.0,48.0,29.73,94.3,7.87,26.52
+1506,muskmelon,Fruit (Cucurbit),Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,muskmelon,0.9998,100.0,17.0,48.0,29.73,94.3,7.87,26.52
+1506,muskmelon,Fruit (Cucurbit),Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,muskmelon,0.9998,100.0,17.0,48.0,29.73,94.3,7.87,26.52
+1507,muskmelon,Fruit (Cucurbit),Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,muskmelon,muskmelon,0.2744,100.0,17.0,48.0,29.73,100.0,6.37,39.79
+1507,muskmelon,Fruit (Cucurbit),Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,muskmelon,watermelon,0.2203,100.0,17.0,48.0,29.73,100.0,6.37,39.79
+1507,muskmelon,Fruit (Cucurbit),Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,muskmelon,muskmelon,0.9857,100.0,17.0,48.0,29.73,100.0,6.37,39.79
+1600,orange,Citrus Fruit,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.2353,31.0,25.0,12.0,18.05,90.04,7.02,111.78
+1600,orange,Citrus Fruit,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,orange,0.9994,31.0,25.0,12.0,18.05,90.04,7.02,111.78
+1600,orange,Citrus Fruit,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,orange,0.9987,31.0,25.0,12.0,18.05,90.04,7.02,111.78
+1601,orange,Citrus Fruit,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.1972,31.0,25.0,12.0,18.05,76.53,7.02,72.66
+1601,orange,Citrus Fruit,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,orange,0.9664,31.0,25.0,12.0,18.05,76.53,7.02,72.66
+1601,orange,Citrus Fruit,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,mungbean,0.8955,31.0,25.0,12.0,18.05,76.53,7.02,72.66
+1602,orange,Citrus Fruit,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.2003,31.0,25.0,12.0,23.05,81.04,7.02,111.78
+1602,orange,Citrus Fruit,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,orange,0.987,31.0,25.0,12.0,23.05,81.04,7.02,111.78
+1602,orange,Citrus Fruit,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,pigeonpeas,0.4561,31.0,25.0,12.0,23.05,81.04,7.02,111.78
+1603,orange,Citrus Fruit,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.2403,18.6,15.0,7.2,18.05,90.04,7.02,111.78
+1603,orange,Citrus Fruit,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,orange,0.9995,18.6,15.0,7.2,18.05,90.04,7.02,111.78
+1603,orange,Citrus Fruit,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,orange,0.9994,18.6,15.0,7.2,18.05,90.04,7.02,111.78
+1604,orange,Citrus Fruit,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.182,41.85,33.75,16.2,18.05,90.04,7.02,111.78
+1604,orange,Citrus Fruit,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,papaya,0.9951,41.85,33.75,16.2,18.05,90.04,7.02,111.78
+1604,orange,Citrus Fruit,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,orange,0.9898,41.85,33.75,16.2,18.05,90.04,7.02,111.78
+1605,orange,Citrus Fruit,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.1344,31.0,25.0,12.0,18.05,90.04,5.52,111.78
+1605,orange,Citrus Fruit,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,orange,0.9976,31.0,25.0,12.0,18.05,90.04,5.52,111.78
+1605,orange,Citrus Fruit,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,orange,0.9987,31.0,25.0,12.0,18.05,90.04,5.52,111.78
+1606,orange,Citrus Fruit,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.235,31.0,25.0,12.0,18.05,90.04,8.52,111.78
+1606,orange,Citrus Fruit,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,orange,0.9995,31.0,25.0,12.0,18.05,90.04,8.52,111.78
+1606,orange,Citrus Fruit,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,orange,0.9987,31.0,25.0,12.0,18.05,90.04,8.52,111.78
+1607,orange,Citrus Fruit,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,orange,orange,0.2225,31.0,25.0,12.0,18.05,100.0,7.02,167.67
+1607,orange,Citrus Fruit,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,orange,orange,0.945,31.0,25.0,12.0,18.05,100.0,7.02,167.67
+1607,orange,Citrus Fruit,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,orange,coconut,0.9997,31.0,25.0,12.0,18.05,100.0,7.02,167.67
+1700,papaya,Tropical Fruit,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.2594,36.0,59.0,46.0,34.29,93.61,6.72,127.25
+1700,papaya,Tropical Fruit,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.9998,36.0,59.0,46.0,34.29,93.61,6.72,127.25
+1700,papaya,Tropical Fruit,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,papaya,0.9999,36.0,59.0,46.0,34.29,93.61,6.72,127.25
+1701,papaya,Tropical Fruit,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.1714,36.0,59.0,46.0,34.29,79.57,6.72,82.71
+1701,papaya,Tropical Fruit,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.1949,36.0,59.0,46.0,34.29,79.57,6.72,82.71
+1701,papaya,Tropical Fruit,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,pigeonpeas,0.9705,36.0,59.0,46.0,34.29,79.57,6.72,82.71
+1702,papaya,Tropical Fruit,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.1792,36.0,59.0,46.0,39.29,84.25,6.72,127.25
+1702,papaya,Tropical Fruit,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.1665,36.0,59.0,46.0,39.29,84.25,6.72,127.25
+1702,papaya,Tropical Fruit,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,papaya,0.7539,36.0,59.0,46.0,39.29,84.25,6.72,127.25
+1703,papaya,Tropical Fruit,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.1504,21.6,35.4,27.6,34.29,93.61,6.72,127.25
+1703,papaya,Tropical Fruit,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.9901,21.6,35.4,27.6,34.29,93.61,6.72,127.25
+1703,papaya,Tropical Fruit,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,coconut,0.9688,21.6,35.4,27.6,34.29,93.61,6.72,127.25
+1704,papaya,Tropical Fruit,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.3152,48.6,79.65,62.1,34.29,93.61,6.72,127.25
+1704,papaya,Tropical Fruit,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.8616,48.6,79.65,62.1,34.29,93.61,6.72,127.25
+1704,papaya,Tropical Fruit,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,papaya,1.0,48.6,79.65,62.1,34.29,93.61,6.72,127.25
+1705,papaya,Tropical Fruit,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.1281,36.0,59.0,46.0,34.29,93.61,5.22,127.25
+1705,papaya,Tropical Fruit,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.9832,36.0,59.0,46.0,34.29,93.61,5.22,127.25
+1705,papaya,Tropical Fruit,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,papaya,0.9951,36.0,59.0,46.0,34.29,93.61,5.22,127.25
+1706,papaya,Tropical Fruit,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.2252,36.0,59.0,46.0,34.29,93.61,8.22,127.25
+1706,papaya,Tropical Fruit,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.9997,36.0,59.0,46.0,34.29,93.61,8.22,127.25
+1706,papaya,Tropical Fruit,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,papaya,1.0,36.0,59.0,46.0,34.29,93.61,8.22,127.25
+1707,papaya,Tropical Fruit,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,papaya,papaya,0.2594,36.0,59.0,46.0,34.29,100.0,6.72,190.88
+1707,papaya,Tropical Fruit,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,papaya,papaya,0.9995,36.0,59.0,46.0,34.29,100.0,6.72,190.88
+1707,papaya,Tropical Fruit,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,papaya,papaya,1.0,36.0,59.0,46.0,34.29,100.0,6.72,190.88
+1800,pigeonpeas,Legume / Pulse,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,pigeonpeas,0.1408,33.0,58.0,24.0,35.46,68.76,5.27,108.63
+1800,pigeonpeas,Legume / Pulse,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,pigeonpeas,0.9973,33.0,58.0,24.0,35.46,68.76,5.27,108.63
+1800,pigeonpeas,Legume / Pulse,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,pigeonpeas,0.9908,33.0,58.0,24.0,35.46,68.76,5.27,108.63
+1801,pigeonpeas,Legume / Pulse,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,mothbeans,0.1347,33.0,58.0,24.0,35.46,58.44,5.27,70.61
+1801,pigeonpeas,Legume / Pulse,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,mothbeans,0.9984,33.0,58.0,24.0,35.46,58.44,5.27,70.61
+1801,pigeonpeas,Legume / Pulse,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,blackgram,0.7001,33.0,58.0,24.0,35.46,58.44,5.27,70.61
+1802,pigeonpeas,Legume / Pulse,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,pigeonpeas,0.1408,33.0,58.0,24.0,40.46,61.88,5.27,108.63
+1802,pigeonpeas,Legume / Pulse,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,pigeonpeas,0.997,33.0,58.0,24.0,40.46,61.88,5.27,108.63
+1802,pigeonpeas,Legume / Pulse,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,pigeonpeas,0.9981,33.0,58.0,24.0,40.46,61.88,5.27,108.63
+1803,pigeonpeas,Legume / Pulse,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,mango,0.1719,19.8,34.8,14.4,35.46,68.76,5.27,108.63
+1803,pigeonpeas,Legume / Pulse,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,pigeonpeas,0.785,19.8,34.8,14.4,35.46,68.76,5.27,108.63
+1803,pigeonpeas,Legume / Pulse,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,pigeonpeas,0.9873,19.8,34.8,14.4,35.46,68.76,5.27,108.63
+1804,pigeonpeas,Legume / Pulse,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,pigeonpeas,0.127,44.55,78.3,32.4,35.46,68.76,5.27,108.63
+1804,pigeonpeas,Legume / Pulse,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,pigeonpeas,0.3247,44.55,78.3,32.4,35.46,68.76,5.27,108.63
+1804,pigeonpeas,Legume / Pulse,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,banana,0.5319,44.55,78.3,32.4,35.46,68.76,5.27,108.63
+1805,pigeonpeas,Legume / Pulse,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,pigeonpeas,0.1408,33.0,58.0,24.0,35.46,68.76,3.8,108.63
+1805,pigeonpeas,Legume / Pulse,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,pigeonpeas,0.9973,33.0,58.0,24.0,35.46,68.76,3.8,108.63
+1805,pigeonpeas,Legume / Pulse,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,pigeonpeas,0.8533,33.0,58.0,24.0,35.46,68.76,3.8,108.63
+1806,pigeonpeas,Legume / Pulse,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,blackgram,0.1643,33.0,58.0,24.0,35.46,68.76,6.77,108.63
+1806,pigeonpeas,Legume / Pulse,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,pigeonpeas,0.9648,33.0,58.0,24.0,35.46,68.76,6.77,108.63
+1806,pigeonpeas,Legume / Pulse,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,pigeonpeas,0.9981,33.0,58.0,24.0,35.46,68.76,6.77,108.63
+1807,pigeonpeas,Legume / Pulse,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pigeonpeas,pigeonpeas,0.1236,33.0,58.0,24.0,35.46,79.07,5.27,162.95
+1807,pigeonpeas,Legume / Pulse,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pigeonpeas,pigeonpeas,0.9264,33.0,58.0,24.0,35.46,79.07,5.27,162.95
+1807,pigeonpeas,Legume / Pulse,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,pigeonpeas,rice,0.4071,33.0,58.0,24.0,35.46,79.07,5.27,162.95
+1900,pomegranate,Fruit,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.1922,12.0,29.0,40.0,19.68,89.75,6.59,111.28
+1900,pomegranate,Fruit,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,pomegranate,0.9998,12.0,29.0,40.0,19.68,89.75,6.59,111.28
+1900,pomegranate,Fruit,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,pomegranate,1.0,12.0,29.0,40.0,19.68,89.75,6.59,111.28
+1901,pomegranate,Fruit,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.1742,12.0,29.0,40.0,19.68,76.29,6.59,72.33
+1901,pomegranate,Fruit,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,pomegranate,0.8777,12.0,29.0,40.0,19.68,76.29,6.59,72.33
+1901,pomegranate,Fruit,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,pigeonpeas,0.594,12.0,29.0,40.0,19.68,76.29,6.59,72.33
+1902,pomegranate,Fruit,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.1765,12.0,29.0,40.0,24.68,80.78,6.59,111.28
+1902,pomegranate,Fruit,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,pomegranate,0.9935,12.0,29.0,40.0,24.68,80.78,6.59,111.28
+1902,pomegranate,Fruit,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,pomegranate,0.9624,12.0,29.0,40.0,24.68,80.78,6.59,111.28
+1903,pomegranate,Fruit,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.1774,7.2,17.4,24.0,19.68,89.75,6.59,111.28
+1903,pomegranate,Fruit,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,pomegranate,0.6592,7.2,17.4,24.0,19.68,89.75,6.59,111.28
+1903,pomegranate,Fruit,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,pomegranate,0.9138,7.2,17.4,24.0,19.68,89.75,6.59,111.28
+1904,pomegranate,Fruit,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.1201,16.2,39.15,54.0,19.68,89.75,6.59,111.28
+1904,pomegranate,Fruit,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,jute,0.0864,16.2,39.15,54.0,19.68,89.75,6.59,111.28
+1904,pomegranate,Fruit,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,pomegranate,0.9962,16.2,39.15,54.0,19.68,89.75,6.59,111.28
+1905,pomegranate,Fruit,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.1553,12.0,29.0,40.0,19.68,89.75,5.09,111.28
+1905,pomegranate,Fruit,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,pomegranate,0.9998,12.0,29.0,40.0,19.68,89.75,5.09,111.28
+1905,pomegranate,Fruit,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,pomegranate,1.0,12.0,29.0,40.0,19.68,89.75,5.09,111.28
+1906,pomegranate,Fruit,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.1834,12.0,29.0,40.0,19.68,89.75,8.09,111.28
+1906,pomegranate,Fruit,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,pomegranate,0.9997,12.0,29.0,40.0,19.68,89.75,8.09,111.28
+1906,pomegranate,Fruit,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,pomegranate,1.0,12.0,29.0,40.0,19.68,89.75,8.09,111.28
+1907,pomegranate,Fruit,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,pomegranate,pomegranate,0.181,12.0,29.0,40.0,19.68,100.0,6.59,166.92
+1907,pomegranate,Fruit,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,pomegranate,pomegranate,0.8437,12.0,29.0,40.0,19.68,100.0,6.59,166.92
+1907,pomegranate,Fruit,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,pomegranate,coconut,0.9998,12.0,29.0,40.0,19.68,100.0,6.59,166.92
+2000,rice,Cereal / Grain,Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,rice,0.1967,63.0,44.0,41.0,24.17,83.73,5.58,257.03
+2000,rice,Cereal / Grain,Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,rice,0.9997,63.0,44.0,41.0,24.17,83.73,5.58,257.03
+2000,rice,Cereal / Grain,Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,rice,0.9993,63.0,44.0,41.0,24.17,83.73,5.58,257.03
+2001,rice,Cereal / Grain,Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,rice,0.1577,63.0,44.0,41.0,24.17,71.17,5.58,167.07
+2001,rice,Cereal / Grain,Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,jute,0.9687,63.0,44.0,41.0,24.17,71.17,5.58,167.07
+2001,rice,Cereal / Grain,Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,jute,0.9902,63.0,44.0,41.0,24.17,71.17,5.58,167.07
+2002,rice,Cereal / Grain,Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,banana,0.1858,63.0,44.0,41.0,29.17,75.36,5.58,257.03
+2002,rice,Cereal / Grain,Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,rice,0.8735,63.0,44.0,41.0,29.17,75.36,5.58,257.03
+2002,rice,Cereal / Grain,Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,jute,0.6192,63.0,44.0,41.0,29.17,75.36,5.58,257.03
+2003,rice,Cereal / Grain,Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,pomegranate,0.1196,37.8,26.4,24.6,24.17,83.73,5.58,257.03
+2003,rice,Cereal / Grain,Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,rice,0.9314,37.8,26.4,24.6,24.17,83.73,5.58,257.03
+2003,rice,Cereal / Grain,Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,rice,0.9598,37.8,26.4,24.6,24.17,83.73,5.58,257.03
+2004,rice,Cereal / Grain,Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,banana,0.1708,85.05,59.4,55.35,24.17,83.73,5.58,257.03
+2004,rice,Cereal / Grain,Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,rice,0.994,85.05,59.4,55.35,24.17,83.73,5.58,257.03
+2004,rice,Cereal / Grain,Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,rice,0.9997,85.05,59.4,55.35,24.17,83.73,5.58,257.03
+2005,rice,Cereal / Grain,Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,rice,0.2061,63.0,44.0,41.0,24.17,83.73,4.08,257.03
+2005,rice,Cereal / Grain,Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,rice,0.9997,63.0,44.0,41.0,24.17,83.73,4.08,257.03
+2005,rice,Cereal / Grain,Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,rice,0.9982,63.0,44.0,41.0,24.17,83.73,4.08,257.03
+2006,rice,Cereal / Grain,Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,jute,0.2046,63.0,44.0,41.0,24.17,83.73,7.08,257.03
+2006,rice,Cereal / Grain,Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,rice,0.9987,63.0,44.0,41.0,24.17,83.73,7.08,257.03
+2006,rice,Cereal / Grain,Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,rice,0.9992,63.0,44.0,41.0,24.17,83.73,7.08,257.03
+2007,rice,Cereal / Grain,Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,rice,rice,0.1738,63.0,44.0,41.0,24.17,96.29,5.58,350.0
+2007,rice,Cereal / Grain,Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,rice,papaya,0.6327,63.0,44.0,41.0,24.17,96.29,5.58,350.0
+2007,rice,Cereal / Grain,Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,rice,papaya,0.9965,63.0,44.0,41.0,24.17,96.29,5.58,350.0
+2100,watermelon,Fruit (Cucurbit),Optimal Baseline,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,watermelon,0.2893,119.0,9.0,50.0,26.75,83.92,6.25,40.79
+2100,watermelon,Fruit (Cucurbit),Optimal Baseline,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,watermelon,0.9998,119.0,9.0,50.0,26.75,83.92,6.25,40.79
+2100,watermelon,Fruit (Cucurbit),Optimal Baseline,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,1.0,119.0,9.0,50.0,26.75,83.92,6.25,40.79
+2101,watermelon,Fruit (Cucurbit),Moderate Drought Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,muskmelon,0.4232,119.0,9.0,50.0,26.75,71.33,6.25,26.52
+2101,watermelon,Fruit (Cucurbit),Moderate Drought Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,watermelon,0.7499,119.0,9.0,50.0,26.75,71.33,6.25,26.52
+2101,watermelon,Fruit (Cucurbit),Moderate Drought Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,0.9956,119.0,9.0,50.0,26.75,71.33,6.25,26.52
+2102,watermelon,Fruit (Cucurbit),Thermal Warming Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,watermelon,0.1676,119.0,9.0,50.0,31.75,75.53,6.25,40.79
+2102,watermelon,Fruit (Cucurbit),Thermal Warming Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,watermelon,0.8584,119.0,9.0,50.0,31.75,75.53,6.25,40.79
+2102,watermelon,Fruit (Cucurbit),Thermal Warming Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,0.9987,119.0,9.0,50.0,31.75,75.53,6.25,40.79
+2103,watermelon,Fruit (Cucurbit),Nutrient Depletion Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,watermelon,0.1869,71.4,5.4,30.0,26.75,83.92,6.25,40.79
+2103,watermelon,Fruit (Cucurbit),Nutrient Depletion Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,watermelon,0.9358,71.4,5.4,30.0,26.75,83.92,6.25,40.79
+2103,watermelon,Fruit (Cucurbit),Nutrient Depletion Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,0.9998,71.4,5.4,30.0,26.75,83.92,6.25,40.79
+2104,watermelon,Fruit (Cucurbit),Nutrient Over-Fertilization,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,watermelon,0.2459,140.0,12.15,67.5,26.75,83.92,6.25,40.79
+2104,watermelon,Fruit (Cucurbit),Nutrient Over-Fertilization,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,watermelon,0.9997,140.0,12.15,67.5,26.75,83.92,6.25,40.79
+2104,watermelon,Fruit (Cucurbit),Nutrient Over-Fertilization,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,1.0,140.0,12.15,67.5,26.75,83.92,6.25,40.79
+2105,watermelon,Fruit (Cucurbit),Soil Acidification Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,watermelon,0.2476,119.0,9.0,50.0,26.75,83.92,4.75,40.79
+2105,watermelon,Fruit (Cucurbit),Soil Acidification Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,watermelon,0.9996,119.0,9.0,50.0,26.75,83.92,4.75,40.79
+2105,watermelon,Fruit (Cucurbit),Soil Acidification Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,1.0,119.0,9.0,50.0,26.75,83.92,4.75,40.79
+2106,watermelon,Fruit (Cucurbit),Soil Alkalinization Stress,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,watermelon,0.3062,119.0,9.0,50.0,26.75,83.92,7.75,40.79
+2106,watermelon,Fruit (Cucurbit),Soil Alkalinization Stress,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,watermelon,0.9997,119.0,9.0,50.0,26.75,83.92,7.75,40.79
+2106,watermelon,Fruit (Cucurbit),Soil Alkalinization Stress,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,1.0,119.0,9.0,50.0,26.75,83.92,7.75,40.79
+2107,watermelon,Fruit (Cucurbit),Extreme Monsoon Waterlogging,Random Forest (Real + Mode B),Random Forest,Real + Mode B,watermelon,watermelon,0.1587,119.0,9.0,50.0,26.75,96.51,6.25,61.19
+2107,watermelon,Fruit (Cucurbit),Extreme Monsoon Waterlogging,XGBoost (Real + Mode B),XGBoost,Real + Mode B,watermelon,banana,0.1408,119.0,9.0,50.0,26.75,96.51,6.25,61.19
+2107,watermelon,Fruit (Cucurbit),Extreme Monsoon Waterlogging,TabNet (Real + Mode B),TabNet,Real + Mode B,watermelon,watermelon,1.0,119.0,9.0,50.0,26.75,96.51,6.25,61.19

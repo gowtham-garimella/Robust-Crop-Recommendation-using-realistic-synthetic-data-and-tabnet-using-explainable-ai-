@@ -1,0 +1,22 @@
+model,synthetic_mode,scenario,baseline_metric,shifted_metric,absolute_change,relative_change_pct,n_samples,random_seed
+TabNet,Real + Mode B,Baseline (Optimal),0.9932,0.9932,0.0,0.0,440,42
+TabNet,Real + Mode B,"Mild Climate Shift (+10% Temp, -10% Rain)",0.9932,0.9722,-0.021,-2.11,440,42
+TabNet,Real + Mode B,"Moderate Climate Shift (+20% Temp, -20% Rain)",0.9932,0.9152,-0.078,-7.85,440,42
+TabNet,Real + Mode B,"Severe Drought (+30% Temp, -45% Rain)",0.9932,0.6412,-0.352,-35.44,440,42
+TabNet,Real + Mode B,"Severe Monsoon (+10% Temp, +50% Rain)",0.9932,0.923,-0.0702,-7.07,440,42
+TabNet,Real + Mode B,Soil Acidification (-1.5 pH),0.9932,0.9386,-0.0546,-5.5,440,42
+TabNet,Real + Mode B,Soil Alkalinization (+1.5 pH),0.9932,0.9464,-0.0468,-4.71,440,42
+Random Forest,Real + Mode B,Baseline (Optimal),0.9091,0.9091,0.0,0.0,440,42
+Random Forest,Real + Mode B,"Mild Climate Shift (+10% Temp, -10% Rain)",0.9091,0.8851,-0.024,-2.64,440,42
+Random Forest,Real + Mode B,"Moderate Climate Shift (+20% Temp, -20% Rain)",0.9091,0.8211,-0.088,-9.68,440,42
+Random Forest,Real + Mode B,"Severe Drought (+30% Temp, -45% Rain)",0.9091,0.5121,-0.397,-43.67,440,42
+Random Forest,Real + Mode B,"Severe Monsoon (+10% Temp, +50% Rain)",0.9091,0.8299,-0.0792,-8.71,440,42
+Random Forest,Real + Mode B,Soil Acidification (-1.5 pH),0.9091,0.8475,-0.0616,-6.78,440,42
+Random Forest,Real + Mode B,Soil Alkalinization (+1.5 pH),0.9091,0.8563,-0.0528,-5.81,440,42
+XGBoost,Real + Mode B,Baseline (Optimal),0.9977,0.9977,0.0,0.0,440,42
+XGBoost,Real + Mode B,"Mild Climate Shift (+10% Temp, -10% Rain)",0.9977,0.9857,-0.012,-1.2,440,42
+XGBoost,Real + Mode B,"Moderate Climate Shift (+20% Temp, -20% Rain)",0.9977,0.9417,-0.056,-5.61,440,42
+XGBoost,Real + Mode B,"Severe Drought (+30% Temp, -45% Rain)",0.9977,0.7417,-0.256,-25.66,440,42
+XGBoost,Real + Mode B,"Severe Monsoon (+10% Temp, +50% Rain)",0.9977,0.9473,-0.0504,-5.05,440,42
+XGBoost,Real + Mode B,Soil Acidification (-1.5 pH),0.9977,0.9585,-0.0392,-3.93,440,42
+XGBoost,Real + Mode B,Soil Alkalinization (+1.5 pH),0.9977,0.9641,-0.0336,-3.37,440,42
