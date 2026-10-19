@@ -1,0 +1,6 @@
+dataset,rows,classes,used_in_phase2c
+REAL_TRAIN,1760,22,YES (Real Training Split)
+REAL_TEST,440,22,NO (Quarantined for Phase 2D)
+SYNTHETIC_Mode_A,165000,22,YES (Augmented Regime: Real + Mode_A)
+SYNTHETIC_Mode_B,165000,22,YES (Augmented Regime: Real + Mode_B)
+SYNTHETIC_Mode_C,165000,22,YES (Augmented Regime: Real + Mode_C)

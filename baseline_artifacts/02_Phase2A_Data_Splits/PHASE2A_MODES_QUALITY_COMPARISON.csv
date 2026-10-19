@@ -1,0 +1,4 @@
+Mode,Total_Records,Frobenius_Corr_Distance,Mean_KS_Statistic,Mean_Wasserstein_Distance,Plausibility_Compliance_Pct,Duplicate_Pct,Min_Distance_To_Real,Median_Distance_To_Real,Shannon_Entropy,Class_Balance_Ratio,Status
+Mode_A,165000,0.00789,0.0091,0.0824,100.0,0.0,0.0406,0.3702,3.091,1.0,PASSED
+Mode_B,165000,0.21639,0.0194,0.1976,100.0,0.0,0.0257,0.3709,3.091,1.0,PASSED
+Mode_C,165000,0.21582,0.0225,0.2597,100.0,0.0,0.0269,0.3667,3.091,1.0,PASSED

@@ -1,0 +1,8 @@
+feature,physical_lower_bound,physical_upper_bound,observed_min,observed_max,violations_count,violation_rate_pct,plausibility_status
+N,0.0,Infinity,0.0,140.0323,0,0.0,PASSED
+P,0.0,Infinity,4.9246,145.0653,0,0.0,PASSED
+K,0.0,Infinity,4.9772,205.0356,0,0.0,PASSED
+temperature,-273.15,Infinity,8.8194,43.6964,0,0.0,PASSED
+humidity,0.0,100.0,14.2519,99.9751,0,0.0,PASSED
+ph,0.0,14.0,3.4928,9.9467,0,0.0,PASSED
+rainfall,0.0,Infinity,20.3533,290.6443,0,0.0,PASSED

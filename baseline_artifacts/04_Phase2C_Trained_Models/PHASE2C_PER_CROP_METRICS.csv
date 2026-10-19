@@ -1,0 +1,265 @@
+model,data_configuration,crop,precision,recall,f1_score,support
+TabNet,Real-Only,apple,1.0,1.0,1.0,16
+TabNet,Real-Only,banana,0.9411764705882353,1.0,0.9696969696969697,16
+TabNet,Real-Only,blackgram,0.9411764705882353,1.0,0.9696969696969697,16
+TabNet,Real-Only,chickpea,1.0,1.0,1.0,16
+TabNet,Real-Only,coconut,0.8421052631578947,1.0,0.9142857142857143,16
+TabNet,Real-Only,coffee,1.0,1.0,1.0,16
+TabNet,Real-Only,cotton,1.0,1.0,1.0,16
+TabNet,Real-Only,grapes,0.9411764705882353,1.0,0.9696969696969697,16
+TabNet,Real-Only,jute,0.8333333333333334,0.9375,0.8823529411764706,16
+TabNet,Real-Only,kidneybeans,1.0,1.0,1.0,16
+TabNet,Real-Only,lentil,1.0,0.9375,0.967741935483871,16
+TabNet,Real-Only,maize,1.0,0.9375,0.967741935483871,16
+TabNet,Real-Only,mango,0.8421052631578947,1.0,0.9142857142857143,16
+TabNet,Real-Only,mothbeans,1.0,0.9375,0.967741935483871,16
+TabNet,Real-Only,mungbean,1.0,1.0,1.0,16
+TabNet,Real-Only,muskmelon,1.0,1.0,1.0,16
+TabNet,Real-Only,orange,1.0,0.9375,0.967741935483871,16
+TabNet,Real-Only,papaya,0.9285714285714286,0.8125,0.8666666666666667,16
+TabNet,Real-Only,pigeonpeas,1.0,0.8125,0.896551724137931,16
+TabNet,Real-Only,pomegranate,1.0,1.0,1.0,16
+TabNet,Real-Only,rice,0.9285714285714286,0.8125,0.8666666666666667,16
+TabNet,Real-Only,watermelon,1.0,1.0,1.0,16
+Random Forest,Real-Only,apple,1.0,1.0,1.0,16
+Random Forest,Real-Only,banana,1.0,1.0,1.0,16
+Random Forest,Real-Only,blackgram,0.7619047619047619,1.0,0.8648648648648649,16
+Random Forest,Real-Only,chickpea,1.0,1.0,1.0,16
+Random Forest,Real-Only,coconut,1.0,1.0,1.0,16
+Random Forest,Real-Only,coffee,1.0,1.0,1.0,16
+Random Forest,Real-Only,cotton,1.0,1.0,1.0,16
+Random Forest,Real-Only,grapes,1.0,1.0,1.0,16
+Random Forest,Real-Only,jute,0.8235294117647058,0.875,0.8484848484848485,16
+Random Forest,Real-Only,kidneybeans,0.8888888888888888,1.0,0.9411764705882353,16
+Random Forest,Real-Only,lentil,0.7692307692307693,0.625,0.6896551724137931,16
+Random Forest,Real-Only,maize,1.0,1.0,1.0,16
+Random Forest,Real-Only,mango,1.0,1.0,1.0,16
+Random Forest,Real-Only,mothbeans,0.8666666666666667,0.8125,0.8387096774193549,16
+Random Forest,Real-Only,mungbean,0.8888888888888888,1.0,0.9411764705882353,16
+Random Forest,Real-Only,muskmelon,1.0,1.0,1.0,16
+Random Forest,Real-Only,orange,1.0,1.0,1.0,16
+Random Forest,Real-Only,papaya,1.0,1.0,1.0,16
+Random Forest,Real-Only,pigeonpeas,0.9090909090909091,0.625,0.7407407407407407,16
+Random Forest,Real-Only,pomegranate,1.0,1.0,1.0,16
+Random Forest,Real-Only,rice,0.8666666666666667,0.8125,0.8387096774193549,16
+Random Forest,Real-Only,watermelon,1.0,1.0,1.0,16
+XGBoost,Real-Only,apple,1.0,1.0,1.0,16
+XGBoost,Real-Only,banana,1.0,1.0,1.0,16
+XGBoost,Real-Only,blackgram,1.0,0.9375,0.967741935483871,16
+XGBoost,Real-Only,chickpea,0.8421052631578947,1.0,0.9142857142857143,16
+XGBoost,Real-Only,coconut,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real-Only,coffee,1.0,1.0,1.0,16
+XGBoost,Real-Only,cotton,1.0,1.0,1.0,16
+XGBoost,Real-Only,grapes,1.0,1.0,1.0,16
+XGBoost,Real-Only,jute,0.8,1.0,0.8888888888888888,16
+XGBoost,Real-Only,kidneybeans,0.8666666666666667,0.8125,0.8387096774193549,16
+XGBoost,Real-Only,lentil,0.875,0.875,0.875,16
+XGBoost,Real-Only,maize,1.0,0.75,0.8571428571428571,16
+XGBoost,Real-Only,mango,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real-Only,mothbeans,0.7,0.4375,0.5384615384615384,16
+XGBoost,Real-Only,mungbean,0.7272727272727273,1.0,0.8421052631578947,16
+XGBoost,Real-Only,muskmelon,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real-Only,orange,1.0,0.9375,0.967741935483871,16
+XGBoost,Real-Only,papaya,1.0,0.9375,0.967741935483871,16
+XGBoost,Real-Only,pigeonpeas,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real-Only,pomegranate,1.0,1.0,1.0,16
+XGBoost,Real-Only,rice,0.9230769230769231,0.75,0.8275862068965517,16
+XGBoost,Real-Only,watermelon,1.0,1.0,1.0,16
+TabNet,Real + Mode A,apple,1.0,1.0,1.0,16
+TabNet,Real + Mode A,banana,1.0,1.0,1.0,16
+TabNet,Real + Mode A,blackgram,1.0,1.0,1.0,16
+TabNet,Real + Mode A,chickpea,1.0,1.0,1.0,16
+TabNet,Real + Mode A,coconut,1.0,1.0,1.0,16
+TabNet,Real + Mode A,coffee,1.0,1.0,1.0,16
+TabNet,Real + Mode A,cotton,1.0,1.0,1.0,16
+TabNet,Real + Mode A,grapes,1.0,1.0,1.0,16
+TabNet,Real + Mode A,jute,0.9375,0.9375,0.9375,16
+TabNet,Real + Mode A,kidneybeans,1.0,1.0,1.0,16
+TabNet,Real + Mode A,lentil,1.0,1.0,1.0,16
+TabNet,Real + Mode A,maize,1.0,1.0,1.0,16
+TabNet,Real + Mode A,mango,1.0,1.0,1.0,16
+TabNet,Real + Mode A,mothbeans,1.0,1.0,1.0,16
+TabNet,Real + Mode A,mungbean,1.0,1.0,1.0,16
+TabNet,Real + Mode A,muskmelon,1.0,1.0,1.0,16
+TabNet,Real + Mode A,orange,1.0,1.0,1.0,16
+TabNet,Real + Mode A,papaya,1.0,1.0,1.0,16
+TabNet,Real + Mode A,pigeonpeas,1.0,1.0,1.0,16
+TabNet,Real + Mode A,pomegranate,1.0,1.0,1.0,16
+TabNet,Real + Mode A,rice,0.9375,0.9375,0.9375,16
+TabNet,Real + Mode A,watermelon,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,apple,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,banana,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode A,blackgram,0.6956521739130435,1.0,0.8205128205128205,16
+Random Forest,Real + Mode A,chickpea,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,coconut,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode A,coffee,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,cotton,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,grapes,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,jute,0.6521739130434783,0.9375,0.7692307692307693,16
+Random Forest,Real + Mode A,kidneybeans,0.8888888888888888,1.0,0.9411764705882353,16
+Random Forest,Real + Mode A,lentil,0.8333333333333334,0.625,0.7142857142857143,16
+Random Forest,Real + Mode A,maize,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,mango,1.0,0.9375,0.967741935483871,16
+Random Forest,Real + Mode A,mothbeans,0.9285714285714286,0.8125,0.8666666666666667,16
+Random Forest,Real + Mode A,mungbean,0.8888888888888888,1.0,0.9411764705882353,16
+Random Forest,Real + Mode A,muskmelon,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,orange,1.0,0.9375,0.967741935483871,16
+Random Forest,Real + Mode A,papaya,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,pigeonpeas,0.8333333333333334,0.625,0.7142857142857143,16
+Random Forest,Real + Mode A,pomegranate,1.0,1.0,1.0,16
+Random Forest,Real + Mode A,rice,0.875,0.4375,0.5833333333333334,16
+Random Forest,Real + Mode A,watermelon,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,apple,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,banana,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,blackgram,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode A,chickpea,0.7619047619047619,1.0,0.8648648648648649,16
+XGBoost,Real + Mode A,coconut,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode A,coffee,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,cotton,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,grapes,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,jute,0.7619047619047619,1.0,0.8648648648648649,16
+XGBoost,Real + Mode A,kidneybeans,0.7857142857142857,0.6875,0.7333333333333333,16
+XGBoost,Real + Mode A,lentil,0.9333333333333333,0.875,0.9032258064516129,16
+XGBoost,Real + Mode A,maize,1.0,0.875,0.9333333333333333,16
+XGBoost,Real + Mode A,mango,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode A,mothbeans,1.0,0.4375,0.6086956521739131,16
+XGBoost,Real + Mode A,mungbean,0.7619047619047619,1.0,0.8648648648648649,16
+XGBoost,Real + Mode A,muskmelon,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode A,orange,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,papaya,1.0,0.8125,0.896551724137931,16
+XGBoost,Real + Mode A,pigeonpeas,0.8125,0.8125,0.8125,16
+XGBoost,Real + Mode A,pomegranate,1.0,1.0,1.0,16
+XGBoost,Real + Mode A,rice,0.7857142857142857,0.6875,0.7333333333333333,16
+XGBoost,Real + Mode A,watermelon,1.0,1.0,1.0,16
+TabNet,Real + Mode B,apple,1.0,1.0,1.0,16
+TabNet,Real + Mode B,banana,1.0,1.0,1.0,16
+TabNet,Real + Mode B,blackgram,1.0,1.0,1.0,16
+TabNet,Real + Mode B,chickpea,1.0,1.0,1.0,16
+TabNet,Real + Mode B,coconut,1.0,1.0,1.0,16
+TabNet,Real + Mode B,coffee,1.0,1.0,1.0,16
+TabNet,Real + Mode B,cotton,1.0,0.9375,0.967741935483871,16
+TabNet,Real + Mode B,grapes,1.0,1.0,1.0,16
+TabNet,Real + Mode B,jute,0.8823529411764706,0.9375,0.9090909090909091,16
+TabNet,Real + Mode B,kidneybeans,1.0,1.0,1.0,16
+TabNet,Real + Mode B,lentil,1.0,0.9375,0.967741935483871,16
+TabNet,Real + Mode B,maize,0.9411764705882353,1.0,0.9696969696969697,16
+TabNet,Real + Mode B,mango,1.0,1.0,1.0,16
+TabNet,Real + Mode B,mothbeans,0.9411764705882353,1.0,0.9696969696969697,16
+TabNet,Real + Mode B,mungbean,1.0,1.0,1.0,16
+TabNet,Real + Mode B,muskmelon,1.0,1.0,1.0,16
+TabNet,Real + Mode B,orange,1.0,1.0,1.0,16
+TabNet,Real + Mode B,papaya,1.0,1.0,1.0,16
+TabNet,Real + Mode B,pigeonpeas,1.0,1.0,1.0,16
+TabNet,Real + Mode B,pomegranate,1.0,1.0,1.0,16
+TabNet,Real + Mode B,rice,0.9333333333333333,0.875,0.9032258064516129,16
+TabNet,Real + Mode B,watermelon,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,apple,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,banana,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode B,blackgram,0.7272727272727273,1.0,0.8421052631578947,16
+Random Forest,Real + Mode B,chickpea,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,coconut,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode B,coffee,0.875,0.875,0.875,16
+Random Forest,Real + Mode B,cotton,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode B,grapes,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,jute,0.5,0.625,0.5555555555555556,16
+Random Forest,Real + Mode B,kidneybeans,0.8421052631578947,1.0,0.9142857142857143,16
+Random Forest,Real + Mode B,lentil,0.7857142857142857,0.6875,0.7333333333333333,16
+Random Forest,Real + Mode B,maize,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,mango,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,mothbeans,0.8666666666666667,0.8125,0.8387096774193549,16
+Random Forest,Real + Mode B,mungbean,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode B,muskmelon,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,orange,1.0,0.9375,0.967741935483871,16
+Random Forest,Real + Mode B,papaya,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,pigeonpeas,1.0,0.5625,0.72,16
+Random Forest,Real + Mode B,pomegranate,1.0,1.0,1.0,16
+Random Forest,Real + Mode B,rice,0.7,0.4375,0.5384615384615384,16
+Random Forest,Real + Mode B,watermelon,1.0,1.0,1.0,16
+XGBoost,Real + Mode B,apple,1.0,1.0,1.0,16
+XGBoost,Real + Mode B,banana,1.0,1.0,1.0,16
+XGBoost,Real + Mode B,blackgram,1.0,0.875,0.9333333333333333,16
+XGBoost,Real + Mode B,chickpea,0.7619047619047619,1.0,0.8648648648648649,16
+XGBoost,Real + Mode B,coconut,1.0,1.0,1.0,16
+XGBoost,Real + Mode B,coffee,1.0,1.0,1.0,16
+XGBoost,Real + Mode B,cotton,1.0,1.0,1.0,16
+XGBoost,Real + Mode B,grapes,1.0,1.0,1.0,16
+XGBoost,Real + Mode B,jute,0.7619047619047619,1.0,0.8648648648648649,16
+XGBoost,Real + Mode B,kidneybeans,0.8461538461538461,0.6875,0.7586206896551724,16
+XGBoost,Real + Mode B,lentil,0.8823529411764706,0.9375,0.9090909090909091,16
+XGBoost,Real + Mode B,maize,1.0,0.8125,0.896551724137931,16
+XGBoost,Real + Mode B,mango,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode B,mothbeans,0.8,0.5,0.6153846153846154,16
+XGBoost,Real + Mode B,mungbean,0.7619047619047619,1.0,0.8648648648648649,16
+XGBoost,Real + Mode B,muskmelon,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode B,orange,1.0,0.875,0.9333333333333333,16
+XGBoost,Real + Mode B,papaya,0.9285714285714286,0.8125,0.8666666666666667,16
+XGBoost,Real + Mode B,pigeonpeas,0.8888888888888888,1.0,0.9411764705882353,16
+XGBoost,Real + Mode B,pomegranate,0.9375,0.9375,0.9375,16
+XGBoost,Real + Mode B,rice,0.7857142857142857,0.6875,0.7333333333333333,16
+XGBoost,Real + Mode B,watermelon,1.0,1.0,1.0,16
+TabNet,Real + Mode C,apple,1.0,1.0,1.0,16
+TabNet,Real + Mode C,banana,1.0,1.0,1.0,16
+TabNet,Real + Mode C,blackgram,1.0,1.0,1.0,16
+TabNet,Real + Mode C,chickpea,1.0,1.0,1.0,16
+TabNet,Real + Mode C,coconut,1.0,1.0,1.0,16
+TabNet,Real + Mode C,coffee,1.0,1.0,1.0,16
+TabNet,Real + Mode C,cotton,1.0,1.0,1.0,16
+TabNet,Real + Mode C,grapes,1.0,1.0,1.0,16
+TabNet,Real + Mode C,jute,0.9375,0.9375,0.9375,16
+TabNet,Real + Mode C,kidneybeans,1.0,1.0,1.0,16
+TabNet,Real + Mode C,lentil,0.9411764705882353,1.0,0.9696969696969697,16
+TabNet,Real + Mode C,maize,1.0,1.0,1.0,16
+TabNet,Real + Mode C,mango,1.0,1.0,1.0,16
+TabNet,Real + Mode C,mothbeans,1.0,0.9375,0.967741935483871,16
+TabNet,Real + Mode C,mungbean,1.0,1.0,1.0,16
+TabNet,Real + Mode C,muskmelon,1.0,1.0,1.0,16
+TabNet,Real + Mode C,orange,1.0,1.0,1.0,16
+TabNet,Real + Mode C,papaya,1.0,1.0,1.0,16
+TabNet,Real + Mode C,pigeonpeas,1.0,1.0,1.0,16
+TabNet,Real + Mode C,pomegranate,1.0,1.0,1.0,16
+TabNet,Real + Mode C,rice,0.9375,0.9375,0.9375,16
+TabNet,Real + Mode C,watermelon,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,apple,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,banana,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode C,blackgram,0.7619047619047619,1.0,0.8648648648648649,16
+Random Forest,Real + Mode C,chickpea,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,coconut,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,coffee,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode C,cotton,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode C,grapes,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,jute,0.6,0.75,0.6666666666666666,16
+Random Forest,Real + Mode C,kidneybeans,0.8,1.0,0.8888888888888888,16
+Random Forest,Real + Mode C,lentil,0.8125,0.8125,0.8125,16
+Random Forest,Real + Mode C,maize,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,mango,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,mothbeans,0.8571428571428571,0.75,0.8,16
+Random Forest,Real + Mode C,mungbean,0.9411764705882353,1.0,0.9696969696969697,16
+Random Forest,Real + Mode C,muskmelon,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,orange,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,papaya,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,pigeonpeas,1.0,0.5,0.6666666666666666,16
+Random Forest,Real + Mode C,pomegranate,1.0,1.0,1.0,16
+Random Forest,Real + Mode C,rice,0.7777777777777778,0.4375,0.56,16
+Random Forest,Real + Mode C,watermelon,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,apple,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,banana,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,blackgram,0.9285714285714286,0.8125,0.8666666666666667,16
+XGBoost,Real + Mode C,chickpea,0.8888888888888888,1.0,0.9411764705882353,16
+XGBoost,Real + Mode C,coconut,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,coffee,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,cotton,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,grapes,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,jute,0.8,1.0,0.8888888888888888,16
+XGBoost,Real + Mode C,kidneybeans,0.875,0.875,0.875,16
+XGBoost,Real + Mode C,lentil,0.875,0.875,0.875,16
+XGBoost,Real + Mode C,maize,1.0,0.875,0.9333333333333333,16
+XGBoost,Real + Mode C,mango,1.0,1.0,1.0,16
+XGBoost,Real + Mode C,mothbeans,0.7777777777777778,0.4375,0.56,16
+XGBoost,Real + Mode C,mungbean,0.7272727272727273,1.0,0.8421052631578947,16
+XGBoost,Real + Mode C,muskmelon,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode C,orange,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode C,papaya,0.9285714285714286,0.8125,0.8666666666666667,16
+XGBoost,Real + Mode C,pigeonpeas,0.9411764705882353,1.0,0.9696969696969697,16
+XGBoost,Real + Mode C,pomegranate,1.0,0.9375,0.967741935483871,16
+XGBoost,Real + Mode C,rice,0.8,0.75,0.7741935483870968,16
+XGBoost,Real + Mode C,watermelon,1.0,1.0,1.0,16

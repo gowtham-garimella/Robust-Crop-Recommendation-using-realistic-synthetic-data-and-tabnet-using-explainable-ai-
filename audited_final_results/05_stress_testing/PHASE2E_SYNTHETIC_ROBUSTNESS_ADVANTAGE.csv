@@ -1,0 +1,10 @@
+Architecture,Augmented Regime,Mean Shifted Macro F1 (Augmented),Mean Shifted Macro F1 (Real-Only),Robustness F1 Advantage,Agronomic Suitability (Augmented),Agronomic Suitability (Real-Only),Agronomic Suitability Advantage
+TabNet,Real + Mode A,0.7603,0.7441,0.0162,0.648,0.6386,0.0093
+TabNet,Real + Mode B,0.7426,0.7441,-0.0015,0.6513,0.6386,0.0126
+TabNet,Real + Mode C,0.7661,0.7441,0.022,0.6465,0.6386,0.0078
+Random Forest,Real + Mode A,0.7299,0.8474,-0.1174,0.6172,0.6298,-0.0126
+Random Forest,Real + Mode B,0.7367,0.8474,-0.1107,0.624,0.6298,-0.0058
+Random Forest,Real + Mode C,0.7592,0.8474,-0.0882,0.6222,0.6298,-0.0076
+XGBoost,Real + Mode A,0.8378,0.85,-0.0121,0.6361,0.6235,0.0126
+XGBoost,Real + Mode B,0.8434,0.85,-0.0066,0.6399,0.6235,0.0164
+XGBoost,Real + Mode C,0.8506,0.85,0.0006,0.6348,0.6235,0.0114

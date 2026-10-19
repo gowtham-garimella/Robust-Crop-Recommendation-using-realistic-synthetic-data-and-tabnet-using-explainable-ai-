@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Scratch and temporary directories
+scratch/
+.ipynb_checkpoints/
+
+# OS artifacts
+Thumbs.db
+.DS_Store

@@ -1,0 +1,4 @@
+Mode,Total_Samples,Exact_Matches_Real_Train,Precision_4_Matches,Precision_3_Matches,Precision_2_Matches,Precision_1_Matches,Synthetic_Median_NN_Dist,Real_Baseline_Median_NN_Dist,Min_NN_Distance,Distance_Ratio_Median,Top100_Label_Concordance_Pct,Overall_Label_Concordance_Pct,Quarantine_Status
+Mode_A,165000,0,0,0,0,0,0.37018,0.39374,0.04055,0.9402,100.0,98.11,PASSED (REAL_TEST Isolated)
+Mode_B,165000,0,0,0,0,0,0.37091,0.39374,0.02569,0.942,100.0,97.78,PASSED (REAL_TEST Isolated)
+Mode_C,165000,0,0,0,0,0,0.3667,0.39374,0.02689,0.9313,100.0,97.86,PASSED (REAL_TEST Isolated)

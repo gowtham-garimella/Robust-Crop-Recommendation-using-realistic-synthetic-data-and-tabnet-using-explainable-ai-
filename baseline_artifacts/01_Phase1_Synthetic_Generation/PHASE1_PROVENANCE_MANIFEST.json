@@ -1,0 +1,525 @@
+{
+  "project": "Robust Crop Recommendation Using Realistic Synthetic Data with TabNet and Explainable AI",
+  "phase": "Phase 1: Realistic Synthetic Agricultural Data Generation",
+  "version": "3.5.0-Production-Engineered-Final",
+  "timestamp_utc": "2026-10-19T02:11:41.084495+00:00",
+  "primary_dataset": {
+    "path": "./Crop_recommendation.csv",
+    "sha256": "54a5a6e5408668e668667efc50de2fc867c1b875e0431b4f54dd331b0a109a4e",
+    "cleaning_metadata": {
+      "source_filename": "./Crop_recommendation.csv",
+      "initial_rows": 2200,
+      "dropped_missing_labels": 0,
+      "dropped_non_numeric": 0,
+      "dropped_physical_invariants": 0,
+      "rejections_by_feature": {},
+      "retained_rows": 2200,
+      "crop_counts_post_cleaning": {
+        "rice": 100,
+        "maize": 100,
+        "chickpea": 100,
+        "kidneybeans": 100,
+        "pigeonpeas": 100,
+        "mothbeans": 100,
+        "mungbean": 100,
+        "blackgram": 100,
+        "lentil": 100,
+        "pomegranate": 100,
+        "banana": 100,
+        "mango": 100,
+        "grapes": 100,
+        "watermelon": 100,
+        "muskmelon": 100,
+        "apple": 100,
+        "orange": 100,
+        "papaya": 100,
+        "coconut": 100,
+        "cotton": 100,
+        "jute": 100,
+        "coffee": 100
+      }
+    }
+  },
+  "auxiliary_datasets": {
+    "Soil data.csv": {
+      "file_path": "./Soil data.csv",
+      "sha256": "47fc7ac20cb571f6490d49000949fd60d166fb2918ac0c9da16d0455f042e944",
+      "rows": 875,
+      "columns": [
+        "District",
+        "Nitrogen Value",
+        "Phosphorous value",
+        "Potassium value",
+        "pH"
+      ]
+    },
+    "Crop_Predication_dataset.xlsx": {
+      "file_path": "./Crop_Predication_dataset.xlsx",
+      "sha256": "b5c0e07761e951c9cfb84f1f98cf620077735640738aca5f89be8979ca78ae1e",
+      "rows": 1239,
+      "columns": [
+        "ph",
+        "EC",
+        "CaCO3",
+        "OC",
+        "N",
+        "P",
+        "K",
+        "label"
+      ]
+    },
+    "Sub_Division_IMD_2017.csv": {
+      "file_path": "./Sub_Division_IMD_2017.csv",
+      "sha256": "5d19d1517ef4b3aee4490635ca542d96f333b0c163e5da2da0aa1b14d923b9c4",
+      "rows": 4188,
+      "columns": [
+        "SUBDIVISION",
+        "YEAR",
+        "JAN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAY",
+        "JUN",
+        "JUL",
+        "AUG",
+        "SEP",
+        "OCT",
+        "NOV",
+        "DEC",
+        "ANNUAL",
+        "JF",
+        "MAM",
+        "JJAS",
+        "OND"
+      ]
+    },
+    "2025_V1.csv": {
+      "file_path": "./2025_V1.csv",
+      "sha256": "63116ba243d18f373ca762fbf32ed2c3a1588faee157236313ac2d9ca6704b79",
+      "rows": 17316,
+      "columns": [
+        "timestamp",
+        "Temp_5cm",
+        "SM_5cm",
+        "RDP_5cm",
+        "Temp_15cm",
+        "SM_15cm",
+        "RDP_15cm",
+        "Temp_50cm",
+        "SM_50cm",
+        "RDP_50cm",
+        "Precipitation"
+      ]
+    },
+    "crop_yield.csv": {
+      "file_path": "./crop_yield.csv",
+      "sha256": "f59e4b5f21e2baca3ac68c6fa202c4dac897ff26790833fd51f91ee8ae2a6e33",
+      "rows": 19689,
+      "columns": [
+        "crop",
+        "year",
+        "season",
+        "state",
+        "area",
+        "production",
+        "fertilizer",
+        "pesticide",
+        "yield"
+      ]
+    }
+  },
+  "institutional_agronomic_rules": {
+    "apple": {
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 6.5
+      },
+      "temperature": {
+        "preferred_min": 5.0,
+        "preferred_max": 28.0
+      },
+      "qualitative": [
+        "well_drained",
+        "chilling_requirement"
+      ],
+      "source": "TNAU - Commercial Fruit / Apple guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "banana": {
+      "temperature": {
+        "hard_min": 10.0,
+        "hard_max": 40.0,
+        "preferred_center": 23.0
+      },
+      "rainfall": {
+        "preferred_min": 100.0,
+        "preferred_max": 350.0
+      },
+      "qualitative": [
+        "warm_humid",
+        "good_drainage"
+      ],
+      "source": "TNAU Banana Expert System",
+      "source_type": "Government Agricultural University"
+    },
+    "blackgram": {
+      "ph": {
+        "preferred_min": 6.0,
+        "preferred_max": 8.5
+      },
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 40.0
+      },
+      "qualitative": [
+        "well_drained",
+        "avoid_waterlogging"
+      ],
+      "source": "ICAR/TNAU Blackgram guidance",
+      "source_type": "ICAR/Government Agricultural University"
+    },
+    "chickpea": {
+      "temperature": {
+        "preferred_min": 10.0,
+        "preferred_max": 35.0
+      },
+      "humidity": {
+        "preferred_min": 10.0,
+        "preferred_max": 65.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 8.5
+      },
+      "qualitative": [
+        "well_drained",
+        "dry_conditions_preferred_during_maturity"
+      ],
+      "source": "ICAR crop production guidance",
+      "source_type": "ICAR"
+    },
+    "coconut": {
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 38.0,
+        "preferred_center": 27.0
+      },
+      "humidity": {
+        "preferred_min": 60.0,
+        "preferred_max": 100.0
+      },
+      "ph": {
+        "preferred_min": 5.0,
+        "preferred_max": 8.0
+      },
+      "qualitative": [
+        "good_drainage",
+        "warm_humid_climate"
+      ],
+      "source": "TNAU/NABARD Coconut technical guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "coffee": {
+      "ph": {
+        "preferred_min": 4.5,
+        "preferred_max": 6.5
+      },
+      "temperature": {
+        "preferred_min": 15.0,
+        "preferred_max": 32.0
+      },
+      "humidity": {
+        "preferred_min": 50.0,
+        "preferred_max": 95.0
+      },
+      "qualitative": [
+        "well_drained",
+        "high_organic_matter_preferred"
+      ],
+      "source": "TNAU Coffee guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "cotton": {
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 8.5
+      },
+      "temperature": {
+        "preferred_min": 18.0,
+        "preferred_max": 40.0
+      },
+      "qualitative": [
+        "good_drainage",
+        "avoid_waterlogging"
+      ],
+      "source": "ICAR AICRP Agrometeorology / Cotton guidance",
+      "source_type": "ICAR"
+    },
+    "grapes": {
+      "temperature": {
+        "preferred_min": 12.0,
+        "preferred_max": 40.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 7.5
+      },
+      "qualitative": [
+        "good_drainage"
+      ],
+      "source": "TNAU Grape cultivation guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "jute": {
+      "humidity": {
+        "preferred_min": 65.0,
+        "preferred_max": 100.0
+      },
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 42.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 8.5
+      },
+      "qualitative": [
+        "soil_type_dependent",
+        "species_dependent_waterlogging"
+      ],
+      "source": "TNAU Jute crop production guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "kidneybeans": {
+      "temperature": {
+        "preferred_min": 12.0,
+        "preferred_max": 32.0
+      },
+      "ph": {
+        "preferred_min": 5.0,
+        "preferred_max": 7.5
+      },
+      "qualitative": [
+        "well_drained",
+        "avoid_waterlogging"
+      ],
+      "source": "ICAR Pulse Production Guidelines",
+      "source_type": "ICAR"
+    },
+    "lentil": {
+      "temperature": {
+        "preferred_min": 10.0,
+        "preferred_max": 32.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 8.2
+      },
+      "qualitative": [
+        "well_drained",
+        "avoid_waterlogging"
+      ],
+      "source": "ICAR Pulse Production Guidelines",
+      "source_type": "ICAR"
+    },
+    "maize": {
+      "temperature": {
+        "preferred_min": 15.0,
+        "preferred_max": 35.0
+      },
+      "ph": {
+        "preferred_min": 5.0,
+        "preferred_max": 8.0
+      },
+      "qualitative": [
+        "well_drained",
+        "avoid_prolonged_waterlogging"
+      ],
+      "source": "ICAR Agronomy Compendium",
+      "source_type": "ICAR"
+    },
+    "mango": {
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 8.0
+      },
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 42.0
+      },
+      "qualitative": [
+        "good_drainage",
+        "rainfall_during_growing_period",
+        "relatively_dry_during_flowering"
+      ],
+      "source": "TNAU Mango cultivation guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "mothbeans": {
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 42.0
+      },
+      "ph": {
+        "preferred_min": 5.0,
+        "preferred_max": 8.5
+      },
+      "qualitative": [
+        "arid_and_semi_arid_adapted",
+        "drought_tolerant"
+      ],
+      "source": "ICAR arid-region crop guidance (CAZRI)",
+      "source_type": "ICAR"
+    },
+    "mungbean": {
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 40.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 8.0
+      },
+      "qualitative": [
+        "well_drained",
+        "avoid_waterlogging"
+      ],
+      "source": "ICAR crop/weather guidance",
+      "source_type": "ICAR"
+    },
+    "muskmelon": {
+      "ph": {
+        "preferred_min": 6.0,
+        "preferred_max": 7.5
+      },
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 40.0
+      },
+      "qualitative": [
+        "well_drained"
+      ],
+      "source": "TNAU Muskmelon guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "orange": {
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 7.5
+      },
+      "temperature": {
+        "preferred_min": 10.0,
+        "preferred_max": 38.0
+      },
+      "qualitative": [
+        "deep_well_drained"
+      ],
+      "source": "TNAU Sweet Orange guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "papaya": {
+      "temperature": {
+        "preferred_min": 18.0,
+        "preferred_max": 38.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 7.5
+      },
+      "qualitative": [
+        "well_drained",
+        "strongly_avoid_waterlogging"
+      ],
+      "source": "ICAR-MGIFRI Papaya cultivation guidance",
+      "source_type": "ICAR"
+    },
+    "pigeonpeas": {
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 7.5
+      },
+      "temperature": {
+        "preferred_min": 18.0,
+        "preferred_max": 38.0
+      },
+      "qualitative": [
+        "well_drained",
+        "avoid_waterlogging",
+        "avoid_salinity"
+      ],
+      "source": "ICAR AICRP Agrometeorology / Pigeonpea guidance",
+      "source_type": "ICAR"
+    },
+    "pomegranate": {
+      "temperature": {
+        "preferred_min": 15.0,
+        "preferred_max": 42.0,
+        "preferred_center": 38.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 8.5
+      },
+      "qualitative": [
+        "drought_tolerant",
+        "well_drained",
+        "tolerates_somewhat_alkaline_conditions"
+      ],
+      "source": "TNAU Tropical Fruit Production guidance",
+      "source_type": "Government Agricultural University"
+    },
+    "rice": {
+      "temperature": {
+        "preferred_min": 15.0,
+        "preferred_max": 40.0
+      },
+      "humidity": {
+        "preferred_min": 50.0,
+        "preferred_max": 100.0
+      },
+      "ph": {
+        "preferred_min": 4.5,
+        "preferred_max": 8.5
+      },
+      "qualitative": [
+        "standing_water_tolerance",
+        "avoid_standing_water_at_ripening"
+      ],
+      "source": "TNAU Rice Expert System",
+      "source_type": "Government Agricultural University"
+    },
+    "watermelon": {
+      "temperature": {
+        "preferred_min": 20.0,
+        "preferred_max": 35.0
+      },
+      "ph": {
+        "preferred_min": 5.5,
+        "preferred_max": 7.5
+      },
+      "qualitative": [
+        "well_drained"
+      ],
+      "source": "TNAU Watermelon guidance",
+      "source_type": "Government Agricultural University"
+    }
+  },
+  "mode_diagnostics": {
+    "Mode_A": {
+      "raw_full_record_exact_matches": 0,
+      "three_decimal_full_record_matches": 0,
+      "four_decimal_intra_synthetic_duplicates": 0
+    },
+    "Mode_B": {
+      "raw_full_record_exact_matches": 0,
+      "three_decimal_full_record_matches": 0,
+      "four_decimal_intra_synthetic_duplicates": 0
+    },
+    "Mode_C": {
+      "raw_full_record_exact_matches": 0,
+      "three_decimal_full_record_matches": 0,
+      "four_decimal_intra_synthetic_duplicates": 0
+    }
+  }
+}

@@ -1,0 +1,5 @@
+metric,count,percentage,interpretation
+Exact Full-Record Matches (Synthetic vs REAL_TRAIN),0,0.0,Zero exact matches confirms synthetic records are novel instances.
+3-Decimal Rounded Matches (Synthetic vs REAL_TRAIN),0,0.0,Absence of rounded matches demonstrates non-collocated generation.
+Intra-Synthetic Exact Duplicates,0,0.0,Confirms internal variety across generated records.
+Intra-Synthetic 4-Decimal Duplicates,0,0.0,Validates continuous non-grid distribution.
