@@ -38,7 +38,7 @@ All metrics evaluated on untouched `REAL_TEST.csv` (440 records):
 +----------------------------+----------------------+---------------------+---------------------+
 | Random Forest (Real-Only)  | 99.32% (or throttled)| 99.32%              | [0.9841, 1.0000]    |
 | Random Forest (Real + Mode A)| 98.86%             | 98.86%              | [0.9773, 0.9977]    |
-| Random Forest (Real + Mode B)| 90.91%             | 90.91%              | [0.8818, 0.9341]    |
+| Random Forest (Real + Mode B)| 91.14%             | 91.14%              | [0.8841, 0.9364]    |
 | Random Forest (Real + Mode C)| 99.09%             | 99.09%              | [0.9818, 0.9977]    |
 +----------------------------+----------------------+---------------------+---------------------+
 | XGBoost (Real-Only)        | 99.09% (or throttled)| 99.09%              | [0.9818, 0.9977]    |

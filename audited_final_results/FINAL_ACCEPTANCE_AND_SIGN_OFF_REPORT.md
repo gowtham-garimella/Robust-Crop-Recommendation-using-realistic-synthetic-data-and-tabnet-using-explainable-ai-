@@ -34,7 +34,7 @@ A rigorous, independent, end-to-end scientific audit and validation has been con
 | **CHK-02** | **Critical Defect Remediation** | **PASSED** | 12/12 defects confirmed, repaired, and re-tested. Zero open or unresolved critical defects (`DEFECT_REGISTER.md`). |
 | **CHK-03** | **Automated Regression Suite** | **PASSED** | 19/19 tests pass in standalone runner (`test_results.log`, execution code 0). |
 | **CHK-04** | **Test Set Protection & Isolation** | **PASSED** | `REAL_TEST.csv` (440 rows, SHA-256: `78aa4cb6...`) isolated; 0 duplicate vectors, 0 leakage (`PHASE2A_LEAKAGE_AUDIT.csv`). |
-| **CHK-05** | **Holdout Accuracy Criterion ($\ge 85\%$)** | **PASSED** | Random Forest achieves 90.91% - 99.32%; XGBoost achieves 99.09% - 100.00%; TabNet achieves 97.05% - 99.77% on `REAL_TEST.csv`. |
+| **CHK-05** | **Holdout Accuracy Criterion ($\ge 85\%$)** | **PASSED** | Random Forest achieves 91.14% - 99.32%; XGBoost achieves 99.09% - 100.00%; TabNet achieves 97.05% - 99.77% on `REAL_TEST.csv`. |
 | **CHK-06** | **Independent Metric Recomputation** | **PASSED** | Accuracy, Macro F1, MCC, and contingency tables verified from raw prediction vectors (`PHASE2D_TEST_RESULTS.csv`). |
 | **CHK-07** | **Phase 2B Mode-Label Discrepancy Resolved** | **PASSED** | Mode labels in `distance_quantiles_summary.csv` aligned with synthetic generators; distance ratios documented across Modes A, B, and C. |
 | **CHK-08** | **Validation Split Isolation from Generators** | **PASSED** | Internal train-validation protocol implemented (`INTERNAL_TRAIN`: 1,408; `INTERNAL_VAL`: 352); generators fitted strictly on train partition. |
@@ -66,7 +66,7 @@ All metrics recomputed independently on quarantined holdout `REAL_TEST.csv` ($N 
 +----------------------+------------------+----------+------------------+----------+--------+--------+
 | Random Forest        | Real-Only        | 99.32%   | [0.9841, 1.0000] | 0.9930   | 0.9929 | PASSED |
 | Random Forest        | Real + Mode A    | 98.86%   | [0.9773, 0.9977] | 0.9885   | 0.9881 | PASSED |
-| Random Forest        | Real + Mode B    | 90.91%   | [0.8818, 0.9341] | 0.9080   | 0.9056 | PASSED |
+| Random Forest        | Real + Mode B    | 91.14%   | [0.8841, 0.9364] | 0.9080   | 0.9055 | PASSED |
 | Random Forest        | Real + Mode C    | 99.09%   | [0.9818, 0.9977] | 0.9908   | 0.9905 | PASSED |
 +----------------------+------------------+----------+------------------+----------+--------+--------+
 | XGBoost              | Real-Only        | 99.09%   | [0.9818, 0.9977] | 0.9907   | 0.9905 | PASSED |

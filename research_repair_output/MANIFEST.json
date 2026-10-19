@@ -17,35 +17,35 @@
     "path": "DEFECT_REPAIR_REPORT.md",
     "filename": "DEFECT_REPAIR_REPORT.md",
     "size_bytes": 18216,
-    "sha256": "b4685912475ef9f896021a9274541ccd834ca58f6b6634c08a342377c16c7f35",
+    "sha256": "54b698ad2faf1e33a0768ce3823a1ccf7d7744a19c8d44955a75b6878bed56a5",
     "category": "root"
   },
   {
     "path": "FINAL_AUDIT_REPORT.md",
     "filename": "FINAL_AUDIT_REPORT.md",
-    "size_bytes": 5720,
-    "sha256": "c789b089d171e3a7225332ef05d1a97a4b4e08e276a40a6e4d4bb0cac0e087d6",
-    "category": "root"
-  },
-  {
-    "path": "MANIFEST.json",
-    "filename": "MANIFEST.json",
-    "size_bytes": 22677,
-    "sha256": "7bf18c06c5cbc22f8e2d69cbc228235eee0e0a894e03831a3b28ae309de44f36",
+    "size_bytes": 5721,
+    "sha256": "6662709688d43ca55e5f7db5b5d1ed28d111b52a4c6f3bd6889992e81337f681",
     "category": "root"
   },
   {
     "path": "ORIGINAL_VS_CORRECTED_COMPARISON.md",
     "filename": "ORIGINAL_VS_CORRECTED_COMPARISON.md",
     "size_bytes": 5188,
-    "sha256": "fc66aa4377ff45aee163c5c1beae691f4834df32dc14d247fd8a25ec35f7be08",
+    "sha256": "a981b899f909fd86bf43c52935ec6db323b00227246589fa6c309b810ad1ddb1",
     "category": "root"
   },
   {
     "path": "POST_REPAIR_INDEPENDENT_VERIFICATION.md",
     "filename": "POST_REPAIR_INDEPENDENT_VERIFICATION.md",
-    "size_bytes": 14503,
-    "sha256": "f1faf0f6ab60fb08b2906e1380dcf156c8054006194e1021798f17a26792f5f1",
+    "size_bytes": 28977,
+    "sha256": "7a471927406bea82c472e37a3641b662d31a5bb9a13a1d7dd9026f65934823ee",
+    "category": "root"
+  },
+  {
+    "path": "run_all_phases.bat",
+    "filename": "run_all_phases.bat",
+    "size_bytes": 2523,
+    "sha256": "a5cffca63d94692b4431ba8c0e2ed45331f08bd33caf9ae9b67d0559b52c3ea2",
     "category": "root"
   },
   {
@@ -63,10 +63,24 @@
     "category": "audit"
   },
   {
+    "path": "audit/POST_REPAIR_100_PERCENT_AUDIT.csv",
+    "filename": "POST_REPAIR_100_PERCENT_AUDIT.csv",
+    "size_bytes": 1937,
+    "sha256": "c713fccebe919aeef5e5a8a9e49c36d40993425dfc77e04982e6852e504db557",
+    "category": "audit"
+  },
+  {
     "path": "audit/POST_REPAIR_CONFUSION_MATRIX_AUDIT.csv",
     "filename": "POST_REPAIR_CONFUSION_MATRIX_AUDIT.csv",
-    "size_bytes": 678,
-    "sha256": "e259a068417f6eabe25c7fe491c232393fa12358ddda593c5d079d64ddb3c577",
+    "size_bytes": 1722,
+    "sha256": "7be7c657354e3ab64157d6611b72f12a02ea202e9d10289d565a2b1a733c371f",
+    "category": "audit"
+  },
+  {
+    "path": "audit/POST_REPAIR_DISCREPANCY_LOG.csv",
+    "filename": "POST_REPAIR_DISCREPANCY_LOG.csv",
+    "size_bytes": 2890,
+    "sha256": "314432f70b101e7358fa45291d88ec252f9a144ce4349abf6b729dc4fa074bc3",
     "category": "audit"
   },
   {
@@ -116,6 +130,90 @@
     "filename": "test_set_independence_audit.md",
     "size_bytes": 7543,
     "sha256": "70ceb6b8da2c7a40496a6d010c17d41dd67bf4e89a85fe7b0649221ebfb92a23",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_random_forest_real-only.csv",
+    "filename": "cm_random_forest_real-only.csv",
+    "size_bytes": 1372,
+    "sha256": "0ddd461bc69609d89f6d3b12be5e5d0201a7cdf999e8ec0190c64dde247b962a",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_random_forest_real_plus_mode_a.csv",
+    "filename": "cm_random_forest_real_plus_mode_a.csv",
+    "size_bytes": 1372,
+    "sha256": "1c044b42e6fb85aade83b542c10d868c7e96d6a14adec5593118b61a704e6d19",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_random_forest_real_plus_mode_b.csv",
+    "filename": "cm_random_forest_real_plus_mode_b.csv",
+    "size_bytes": 1371,
+    "sha256": "9e6a650db86e06f9bcc25b25bda9bd70b1a7b557d9ad697c455951303b20fe39",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_random_forest_real_plus_mode_c.csv",
+    "filename": "cm_random_forest_real_plus_mode_c.csv",
+    "size_bytes": 1371,
+    "sha256": "0ab3e2c4fa53858b9dc1c590ae2f2ca4c41055e3a5a097971b10cb77614d7fe4",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_tabnet_real-only.csv",
+    "filename": "cm_tabnet_real-only.csv",
+    "size_bytes": 1372,
+    "sha256": "434e064b9f5eedbbb90b5d0f088c33436e916e1324babb0d1bdc0fca57df444c",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_tabnet_real_plus_mode_a.csv",
+    "filename": "cm_tabnet_real_plus_mode_a.csv",
+    "size_bytes": 1372,
+    "sha256": "f411334c5a7932acbc6214eb1a0296b597131a3b992644bf52ebe79613286778",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_tabnet_real_plus_mode_b.csv",
+    "filename": "cm_tabnet_real_plus_mode_b.csv",
+    "size_bytes": 1372,
+    "sha256": "d6b5e8e3960975acccafb6f27f98b833a743d819873b8bd40bd014f2194dadd2",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_tabnet_real_plus_mode_c.csv",
+    "filename": "cm_tabnet_real_plus_mode_c.csv",
+    "size_bytes": 1372,
+    "sha256": "f411334c5a7932acbc6214eb1a0296b597131a3b992644bf52ebe79613286778",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_xgboost_real-only.csv",
+    "filename": "cm_xgboost_real-only.csv",
+    "size_bytes": 1372,
+    "sha256": "0ddd461bc69609d89f6d3b12be5e5d0201a7cdf999e8ec0190c64dde247b962a",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_xgboost_real_plus_mode_a.csv",
+    "filename": "cm_xgboost_real_plus_mode_a.csv",
+    "size_bytes": 1372,
+    "sha256": "0ddd461bc69609d89f6d3b12be5e5d0201a7cdf999e8ec0190c64dde247b962a",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_xgboost_real_plus_mode_b.csv",
+    "filename": "cm_xgboost_real_plus_mode_b.csv",
+    "size_bytes": 1372,
+    "sha256": "0ddd461bc69609d89f6d3b12be5e5d0201a7cdf999e8ec0190c64dde247b962a",
+    "category": "audit"
+  },
+  {
+    "path": "audit/confusion_matrices/cm_xgboost_real_plus_mode_c.csv",
+    "filename": "cm_xgboost_real_plus_mode_c.csv",
+    "size_bytes": 1372,
+    "sha256": "0ddd461bc69609d89f6d3b12be5e5d0201a7cdf999e8ec0190c64dde247b962a",
     "category": "audit"
   },
   {
@@ -457,8 +555,8 @@
   {
     "path": "results/phase2d/PHASE2D_CONFUSION_MATRICES.csv",
     "filename": "PHASE2D_CONFUSION_MATRICES.csv",
-    "size_bytes": 11901,
-    "sha256": "19406ffb838fcaf1d6d8e475d321582c7bb60282339490f5316238fab0593016",
+    "size_bytes": 14530,
+    "sha256": "9e86e102623eb1bb5a7ddea68a14505049e6a0067d001826ecbc777985b67ffc",
     "category": "results"
   },
   {
@@ -492,8 +590,8 @@
   {
     "path": "results/phase2e/PHASE2E_ROBUSTNESS_ADVANTAGE_TIDY.csv",
     "filename": "PHASE2E_ROBUSTNESS_ADVANTAGE_TIDY.csv",
-    "size_bytes": 2286,
-    "sha256": "c62c911624998e1dade1b11aabcfbe15d5dec0c28edb88241fd5fa5e22a943c0",
+    "size_bytes": 2288,
+    "sha256": "c3e5bdcb92b6e4861ca08108de6fa3a70e4b0434b385730728b7419061547d20",
     "category": "results"
   },
   {
@@ -572,13 +670,6 @@
     "size_bytes": 294185,
     "sha256": "4f2db93cce24fe55afd788502719877f64d53f2037645506e7b97b88e0443385",
     "category": "results"
-  },
-  {
-    "path": "run_all_phases.bat",
-    "filename": "run_all_phases.bat",
-    "size_bytes": 2523,
-    "sha256": "a5cffca63d94692b4431ba8c0e2ed45331f08bd33caf9ae9b67d0559b52c3ea2",
-    "category": "root"
   },
   {
     "path": "src/config.py",

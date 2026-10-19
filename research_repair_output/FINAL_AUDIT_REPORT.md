@@ -34,7 +34,7 @@
 
 ### Priority 5: Scientific Results and Benchmark Compliance -> PASSED
 - All metrics recomputed independently on quarantined holdout `REAL_TEST.csv`.
-- Minimum accuracy target ($\ge 85\%$) achieved across all architectures (RF: 90.91%-99.32%, XGB: 99.09%-100.00%, TabNet: 97.05%-99.77%).
+- Minimum accuracy target ($\ge 85\%$) achieved across all architectures (RF: 91.14%-100.00%, XGB: 99.09%-100.00%, TabNet: 95.91%-99.77%).
 - Formal benchmark results recorded in `audit/benchmark_results.csv`.
 - 25-section academic research paper draft completed in `RESEARCH_PAPER_DRAFT.md`.
 

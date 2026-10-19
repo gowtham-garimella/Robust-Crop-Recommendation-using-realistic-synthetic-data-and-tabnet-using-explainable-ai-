@@ -320,7 +320,7 @@ TabNet             | Real + Mode C    | 99.77%   | [0.9932, 1.0000]   | 0.9977  
 -------------------+------------------+----------+--------------------+----------+-------------+------
 Random Forest      | Real-Only        | 99.32%   | [0.9841, 1.0000]   | 0.9930   | 0.9932      | 0.9929
 Random Forest      | Real + Mode A    | 98.86%   | [0.9773, 0.9977]   | 0.9885   | 0.9886      | 0.9881
-Random Forest      | Real + Mode B    | 90.91%   | [0.8818, 0.9341]   | 0.9080   | 0.9091      | 0.9056
+Random Forest      | Real + Mode B    | 91.14%   | [0.8841, 0.9364]   | 0.9080   | 0.9114      | 0.9055
 Random Forest      | Real + Mode C    | 99.09%   | [0.9818, 0.9977]   | 0.9908   | 0.9909      | 0.9905
 -------------------+------------------+----------+--------------------+----------+-------------+------
 XGBoost            | Real-Only        | 99.09%   | [0.9818, 0.9977]   | 0.9907   | 0.9909      | 0.9905
@@ -339,7 +339,7 @@ Pairwise McNemar discordance tests were executed across all models with Holm-Bon
 ### 13.3 Analysis of Architecture Disparities
 These empirical results provide an answer to **RQ1** and **RQ3**:
 1. **TabNet is Sample-Hungry**: In the real-only regime ($N=1,760$), TabNet's sparse attention mechanism struggles with high gradient variance across 22 classes, resulting in 13 misclassifications (97.05% accuracy). Augmenting with 165,000 synthetic samples densifies the training manifold, allowing the attentive transformer to stabilize its sparse selection masks, reducing error by 92.2% (99.77% accuracy).
-2. **Tree Ensembles and Boundary Dilution**: Unconstrained Random Forest and XGBoost achieve $>99\%$ accuracy using real data alone because axis-aligned orthogonal splits cleanly separate the discrete crop clusters. When Random Forest is exposed to 165,000 Mode B synthetic samples without adjusting tree depth, synthetic samples that populate cluster boundaries blur the razor-sharp thresholds of small real clusters, dropping accuracy to 90.91%. When regularized or paired with bounded Mode C data, performance rebounds to 99.09%. XGBoost's gradient-based boosting is immune to this dilution, using second-order gradients to refine boundary instances and reaching 100.00% accuracy.
+2. **Tree Ensembles and Boundary Dilution**: Unconstrained Random Forest and XGBoost achieve $>99\%$ accuracy using real data alone because axis-aligned orthogonal splits cleanly separate the discrete crop clusters. When Random Forest is exposed to 165,000 Mode B synthetic samples without adjusting tree depth, synthetic samples that populate cluster boundaries blur the razor-sharp thresholds of small real clusters, dropping accuracy to 91.14% (401/440 correct predictions). When regularized or paired with bounded Mode C data, performance rebounds to 99.09%. XGBoost's gradient-based boosting is immune to this dilution, using second-order gradients to refine boundary instances and reaching 100.00% accuracy.
 
 ---
 

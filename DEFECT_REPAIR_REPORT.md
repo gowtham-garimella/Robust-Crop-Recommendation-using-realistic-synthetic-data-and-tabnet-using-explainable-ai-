@@ -69,7 +69,7 @@ Every metric, attribution, and benchmark reported herein has been recomputed fro
 - **Corrected Architecture**: Replaced throttled parameters with fair, unconstrained grid search on `INTERNAL_VAL`:
   - Random Forest: `n_estimators=100`, `max_depth=12`, `max_features='sqrt'`.
   - XGBoost: `n_estimators=100`, `max_depth=6`, `learning_rate=0.10`, `subsample=0.85`.
-- **Verification Evidence**: Tree models achieve natural competitive performance on `REAL_TEST.csv`: Random Forest = **90.91% - 100.00%**, XGBoost = **99.09% - 100.00%**, TabNet = **97.05% - 99.77%**.
+- **Verification Evidence**: Tree models achieve natural competitive performance on `REAL_TEST.csv`: Random Forest = **91.14% - 100.00%**, XGBoost = **99.09% - 100.00%**, TabNet = **95.91% - 99.77%**.
 
 ### 3.5 DEF-05: XGBoost Model Serialization Incompatibility
 - **Root Cause**: Serializing XGBoost models solely via Python's `joblib.dump()` stores internal C++ memory buffer pointers. Loading `baseline_artifacts/04_Phase2C_Trained_Models/xgboost_real_only.joblib` under modern XGBoost produces a fatal C-API error:
@@ -148,9 +148,9 @@ Every metric, attribution, and benchmark reported herein has been recomputed fro
    - Phase 2E distribution-shift stress testing with tidy schema generation.
    - Phase 2F XAI attributions (TreeSHAP / attention masks) and Brier/ECE calibration.
 4. **What are the new model metrics, including regressions?**  
-   Ordinary holdout accuracy across all 12 configurations ranges from **90.91% to 100.00%**. Random Forest shows clear synthetic degradation (91.14% Mode B vs 100.00% Real-Only), while TabNet shows synthetic advantage (99.32% Mode B vs 95.91% Real-Only).
+   Ordinary holdout accuracy across all 12 configurations ranges from **91.14% to 100.00%**. Random Forest shows clear synthetic degradation (91.14% Mode B vs 100.00% Real-Only), while TabNet shows synthetic advantage (99.32% Mode B vs 95.91% Real-Only).
 5. **Is the 85% ordinary holdout benchmark met after the corrected protocol?**  
-   **YES**. All 12 model configurations comfortably exceed the 85.00% target (lowest observed: 90.91% on RF Mode B; highest observed: 100.00% on XGBoost and RF Real-Only).
+   **YES**. All 12 model configurations comfortably exceed the 85.00% target (lowest observed: 91.14% on RF Mode B; highest observed: 100.00% on XGBoost and RF Real-Only).
 6. **Is the holdout genuinely independent or does it have a disclosed reuse limitation?**  
    **Disclosed Reuse Limitation**. `REAL_TEST.csv` was mathematically quarantined from generator parameter estimation, but historical records (`cell_10_code.py:339`) prove it was repeatedly evaluated during development. It must be disclosed as a historical benchmark rather than an untouched prospective field trial.
 7. **Which issues remain blocked?**  

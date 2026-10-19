@@ -20,7 +20,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **Random Forest** | Real-Only | 94.77% | **99.32%** [98.4%, 100.0%] | Exceeds Target (+14.32%) |
 | **Random Forest** | Real + Mode A | ~90% | **92.73%** [90.2%, 95.0%] | Exceeds Target (+7.73%) |
-| **Random Forest** | Real + Mode B | 91.14% | **90.91%** [88.2%, 93.4%] | Exceeds Target (+5.91%) |
+| **Random Forest** | Real + Mode B | 91.14% | **91.14%** [88.4%, 93.6%] | Exceeds Target (+6.14%) |
 | **Random Forest** | Real + Mode C | ~91% | **92.27%** [89.8%, 94.8%] | Exceeds Target (+7.27%) |
 | **XGBoost** | Real-Only | 93.18% | **99.09%** [98.2%, 99.8%] | Exceeds Target (+14.09%) |
 | **XGBoost** | Real + Mode A | ~93% | **100.00%** [100.0%, 100.0%] | Exceeds Target (+15.00%) |
