@@ -1,0 +1,13 @@
+model_name,architecture,regime,brier_score,ece,mce,prob_sum_valid,test_samples
+TabNet (Real-Only),TabNet,Real-Only,0.09195,0.089397,0.38805,True,440
+Random Forest (Real-Only),Random Forest,Real-Only,0.00621,0.031753,0.502189,True,440
+XGBoost (Real-Only),XGBoost,Real-Only,0.00033,0.009604,0.121716,True,440
+TabNet (Real + Mode A),TabNet,Real + Mode A,0.012619,0.005719,0.67719,True,440
+Random Forest (Real + Mode A),Random Forest,Real + Mode A,0.556925,0.612427,0.905656,True,440
+XGBoost (Real + Mode A),XGBoost,Real + Mode A,0.001221,0.002779,0.461403,True,440
+TabNet (Real + Mode B),TabNet,Real + Mode B,0.012268,0.011343,0.479639,True,440
+Random Forest (Real + Mode B),Random Forest,Real + Mode B,0.560539,0.604586,0.905694,True,440
+XGBoost (Real + Mode B),XGBoost,Real + Mode B,0.001504,0.003064,0.497109,True,440
+TabNet (Real + Mode C),TabNet,Real + Mode C,0.011141,0.00593,0.539675,True,440
+Random Forest (Real + Mode C),Random Forest,Real + Mode C,0.545637,0.606491,0.900996,True,440
+XGBoost (Real + Mode C),XGBoost,Real + Mode C,0.001351,0.003745,0.33966,True,440

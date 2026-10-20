@@ -1,0 +1,9 @@
+model_name,artifact_file,explainer_class,feature_perturbation,background_dataset,output_space,test_samples,max_additivity_residual,tolerance,status
+Random Forest (Real-Only),random_forest_real_only.joblib,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),probability,22,4.440892098500626e-16,1e-05,PASS
+XGBoost (Real-Only),xgboost_real_only.json,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),raw_margin,22,2.384185791015625e-06,1e-05,PASS
+Random Forest (Real + Mode A),random_forest_mode_a.joblib,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),probability,22,2.220446049250313e-16,1e-05,PASS
+XGBoost (Real + Mode A),xgboost_mode_a.json,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),raw_margin,22,2.384185791015625e-06,1e-05,PASS
+Random Forest (Real + Mode B),random_forest_mode_b.joblib,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),probability,22,2.220446049250313e-16,1e-05,PASS
+XGBoost (Real + Mode B),xgboost_mode_b.json,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),raw_margin,22,2.86102294921875e-06,1e-05,PASS
+Random Forest (Real + Mode C),random_forest_mode_c.joblib,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),probability,22,2.7755575615628914e-16,1e-05,PASS
+XGBoost (Real + Mode C),xgboost_mode_c.json,shap.TreeExplainer,tree_path_dependent,None (uses internal tree node weights),raw_margin,22,3.337860107421875e-06,1e-05,PASS

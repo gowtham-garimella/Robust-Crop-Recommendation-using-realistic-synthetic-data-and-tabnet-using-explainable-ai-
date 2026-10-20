@@ -1,0 +1,136 @@
+{
+  "RAW": {
+    "name": "Raw Dataset",
+    "rows": 2200,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "label"
+    ],
+    "classes": 22,
+    "status": "VALID"
+  },
+  "REAL_TRAIN": {
+    "name": "REAL_TRAIN",
+    "rows": 1760,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "crop"
+    ],
+    "classes": 22,
+    "status": "VALID",
+    "leakage_with_real_test": 0
+  },
+  "REAL_TEST": {
+    "name": "REAL_TEST",
+    "rows": 440,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "crop"
+    ],
+    "classes": 22,
+    "status": "VALID"
+  },
+  "INTERNAL_TRAIN": {
+    "name": "INTERNAL_TRAIN",
+    "rows": 1408,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "crop"
+    ],
+    "classes": 22,
+    "status": "VALID",
+    "leakage_with_real_test": 0
+  },
+  "INTERNAL_VAL": {
+    "name": "INTERNAL_VAL",
+    "rows": 352,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "crop"
+    ],
+    "classes": 22,
+    "status": "VALID",
+    "leakage_with_real_test": 0
+  },
+  "Mode A": {
+    "name": "Mode A",
+    "rows": 165000,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "crop"
+    ],
+    "classes": 22,
+    "status": "VALID",
+    "leakage_with_real_test": 0
+  },
+  "Mode B": {
+    "name": "Mode B",
+    "rows": 165000,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "crop"
+    ],
+    "classes": 22,
+    "status": "VALID",
+    "leakage_with_real_test": 0
+  },
+  "Mode C": {
+    "name": "Mode C",
+    "rows": 165000,
+    "columns": [
+      "N",
+      "P",
+      "K",
+      "temperature",
+      "humidity",
+      "ph",
+      "rainfall",
+      "crop"
+    ],
+    "classes": 22,
+    "status": "VALID",
+    "leakage_with_real_test": 0
+  }
+}
