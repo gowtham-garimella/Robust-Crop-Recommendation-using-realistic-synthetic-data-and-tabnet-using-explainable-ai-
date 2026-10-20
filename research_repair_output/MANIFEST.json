@@ -28,6 +28,13 @@
     "category": "root"
   },
   {
+    "path": "FINAL_PUBLICATION_READINESS_REVIEW.md",
+    "filename": "FINAL_PUBLICATION_READINESS_REVIEW.md",
+    "size_bytes": 25616,
+    "sha256": "8855da4dca761386eccb38dd0d36991cbb60ad8b8c0d4ca26f2f1cd7c5ec0d58",
+    "category": "root"
+  },
+  {
     "path": "ORIGINAL_VS_CORRECTED_COMPARISON.md",
     "filename": "ORIGINAL_VS_CORRECTED_COMPARISON.md",
     "size_bytes": 5188,
@@ -37,8 +44,8 @@
   {
     "path": "POST_REPAIR_INDEPENDENT_VERIFICATION.md",
     "filename": "POST_REPAIR_INDEPENDENT_VERIFICATION.md",
-    "size_bytes": 28977,
-    "sha256": "7a471927406bea82c472e37a3641b662d31a5bb9a13a1d7dd9026f65934823ee",
+    "size_bytes": 29824,
+    "sha256": "fb52022748443c422d4ea460a3d5e87ea09e584e3a06c157c6c17e7458c21a6b",
     "category": "root"
   },
   {
@@ -65,8 +72,8 @@
   {
     "path": "audit/POST_REPAIR_100_PERCENT_AUDIT.csv",
     "filename": "POST_REPAIR_100_PERCENT_AUDIT.csv",
-    "size_bytes": 1937,
-    "sha256": "c713fccebe919aeef5e5a8a9e49c36d40993425dfc77e04982e6852e504db557",
+    "size_bytes": 1549,
+    "sha256": "5ebef439348ec1a2643c6f79d3550856d404155dd976a608c93fb6bc8488fe1e",
     "category": "audit"
   },
   {
@@ -79,8 +86,8 @@
   {
     "path": "audit/POST_REPAIR_DISCREPANCY_LOG.csv",
     "filename": "POST_REPAIR_DISCREPANCY_LOG.csv",
-    "size_bytes": 2890,
-    "sha256": "314432f70b101e7358fa45291d88ec252f9a144ce4349abf6b729dc4fa074bc3",
+    "size_bytes": 3330,
+    "sha256": "e8fba2b953aecc48745279026cafa465d40a629647501865017181c2d55e0e91",
     "category": "audit"
   },
   {
@@ -100,8 +107,15 @@
   {
     "path": "audit/POST_REPAIR_TEST_RESULTS.csv",
     "filename": "POST_REPAIR_TEST_RESULTS.csv",
-    "size_bytes": 1762,
-    "sha256": "bce18127d1acb8d1f850e6ccdd00658b0d0b53609b019ebace7f324575f916f2",
+    "size_bytes": 2736,
+    "sha256": "d5e35e5295f314368b2cfc2c1a2e58c06445c94149bd3376510e42352bd73a7f",
+    "category": "audit"
+  },
+  {
+    "path": "audit/POST_REPAIR_TREESHAP_AUDIT.csv",
+    "filename": "POST_REPAIR_TREESHAP_AUDIT.csv",
+    "size_bytes": 1865,
+    "sha256": "13854bcd0a193cd1a2d0f165a3aeb4c5c47d9852ae2b8736832fb7c27263b7d4",
     "category": "audit"
   },
   {
@@ -214,6 +228,13 @@
     "filename": "cm_xgboost_real_plus_mode_c.csv",
     "size_bytes": 1372,
     "sha256": "0ddd461bc69609d89f6d3b12be5e5d0201a7cdf999e8ec0190c64dde247b962a",
+    "category": "audit"
+  },
+  {
+    "path": "audit/predictions/PREDICTIONS_100_PERCENT_MODELS.csv",
+    "filename": "PREDICTIONS_100_PERCENT_MODELS.csv",
+    "size_bytes": 56795,
+    "sha256": "60948ca0df23520a6cf6e549527654d2f941433297321cbee5f779bbf8cd861f",
     "category": "audit"
   },
   {

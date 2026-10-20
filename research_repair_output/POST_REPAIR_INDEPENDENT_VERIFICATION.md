@@ -98,10 +98,12 @@ The achievement of 100% accuracy on real holdout test data is **not** an artifac
    - *Rice*: Requires moderate Nitrogen ($N \approx 80$), extreme humidity ($>80\%$), extreme rainfall ($>200\text{ mm}$).
    - *Muskmelon*: Requires high Nitrogen ($N \approx 100$), extreme humidity ($>90\%$), very low rainfall ($20-30\text{ mm}$).
    - Inter-cluster Euclidean distances between centroids range from **$24.53$ to $252.70$**.
-2. **Axis-Aligned Orthogonal Hyperplanes**:
-   When tree depth restrictions are unconstrained (Random Forest `max_depth=12`, XGBoost `max_depth=6`), orthogonal splits partition the discrete clusters with zero boundary collision.
-3. **Negative Finding Confirmation (Synthetic Degradation)**:
-   When Random Forest is augmented with 165,000 synthetic Mode B samples, the synthetic points populate the boundary regions between clusters. Without tree depth adjustments, this boundary blurring causes Random Forest accuracy to drop to **91.14%** (39 errors). This proves that the models do not trivially memorize test data; rather, the decision boundary sharpness depends directly on data manifold density.
+2. **Axis-Aligned Orthogonal Hyperplanes and Benchmark Geometry**:
+   When tree depth restrictions are unconstrained (Random Forest `max_depth=12`, XGBoost `max_depth=6`), orthogonal splits partition the discrete clusters with zero misclassifications on this curated dataset. However, achieving 100% classification accuracy on this benchmark **does not establish field-level agronomic validity, multi-season climate resilience, or actual crop yield**. It strictly measures the capacity of tree ensembles to isolate non-overlapping, low-variance clusters within this specific 7-variable parameterization.
+3. **Observed Performance Regression in Random Forest**:
+   When Random Forest is trained on the combined dataset containing 165,000 synthetic Mode B samples alongside 1,760 real samples, holdout accuracy drops from 100.00% to **91.14%** (401 correct, 39 errors).
+   - *Plausible Hypotheses*: Adding a large volume of synthetic samples (ratio ~94:1 synthetic to real) with empirical dispersion may populate peripheral regions between botanical clusters, thereby altering leaf-node class probability distributions in axis-aligned decision trees when hyperparameters are held fixed.
+   - *Scientific Boundary*: This observed performance drop must **not** be interpreted as definitive causal proof that the model is free from memorization or that synthetic data universally degrades tree performance. It represents an empirical sensitivity of unconstrained decision trees to synthetic sample density and distribution shifts along class boundaries.
 
 ---
 
