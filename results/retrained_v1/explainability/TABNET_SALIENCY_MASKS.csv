@@ -1,0 +1,617 @@
+model_name,architecture,regime,explanation_type,sample_crop,feature,raw_feature_value,scaled_feature_value,saliency_weight
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,apple,N,38.0,-0.3396924517067488,0.26940170976135847
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,apple,P,135.0,2.4828355220399723,0.08340788000175006
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,apple,K,203.0,3.0563794309606354,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,apple,temperature,23.7612,-0.3611576205846464,0.1678324788513947
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,apple,humidity,93.6616,0.995101990098452,0.3146991345275721
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,apple,ph,5.9656,-0.6443929854736674,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,apple,rainfall,100.826,-0.04260981723178449,0.16465879682253992
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,banana,N,101.0,1.369056512577897,0.13689620151224022
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,banana,P,92.0,1.1769132597415186,0.20832996830526282
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,banana,K,45.0,-0.06295770892406087,0.10081482434386449
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,banana,temperature,28.2278,0.5330024577777209,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,banana,humidity,80.643,0.4121412748621644,0.23077021670739095
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,banana,ph,5.7581,-0.9103036318289734,0.20874235480302988
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,banana,rainfall,98.004,-0.09464168565193222,0.11444643430097794
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,blackgram,N,23.0,-0.746537443203093,0.15251344779815929
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,blackgram,P,70.0,0.5087669860074262,0.07215048744638249
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,blackgram,K,15.0,-0.655236912699636,0.2617807748293844
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,blackgram,temperature,34.6008,1.8088010919521196,0.16473735983665538
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,blackgram,humidity,63.113,-0.37283570715526587,0.16345905353581708
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,blackgram,ph,7.4036,1.198399831195871,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,blackgram,rainfall,60.4179,-0.78765196546289,0.18535887652064584
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,chickpea,N,40.0,-0.2854464528405695,0.06130330371883299
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,chickpea,P,58.0,0.14432356397064858,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,chickpea,K,75.0,0.5293214948515143,0.10914269458251834
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,chickpea,temperature,18.5919,-1.3959898627998852,0.24970095599946196
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,chickpea,humidity,14.7796,-2.5371600917896786,0.4483387678925215
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,chickpea,ph,7.1681,0.896607266296235,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,chickpea,rainfall,89.6098,-0.24941344677610153,0.13151427777988844
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coconut,N,27.0,-0.6380454454707346,0.165354011891141
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coconut,P,8.0,-1.374190694515925,0.23118808697746876
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coconut,K,30.0,-0.3590973108118484,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coconut,temperature,26.446,0.17630733674022858,0.10114774492534957
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coconut,humidity,98.2994,1.2027783304977924,0.23295741500138872
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coconut,ph,6.0084,-0.5895449099844771,0.030228755722950792
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coconut,rainfall,221.2258,2.1773145454231155,0.2391239854556466
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coffee,N,87.0,0.9893345205146424,0.12530238134590002
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coffee,P,28.0,-0.7667849911212955,0.19167566202012343
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coffee,K,30.0,-0.3590973108118484,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coffee,temperature,25.6015,0.007248503135916714,0.15419267835719389
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coffee,humidity,68.6626,-0.12432981671579471,0.1898619984788437
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coffee,ph,6.5367,0.08747000312158475,0.023803775455217665
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,coffee,rainfall,168.8384,1.2113987751631379,0.315163504300512
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,cotton,N,140.0,2.4268534904683925,0.149345784879994
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,cotton,P,45.0,-0.25049014323586055,0.16797781440967416
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,cotton,K,15.0,-0.655236912699636,0.1718615839865749
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,cotton,temperature,25.5308,-0.006904794123793434,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,cotton,humidity,80.0466,0.3854350414294663,0.27237733280234266
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,cotton,ph,5.801,-0.8553274066306954,0.012194405443915722
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,cotton,rainfall,99.3956,-0.06898344748982106,0.22624307844394265
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,grapes,N,33.0,-0.47530744887219684,0.09766625134640994
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,grapes,P,120.0,2.027281244494,0.4446854972980484
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,grapes,K,205.0,3.0958647112123403,0.06226241028755799
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,grapes,temperature,35.1216,1.9130590440434467,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,grapes,humidity,82.2689,0.48494755410130536,0.21365015428815917
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,grapes,ph,5.5508,-1.1759579787661052,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,grapes,rainfall,69.7152,-0.6162289001678364,0.18173568675658944
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,jute,N,95.0,1.2063185159793595,0.14772700169910008
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,jute,P,57.0,0.1139532788009171,0.27620002902440216
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,jute,K,41.0,-0.1419282694274709,0.06141582038144279
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,jute,temperature,23.2493,-0.4636338987635058,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,jute,humidity,73.6535,0.09915801098248192,0.2098579950029711
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,jute,ph,6.4346,-0.04337084985613433,0.043981446233091546
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,jute,rainfall,184.7675,1.5050985750396009,0.26081770762285933
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,kidneybeans,N,27.0,-0.6380454454707346,0.1067669514896244
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,kidneybeans,P,80.0,0.8124698377047409,0.006189910922247708
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,kidneybeans,K,15.0,-0.655236912699636,0.2625940692774924
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,kidneybeans,temperature,19.071,-1.3000797536467459,0.14896337131408136
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,kidneybeans,humidity,21.2109,-2.2491725011194736,0.2093440895348964
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,kidneybeans,ph,5.7884,-0.8714742699756439,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,kidneybeans,rainfall,86.2192,-0.31192912823086905,0.26614160742020043
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,lentil,N,3.0,-1.2889974318648854,0.15629933365219972
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,lentil,P,78.0,0.751729267365278,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,lentil,K,18.0,-0.5960089923220785,0.32125114227391927
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,lentil,temperature,20.2137,-1.0713248345707875,0.16704193183637583
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,lentil,humidity,68.6526,-0.12477760735014538,0.15224910126946295
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,lentil,ph,6.8871,0.5365065837620627,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,lentil,rainfall,50.8973,-0.9631922228976386,0.20315849093625266
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,maize,N,67.0,0.4468745318528501,0.19541261051642775
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,maize,P,60.0,0.2050641343101115,0.03721795671727774
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,maize,K,25.0,-0.45781051144111096,0.24193466020463755
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,maize,temperature,24.9216,-0.12885937249175838,0.08332565474033811
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,maize,humidity,66.7863,-0.20834877343908648,0.22494777512279032
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,maize,ph,5.7503,-0.9202993091377507,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,maize,rainfall,109.2162,0.11208819212991844,0.2171613426443756
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mango,N,38.0,-0.3396924517067488,0.11011496189346372
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mango,P,15.0,-1.1615986983278046,0.11163563185403254
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mango,K,30.0,-0.3590973108118484,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mango,temperature,28.9186,0.6712923834779686,0.48969596275661015
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mango,humidity,48.1397,-1.0433260576881573,0.14702073361811763
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mango,ph,5.0755,-1.7850535460561132,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mango,rainfall,97.0133,-0.11290815342083399,0.14153270983915817
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mothbeans,N,27.0,-0.6380454454707346,0.12168997697431785
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mothbeans,P,43.0,-0.3112307135753235,0.10457289961730092
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mothbeans,K,23.0,-0.497295791692816,0.1640590774355965
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mothbeans,temperature,31.7045,1.2289963556961474,0.20900077437411765
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mothbeans,humidity,56.8542,-0.6530989093829151,0.18428127188434615
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mothbeans,ph,5.8753,-0.7601121727791329,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mothbeans,rainfall,44.9432,-1.0729735651231536,0.21639599967726242
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mungbean,N,31.0,-0.5295534477383761,0.09651945252805177
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mungbean,P,40.0,-0.4023415690845179,0.10663982912749495
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mungbean,K,22.0,-0.5170384318186685,0.21817959901870967
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mungbean,temperature,29.4089,0.7694445991276947,0.04441713177045462
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mungbean,humidity,86.1606,0.6592142352717122,0.3534329337652856
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mungbean,ph,6.3655,-0.13192229883517786,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,mungbean,rainfall,53.3549,-0.9178791400381929,0.18081105375267434
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,muskmelon,N,100.0,1.3419335131448074,0.13952727053241695
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,muskmelon,P,17.0,-1.1008581279883418,0.038056148002484066
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,muskmelon,K,48.0,-0.00372978854650336,0.02200876495394692
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,muskmelon,temperature,29.7279,0.8333045966644336,0.12770764601535253
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,muskmelon,humidity,94.2975,1.0235769965368364,0.32517548975613825
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,muskmelon,ph,6.3678,-0.12897485552617935,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,muskmelon,rainfall,26.5236,-1.4125930561053495,0.34752468071225057
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,orange,N,31.0,-0.5295534477383761,0.061644543882208316
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,orange,P,25.0,-0.85789584663049,0.2454234951634823
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,orange,K,12.0,-0.7144648330771936,0.2170607274765929
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,orange,temperature,18.0514,-1.5041915200682454,0.2423755946711788
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,orange,humidity,90.0397,0.8329167002428365,0.19743899806946327
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,orange,ph,7.0165,0.7023323073205031,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,orange,rainfall,111.7794,0.15934832151848077,0.03605664070393939
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,papaya,N,36.0,-0.39393845057292803,0.15826519278881246
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,papaya,P,59.0,0.17469384914038005,0.1559647716712022
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,papaya,K,46.0,-0.04321506879820837,0.12236254938819437
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,papaya,temperature,34.2888,1.746342410975749,0.06042227747913979
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,papaya,humidity,93.6108,0.9928272136759481,0.2064393786264514
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,papaya,ph,6.7211,0.32377806667781783,0.09572555027456726
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,papaya,rainfall,127.251,0.4446127635628328,0.20082027973585884
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pigeonpeas,N,33.0,-0.47530744887219684,0.15175332223569743
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pigeonpeas,P,58.0,0.14432356397064858,0.13420431777529906
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pigeonpeas,K,24.0,-0.4775531515669635,0.1372540530833799
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pigeonpeas,temperature,35.4579,1.9803822953650931,0.12970473070451877
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pigeonpeas,humidity,68.7581,-0.12005341615774191,0.18393554954388014
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pigeonpeas,ph,5.2695,-1.5364431104275384,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pigeonpeas,rainfall,108.6333,0.10134071654448117,0.26314802660946524
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pomegranate,N,12.0,-1.0448904369670788,0.10038151020898216
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pomegranate,P,29.0,-0.7364147059515641,0.22878873016853118
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pomegranate,K,40.0,-0.1616709095533234,0.17824398818787915
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pomegranate,temperature,19.6829,-1.1775846674626391,0.2328900934109529
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pomegranate,humidity,89.7527,0.8200651090369611,0.184734633686379
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pomegranate,ph,6.594,0.16089978642837588,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,pomegranate,rainfall,111.2819,0.15017544606170413,0.0749610442978772
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,rice,N,63.0,0.33838253412049163,0.1343923932435111
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,rice,P,44.0,-0.280860428405592,0.19187519140578738
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,rice,K,41.0,-0.1419282694274709,0.021593170404888336
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,rice,temperature,24.173,-0.2787201692190389,0.00464052701321101
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,rice,humidity,83.7288,0.5503205088102187,0.1697689512558078
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,rice,ph,5.5834,-1.1341811736037772,0.08708735803709276
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,rice,rainfall,257.0344,2.8375513857880024,0.3906424086001996
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,watermelon,N,119.0,1.8572705023735103,0.11863056399310092
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,watermelon,P,9.0,-1.3438204093461934,0.23207579375753631
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,watermelon,K,50.0,0.03575549170520165,0.08332034699395491
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,watermelon,temperature,26.7455,0.23626366671594334,0.11933426955825069
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,watermelon,humidity,83.9196,0.5588643541136369,0.16196899365146872
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,watermelon,ph,6.2513,-0.2782692666124114,0.0
+TabNet (Real-Only),TabNet,Real-Only,attention_feature_saliency_mask,watermelon,rainfall,40.7943,-1.1494707369475163,0.28467003201589713
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,apple,N,38.0,-0.3418040513370911,0.137465776249988
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,apple,P,135.0,2.4853181786981904,0.024507308509619182
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,apple,K,203.0,3.056690003893067,0.05260607128210617
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,apple,temperature,23.7612,-0.3663242355694094,0.09290894637247807
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,apple,humidity,93.6616,0.9961786572890917,0.5411548773272057
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,apple,ph,5.9656,-0.6534088219815892,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,apple,rainfall,100.826,-0.0430823086971452,0.15135702023553588
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,banana,N,101.0,1.3695250090973987,0.4476924917465967
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,banana,P,92.0,1.178103187922431,0.12104781122347036
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,banana,K,45.0,-0.06328046925494411,0.005703580415108482
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,banana,temperature,28.2278,0.5343446892957768,0.25850180541468015
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,banana,humidity,80.643,0.412787925578917,0.14100499451236692
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,banana,ph,5.7581,-0.9224314331192993,0.004674386292242692
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,banana,rainfall,98.004,-0.09526039699303215,0.02137493037240991
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,blackgram,N,23.0,-0.749263351440541,0.3200707214943162
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,blackgram,P,70.0,0.5092955182232057,0.11853457912593768
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,blackgram,K,15.0,-0.6556799261817816,0.1653046340293776
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,blackgram,temperature,34.6008,1.8194302259827049,0.07648429447920861
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,blackgram,humidity,63.113,-0.3727680886529787,0.15895208330078378
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,blackgram,ph,7.4036,1.2109502855655248,0.1554789988676255
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,blackgram,rainfall,60.4179,-0.7902181732148764,0.005174688676085207
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,chickpea,N,40.0,-0.28747614465663107,0.1675971727893735
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,chickpea,P,58.0,0.14449133475090095,0.05491369945170116
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,chickpea,K,75.0,0.5291189876718934,0.1012486890901723
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,chickpea,temperature,18.5919,-1.4086893171315835,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,chickpea,humidity,14.7796,-2.538688970471342,0.4656098523527558
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,chickpea,ph,7.1681,0.9056258281056183,0.12503115549988025
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,chickpea,rainfall,89.6098,-0.25046709747968554,0.08559943079753506
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coconut,N,27.0,-0.6406075380796211,0.04621164117568632
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coconut,P,8.0,-1.3755260963837024,0.10591412894263527
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coconut,K,30.0,-0.35948019771836287,0.05338559550593073
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coconut,temperature,26.446,0.17505308263191924,0.18232413390551766
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coconut,humidity,98.2994,1.2040081885386458,0.26916093334498825
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coconut,ph,6.0084,-0.5979188568890885,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coconut,rainfall,221.2258,2.1830804819503227,0.3430035671061015
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coffee,N,87.0,0.9892296623341789,0.15051499227324644
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coffee,P,28.0,-0.767519123929861,0.35898307545862845
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coffee,K,30.0,-0.35948019771836287,0.1546716941456385
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coffee,temperature,25.6015,0.004763621509667453,0.04751485019627742
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coffee,humidity,68.6626,-0.12407888976071821,0.15117639784510245
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coffee,ph,6.5367,0.08701919354007705,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,coffee,rainfall,168.8384,1.2144502966944908,0.13713899005138477
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,cotton,N,140.0,2.428919189366369,0.42703136914645234
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,cotton,P,45.0,-0.2507131973440959,0.04049804287395635
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,cotton,K,15.0,-0.6556799261817816,0.06565376622030851
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,cotton,temperature,25.5308,-0.009492701641716296,0.15527456712862867
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,cotton,humidity,80.0466,0.38606199249917345,0.21203862118572855
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,cotton,ph,5.801,-0.866811818575647,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,cotton,rainfall,99.3956,-0.06953005408992924,0.09950363342270899
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,grapes,N,33.0,-0.47762381803824105,0.03964230345867302
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,grapes,P,120.0,2.0293129493578093,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,grapes,K,205.0,3.0961833010215227,0.2498254565290437
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,grapes,temperature,35.1216,1.9244471014740832,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,grapes,humidity,82.2689,0.48564790980821765,0.3865899499403507
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,grapes,ph,5.5508,-1.1911947453547074,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,grapes,rainfall,69.7152,-0.6183133750882459,0.3239422900501166
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,jute,N,95.0,1.2065412890560188,0.003493702243957814
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,jute,P,57.0,0.11409098612820888,0.1932118936850208
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,jute,K,41.0,-0.14226706351185578,0.11489970911973116
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,jute,temperature,23.2493,-0.46954646783522375,0.09280112276161798
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,jute,humidity,73.6535,0.0995737920093882,0.27300960389698375
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,jute,ph,6.4346,-0.0453528960847912,0.07606866146487112
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,jute,rainfall,184.7675,1.508975451291945,0.2465153067898953
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,kidneybeans,N,27.0,-0.6406075380796211,0.05480352954009109
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,kidneybeans,P,80.0,0.8132990044501264,0.1481111805756809
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,kidneybeans,K,15.0,-0.6556799261817816,0.18679467696475327
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,kidneybeans,temperature,19.071,-1.31208105091054,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,kidneybeans,humidity,21.2109,-2.250488947976785,0.478506554430649
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,kidneybeans,ph,5.7884,-0.8831476494206356,0.10713160790170675
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,kidneybeans,rainfall,86.2192,-0.3131584604052828,0.024652450566242413
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,lentil,N,3.0,-1.292542418245141,0.4054712125684602
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,lentil,P,78.0,0.7524983072047422,0.1314011583079428
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,lentil,K,18.0,-0.5964399804890979,0.23269961654129176
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,lentil,temperature,20.2137,-1.0816609594666127,0.0994285281374151
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,lentil,humidity,68.6526,-0.12452701070437547,0.12889095520189028
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,lentil,ph,6.8871,0.5413108703721423,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,lentil,rainfall,50.8973,-0.9662517336081519,0.002108529220793968
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,maize,N,67.0,0.4459505955295789,0.22840513291077127
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,maize,P,60.0,0.20529203199628507,0.14650516511008135
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,maize,K,25.0,-0.4582134405395024,0.21286082156715794
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,maize,temperature,24.9216,-0.13233502220497906,0.02539254211784981
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,maize,humidity,66.7863,-0.20815982241920686,0.22398904886158133
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,maize,ph,5.7503,-0.9325440903090536,0.04182766919624605
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,maize,rainfall,109.2162,0.1120504327699536,0.12101962019339539
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mango,N,38.0,-0.3418040513370911,0.06946685142624202
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mango,P,15.0,-1.162723656024858,0.17956101489077106
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mango,K,30.0,-0.35948019771836287,0.19343544998879048
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mango,temperature,28.9186,0.6736412668484731,0.12587345271751568
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mango,humidity,48.1397,-1.043753021219918,0.31632021405651534
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mango,ph,5.0755,-1.8074185866740005,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mango,rainfall,97.0133,-0.1135781971612588,0.11534301689211582
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mothbeans,N,27.0,-0.6406075380796211,0.13844145899626972
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mothbeans,P,43.0,-0.31151389458948003,0.18954394034980204
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mothbeans,K,23.0,-0.49770673766795825,0.3230433421528823
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mothbeans,temperature,31.7045,1.2354049255109727,0.042194271495884506
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mothbeans,humidity,56.8542,-0.6532380248694413,0.30677698697308503
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mothbeans,ph,5.8753,-0.7704822763706745,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mothbeans,rainfall,44.9432,-1.0763415831909096,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mungbean,N,31.0,-0.5319517247187011,0.13311091096148506
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mungbean,P,40.0,-0.40271494045755624,0.22324127484862455
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mungbean,K,22.0,-0.5174533862321862,0.24126351010770175
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mungbean,temperature,29.4089,0.7725079604994378,0.03139884106377561
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mungbean,humidity,86.1606,0.6600431374514731,0.3709854629928319
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mungbean,ph,6.3655,-0.13494066682992686,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,mungbean,rainfall,53.3549,-0.9208113119937039,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,muskmelon,N,100.0,1.3423610557571688,0.16605454039077314
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,muskmelon,P,17.0,-1.1019229587794737,0.09306936561989157
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,muskmelon,K,48.0,-0.004040523562260374,0.02742855384283364
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,muskmelon,temperature,29.7279,0.8368328131909698,0.16689389349375697
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,muskmelon,humidity,94.2975,1.0246746680962826,0.21446799345102924
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,muskmelon,ph,6.3678,-0.13195872945346074,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,muskmelon,rainfall,26.5236,-1.4169154723386497,0.33208565318391436
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,orange,N,31.0,-0.5319517247187011,0.11863894637782878
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,orange,P,25.0,-0.8587201697979372,0.3611206063327628
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,orange,K,12.0,-0.7149198718744653,0.039762669996433436
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,orange,temperature,18.0514,-1.5176786051559492,0.15814893946832975
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,orange,humidity,90.0397,0.8338737327057197,0.27015370353778306
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,orange,ph,7.0165,0.7090772601611518,0.024075873959736996
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,orange,rainfall,111.7794,0.15944337250064733,0.028099260303863793
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,papaya,N,36.0,-0.3961319580175511,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,papaya,P,59.0,0.174891683373593,0.1874534343508449
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,papaya,K,46.0,-0.04353382069071621,0.18686188383082694
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,papaya,temperature,34.2888,1.7565168904348751,0.3180124190344273
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,papaya,humidity,93.6108,0.9939022028953103,0.18537997839863227
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,papaya,ph,6.7211,0.32609278146197423,0.03309480954465587
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,papaya,rainfall,127.251,0.44550946423652554,0.08919747480916441
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pigeonpeas,N,33.0,-0.47762381803824105,0.15544112260128212
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pigeonpeas,P,58.0,0.14449133475090095,0.22782699516571264
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pigeonpeas,K,24.0,-0.47796008910373033,0.1671177321686888
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pigeonpeas,temperature,35.4579,1.9922604179636196,0.05564102494544173
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pigeonpeas,humidity,68.7581,-0.1197993347487874,0.3047454026276982
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pigeonpeas,ph,5.2695,-1.555898651441636,0.016524137976708927
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pigeonpeas,rainfall,108.6333,0.10127275464533547,0.07270358447449635
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pomegranate,N,12.0,-1.0480668381830711,0.08205082524077606
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pomegranate,P,29.0,-0.737118775307169,0.29733876021619604
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pomegranate,K,40.0,-0.1620137120760837,0.18606475235162068
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pomegranate,temperature,19.6829,-1.188694288020421,0.07709473829627732
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pomegranate,humidity,89.7527,0.8210126616227449,0.2488567764370587
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pomegranate,ph,6.594,0.16130832904943082,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,pomegranate,rainfall,111.2819,0.1502447194435233,0.10859414743016224
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,rice,N,63.0,0.3372947821686589,0.015038250932640072
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,rice,P,44.0,-0.281113545966788,0.09597459219058595
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,rice,K,41.0,-0.14226706351185578,0.07980906824459251
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,rice,temperature,24.173,-0.28328669845852344,0.17136161197488772
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,rice,humidity,83.7288,0.5510690863728012,0.05341540528534524
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,rice,ph,5.5834,-1.1489290242795775,0.07434702837389609
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,rice,rainfall,257.0344,2.8451727188575187,0.5100540429752345
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,watermelon,N,119.0,1.858476169221539,0.2621332666220242
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,watermelon,P,9.0,-1.3451257477610103,0.10132099714145891
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,watermelon,K,50.0,0.03545277356619546,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,watermelon,temperature,26.7455,0.23544585185171096,0.20198358072186146
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,watermelon,humidity,83.9196,0.5596192339777893,0.21592379622109717
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,watermelon,ph,6.2513,-0.2830003400440305,0.0
+TabNet (Real + Mode A),TabNet,Real + Mode A,attention_feature_saliency_mask,watermelon,rainfall,40.7943,-1.1530537272486012,0.218638359269367
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,apple,N,38.0,-0.33957110482937053,0.12594980589279106
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,apple,P,135.0,2.482544774886532,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,apple,K,203.0,3.0559381997853827,0.6479401176620647
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,apple,temperature,23.7612,-0.3782175450174928,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,apple,humidity,93.6616,0.9971202645325986,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,apple,ph,5.9656,-0.8300230146783089,0.11199331844343542
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,apple,rainfall,100.826,-0.04732147181266344,0.1141167579823337
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,banana,N,101.0,1.36478231916958,0.21743618406312382
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,banana,P,92.0,1.174366496345408,0.10415182168788695
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,banana,K,45.0,-0.06333501579119269,0.11707379303338489
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,banana,temperature,28.2278,0.6082763030474162,0.029255786048185226
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,banana,humidity,80.643,0.4144373443769229,0.28455941030814574
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,banana,ph,5.7581,-1.165809926431579,0.1368288839064476
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,banana,rainfall,98.004,-0.09947763633403975,0.1106941209257086
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,blackgram,N,23.0,-0.745369539114835,0.11424449478105853
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,blackgram,P,70.0,0.505065981742972,0.20181978139445536
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,blackgram,K,15.0,-0.6556020820399096,0.23093726731635084
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,blackgram,temperature,34.6008,2.0158178992766884,0.08513467569972953
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,blackgram,humidity,63.113,-0.370165576853393,0.13223958925460122
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,blackgram,ph,7.4036,1.4970207400262776,0.08403734300972632
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,blackgram,rainfall,60.4179,-0.7941434107199045,0.15158684851701007
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,chickpea,N,40.0,-0.28546464692464196,0.24599735994742283
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,chickpea,P,58.0,0.1399929737780071,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,chickpea,K,75.0,0.5289320504575241,0.22211819858344983
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,chickpea,temperature,18.5919,-1.5199098050815087,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,chickpea,humidity,14.7796,-2.533458607828484,0.19396034546507027
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,chickpea,ph,7.1681,1.1159228233135305,0.16681592764130726
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,chickpea,rainfall,89.6098,-0.2546191233026219,0.17110816833606993
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coconut,N,27.0,-0.6371566233053778,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coconut,P,8.0,-1.381144559409347,0.21332355786291024
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coconut,K,30.0,-0.3594685489155511,0.10006908648700917
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coconut,temperature,26.446,0.21474772684134177,0.021598359081843942
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coconut,humidity,98.2994,1.204697642061518,0.13990937587169716
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coconut,ph,6.0084,-0.7607619070973939,0.18520213542826974
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coconut,rainfall,221.2258,2.1779059474434774,0.33989748524382474
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coffee,N,87.0,0.9860371138364799,0.10596099551684886
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coffee,P,28.0,-0.7726895461344053,0.3986424123550216
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coffee,K,30.0,-0.3594685489155511,0.17534424724951242
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coffee,temperature,25.6015,0.028231348681037365,0.07009538219870921
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coffee,humidity,68.6626,-0.12177810556647006,0.061107347989694895
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coffee,ph,6.5367,0.0941596614773159,0.04734208299049941
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,coffee,rainfall,168.8384,1.209682753521734,0.14150753167172034
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,cotton,N,140.0,2.4198582483117876,0.3552237897719896
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,cotton,P,45.0,-0.255502784850705,0.019096015814936754
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,cotton,K,15.0,-0.6556020820399096,0.09378909630769358
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,cotton,temperature,25.5308,0.012616537626053432,0.11614562564268281
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,cotton,humidity,80.0466,0.38774383711954913,0.37553296609468434
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,cotton,ph,5.801,-1.0963869938329507,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,cotton,rainfall,99.3956,-0.0737581046019535,0.04021250634313749
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,grapes,N,33.0,-0.474837249591192,0.16517290660938225
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,grapes,P,120.0,2.0262035149303257,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,grapes,K,205.0,3.0954226708686305,0.5088827481116566
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,grapes,temperature,35.1216,2.130841853978745,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,grapes,humidity,82.2689,0.4872089296380964,0.0859442820636821
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,grapes,ph,5.5508,-1.5012731881494241,0.015918911464185646
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,grapes,rainfall,69.7152,-0.6223108421853214,0.2240811517254836
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,jute,N,95.0,1.2024629454553943,0.10034508027277958
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,jute,P,57.0,0.10957022311426,0.15215235276069508
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,jute,K,41.0,-0.14230395795768827,0.17002071469293473
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,jute,temperature,23.2493,-0.4912758445796708,0.05070909914654579
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,jute,humidity,73.6535,0.10160322469983801,0.15275683201890927
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,jute,ph,6.4346,-0.07106368160706414,0.1290043971775104
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,jute,rainfall,184.7675,1.5040841568801533,0.24501152389068992
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,kidneybeans,N,27.0,-0.6371566233053778,0.11455900833881542
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,kidneybeans,P,80.0,0.8092934883804429,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,kidneybeans,K,15.0,-0.6556020820399096,0.1384453690021338
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,kidneybeans,temperature,19.071,-1.4140957177202274,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,kidneybeans,humidity,21.2109,-2.2456082503094583,0.6060522361399329
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,kidneybeans,ph,5.7884,-1.1167769460647154,0.09055033971379908
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,kidneybeans,rainfall,86.2192,-0.3172841450695175,0.05039304677102759
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,lentil,N,3.0,-1.2864341181621208,0.10487897090614628
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,lentil,P,78.0,0.7484479870529487,0.23932508328014393
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,lentil,K,18.0,-0.5963753754150378,0.18967425465782342
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,lentil,temperature,20.2137,-1.161718849367617,0.14980683881908557
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,lentil,humidity,68.6526,-0.12222568281759932,0.13562441505728468
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,lentil,ph,6.8871,0.6611945235416332,0.012823855133387315
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,lentil,rainfall,50.8973,-0.9701030067306123,0.16786658212246316
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,maize,N,67.0,0.444972534789194,0.19954812646541414
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,maize,P,60.0,0.20083847510550124,0.11996561392754847
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,maize,K,25.0,-0.45817972662367057,0.2174498921528746
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,maize,temperature,24.9216,-0.12193145239793357,0.082038574366301
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,maize,humidity,66.7863,-0.20575702519593053,0.16495765306408494
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,maize,ph,5.7503,-1.1784322778131473,0.04853088453219509
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,maize,rainfall,109.2162,0.1077460872118772,0.16750925544449563
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mango,N,38.0,-0.33957110482937053,0.036082609013953514
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mango,P,15.0,-1.1681853047631174,0.36044108058862856
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mango,K,30.0,-0.3594685489155511,0.17792323748555547
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mango,temperature,28.9186,0.7608464795224178,0.29038280988816706
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mango,humidity,48.1397,-1.0403364222873857,0.13048856471678794
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mango,ph,5.0755,-2.2704274973365517,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mango,rainfall,97.0133,-0.11778773987455284,0.004681698278692219
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mothbeans,N,27.0,-0.6371566233053778,0.21820690584520752
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mothbeans,P,43.0,-0.3163482861781991,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mothbeans,K,23.0,-0.4976641977069184,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mothbeans,temperature,31.7045,1.3761407103297496,0.058255623934153455
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mothbeans,humidity,56.8542,-0.6502952267904325,0.36279776571398725
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mothbeans,ph,5.8753,-0.9761510056726234,0.01065764987049652
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mothbeans,rainfall,44.9432,-1.0801465996351935,0.35008205460731867
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mungbean,N,31.0,-0.5289437074959206,0.233153663313383
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mungbean,P,40.0,-0.4076165381694404,0.1774543386388144
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mungbean,K,22.0,-0.5174064332485423,0.2111573579545115
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mungbean,temperature,29.4089,0.8691342003181511,0.11518799424894184
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mungbean,humidity,86.1606,0.6613925684602311,0.17544018808560685
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mungbean,ph,6.3655,-0.18288476884634527,0.030640092985381034
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,mungbean,rainfall,53.3549,-0.9246816779114292,0.05696636473672258
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,muskmelon,N,100.0,1.3377290902172156,0.18842852230054433
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,muskmelon,P,17.0,-1.1073398034356232,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,muskmelon,K,48.0,-0.004108309166321002,0.086995994148509
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,muskmelon,temperature,29.7279,0.939588581174442,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,muskmelon,humidity,94.2975,1.0255817019319342,0.3517455853455548
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,muskmelon,ph,6.3678,-0.1791627934389597,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,muskmelon,rainfall,26.5236,-1.4205773891525382,0.3728298981876549
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,orange,N,31.0,-0.5289437074959206,0.024290128591096364
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,orange,P,25.0,-0.8639577981256465,0.10429076578847166
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,orange,K,12.0,-0.7148287886647812,0.4577641452452311
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,orange,temperature,18.0514,-1.6392847043066647,0.08539547591052542
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,orange,humidity,90.0397,0.8350122599459421,0.2409462330415405
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,orange,ph,7.0165,0.8705960964615028,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,orange,rainfall,111.7794,0.15511911375375956,0.08731325139701746
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,papaya,N,36.0,-0.3936775627340991,0.2228709272644086
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,papaya,P,59.0,0.17041572444175415,0.17101142933111182
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,papaya,K,46.0,-0.043592780249568794,0.20610894839572116
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,papaya,temperature,34.2888,1.9469095393169316,0.06516270998431599
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,papaya,humidity,93.6108,0.9948465720968594,0.3028538062753711
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,papaya,ph,6.7211,0.3925649941390169,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,papaya,rainfall,127.251,0.44106500851241637,0.031992178717091764
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pigeonpeas,N,33.0,-0.474837249591192,0.04692376643921373
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pigeonpeas,P,58.0,0.1399929737780071,0.31203007767696683
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pigeonpeas,K,24.0,-0.4779219621652945,0.2473324121167892
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pigeonpeas,temperature,35.4579,2.2051171150507525,0.1493939958223637
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pigeonpeas,humidity,68.7581,-0.11750374281818163,0.1524362572258459
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pigeonpeas,ph,5.2695,-1.9564869629744588,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pigeonpeas,rainfall,108.6333,0.0969729375664094,0.09188349067837111
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pomegranate,N,12.0,-1.0429550575908422,0.10921284995870108
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pomegranate,P,29.0,-0.7422667954706582,0.44840319153640856
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pomegranate,K,40.0,-0.16204619349931215,0.15666586529279472
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pomegranate,temperature,19.6829,-1.2789514053504345,0.10794041086077416
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pomegranate,humidity,89.7527,0.8221667928385208,0.12886638328163316
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pomegranate,ph,6.594,0.18688539662653297,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,pomegranate,rainfall,111.2819,0.14592432571358063,0.04891129904241304
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,rice,N,63.0,0.33675961897973683,0.09606350904154769
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,rice,P,44.0,-0.28592553551445204,0.26816918593680356
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,rice,K,41.0,-0.14230395795768827,0.17788905392101118
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,rice,temperature,24.173,-0.2872673442757364,0.09550706387869691
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,rice,humidity,83.7288,0.5525507325305175,0.09957056718024042
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,rice,ph,5.5834,-1.4485182323751749,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,rice,rainfall,257.0344,2.839719991695839,0.26280062001275023
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,watermelon,N,119.0,1.8517404403121374,0.127118942017533
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,watermelon,P,9.0,-1.3507218087455999,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,watermelon,K,50.0,0.03537616191692679,0.1491429445648498
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,watermelon,temperature,26.7455,0.2808953352001468,0.0
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,watermelon,humidity,83.9196,0.5610905064820715,0.30306693678468444
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,watermelon,ph,6.2513,-0.3676889390739284,0.03165944872658844
+TabNet (Real + Mode B),TabNet,Real + Mode B,attention_feature_saliency_mask,watermelon,rainfall,40.7943,-1.1568265113937828,0.3890117278766135
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,apple,N,38.0,-0.33861228374333174,0.17833924033256296
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,apple,P,135.0,2.4842767860140667,0.23925392037981405
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,apple,K,203.0,3.057773690206843,0.20631055423334368
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,apple,temperature,23.7612,-0.3818431557697736,0.03234565003026242
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,apple,humidity,93.6616,0.9972461773469441,0.1145600981221216
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,apple,ph,5.9656,-0.8363119750750342,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,apple,rainfall,100.826,-0.04993284870278246,0.22919053687405186
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,banana,N,101.0,1.3663679733157166,0.29893125934748743
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,banana,P,92.0,1.1758862982659792,0.08044514507972964
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,banana,K,45.0,-0.06292667661506007,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,banana,temperature,28.2278,0.6091887567926966,0.08179970681683946
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,banana,humidity,80.643,0.41462016204983354,0.17109196206897828
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,banana,ph,5.7581,-1.174282761096926,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,banana,rainfall,98.004,-0.10218885752612507,0.3677319266610808
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,blackgram,N,23.0,-0.7445599639954861,0.1036317747169298
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,blackgram,P,70.0,0.5064772115111439,0.36394923890822717
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,blackgram,K,15.0,-0.6554647209483327,0.07905987962116798
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,blackgram,temperature,34.6008,2.023205319448995,0.06166001823029903
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,blackgram,humidity,63.113,-0.3699061347991628,0.16885171519218914
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,blackgram,ph,7.4036,1.5058662914284806,0.01759397188527679
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,blackgram,rainfall,60.4179,-0.7981844539949577,0.20525340142409895
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,chickpea,N,40.0,-0.2844859263763778,0.008165620095603524
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,chickpea,P,58.0,0.14134498237214282,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,chickpea,K,75.0,0.5296113677182126,0.14937416008686663
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,chickpea,temperature,18.5919,-1.5287874233579117,0.09961958663432273
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,chickpea,humidity,14.7796,-2.532987898411329,0.10310258624660766
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,chickpea,ph,7.1681,1.122289808979539,0.20830280172627907
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,chickpea,rainfall,89.6098,-0.25762733706719676,0.4314352451849581
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coconut,N,27.0,-0.6363072492615783,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coconut,P,8.0,-1.3800393057070284,0.138540036835934
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coconut,K,30.0,-0.3591956987816964,0.1736523071979182
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coconut,temperature,26.446,0.21384987222640306,0.08093553117015954
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coconut,humidity,98.2994,1.2048032828532917,0.08159118252129234
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coconut,ph,6.0084,-0.7666004105365434,0.19296706321548623
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coconut,rainfall,221.2258,2.1795543983307795,0.3323138790389892
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coffee,N,87.0,0.9874834717470392,0.1303106627746802
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coffee,P,28.0,-0.7714855904753599,0.1486009212669636
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coffee,K,30.0,-0.3591956987816964,0.2142996041174168
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coffee,temperature,25.6015,0.02647548227453672,0.05165752414156903
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coffee,humidity,68.6626,-0.12154292105169057,0.20344497030276418
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coffee,ph,6.5367,0.09388135454955299,0.010622860487239922
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,coffee,rainfall,168.8384,1.2094777021465168,0.24106345688156405
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,cotton,N,140.0,2.421831941971318,0.35137298613061785
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,cotton,P,45.0,-0.2542149325284417,0.200746177989233
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,cotton,K,15.0,-0.6554647209483327,0.09559787775725202
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,cotton,temperature,25.5308,0.01078884003700284,0.127532707337836
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,cotton,humidity,80.0466,0.38792926168242087,0.11938733773934432
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,cotton,ph,5.801,-1.1044083190711946,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,cotton,rainfall,99.3956,-0.07642009002840583,0.10536291301997917
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,grapes,N,33.0,-0.47392817716071656,0.10783455688532555
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,grapes,P,120.0,2.0278614995903155,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,grapes,K,205.0,3.0972762264957274,0.22957836302234946
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,grapes,temperature,35.1216,2.1387584068225087,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,grapes,humidity,82.2689,0.48738464043242247,0.24516412014239883
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,grapes,ph,5.5508,-1.5119277921443384,0.22631140989012552
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,grapes,rainfall,69.7152,-0.6260229405884146,0.19111155003552874
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,jute,N,95.0,1.2039889012148548,0.13248390941886878
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,jute,P,57.0,0.11091729661055941,0.13071006049532136
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,jute,K,41.0,-0.14193174919282975,0.1815593901321741
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,jute,temperature,23.2493,-0.4954215456056053,0.11289405338137476
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,jute,humidity,73.6535,0.10181659377681215,0.17896419532235677
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,jute,ph,6.4346,-0.07241655992194151,0.05389535778221132
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,jute,rainfall,184.7675,1.5044426880245858,0.20949303343943282
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,kidneybeans,N,27.0,-0.6363072492615783,0.028528406073897027
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,kidneybeans,P,80.0,0.8107540691269782,0.1369788315899473
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,kidneybeans,K,15.0,-0.6554647209483327,0.03280593341321112
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,kidneybeans,temperature,19.071,-1.4224865705148808,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,kidneybeans,humidity,21.2109,-2.245165652380243,0.4998290943504186
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,kidneybeans,ph,5.7884,-1.1249308824633673,0.24333952340449574
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,kidneybeans,rainfall,86.2192,-0.3204123205953422,0.05851821113868313
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,lentil,N,3.0,-1.2858235376650253,0.1049245570346931
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,lentil,P,78.0,0.7498986976038113,0.46765606018319045
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,lentil,K,18.0,-0.5962109165150055,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,lentil,temperature,20.2137,-1.1689487192443098,0.0638858209610696
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,lentil,humidity,68.6526,-0.12199045459239123,0.10517600054506385
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,lentil,ph,6.8871,0.6646040698366412,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,lentil,rainfall,50.8973,-0.9744808953852901,0.2583575612549904
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,maize,N,67.0,0.44621989807750007,0.19634970540579877
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,maize,P,60.0,0.2022003538953097,0.14767125773499382
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,maize,K,25.0,-0.4579520395039085,0.08458489856979055
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,maize,temperature,24.9216,-0.12437809703662243,0.11680175340084685
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,maize,humidity,66.7863,-0.20551363929343455,0.1771369061760564
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,maize,ph,5.7503,-1.1869872051016037,0.016495072309309473
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,maize,rainfall,109.2162,0.10543156137149513,0.2609604063657455
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mango,N,38.0,-0.33861228374333174,0.1092941157299178
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mango,P,15.0,-1.1670455053759445,0.3125216513368012
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mango,K,30.0,-0.3591956987816964,0.00590183182775868
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mango,temperature,28.9186,0.762460785897196,0.2631143498264375
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mango,humidity,48.1397,-1.0400115312971137,0.06726027320026992
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mango,ph,5.0755,-2.286084488993518,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mango,rainfall,97.0133,-0.12053401271439082,0.24190777804729247
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mothbeans,N,27.0,-0.6363072492615783,0.0741512046108755
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mothbeans,P,43.0,-0.3150703040516086,0.2665952967267626
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mothbeans,K,23.0,-0.49745457579279334,0.08090756518543651
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mothbeans,temperature,31.7045,1.3805854904169166,0.13840910006158835
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mothbeans,humidity,56.8542,-0.6500084272531559,0.24901717442408572
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mothbeans,ph,5.8753,-0.9833903460522717,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mothbeans,rainfall,44.9432,-1.0847351484452,0.19091965896258126
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mungbean,N,31.0,-0.5280545345276705,0.11748852051649207
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mungbean,P,40.0,-0.40635336133635885,0.29384082783045634
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mungbean,K,22.0,-0.5172058439372358,0.18376192572314942
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mungbean,temperature,29.4089,0.8712466513719144,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mungbean,humidity,86.1606,0.6615512684670625,0.19808546186182574
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mungbean,ph,6.3655,-0.18496490360441178,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,mungbean,rainfall,53.3549,-0.9289726149869034,0.20682326403973678
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,muskmelon,N,100.0,1.3393047946322396,0.3219851265865702
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,muskmelon,P,17.0,-1.1061901338527775,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,muskmelon,K,48.0,-0.003672872181732807,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,muskmelon,temperature,29.7279,0.9420251361494701,0.1764809933250696
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,muskmelon,humidity,94.2975,1.0257048352001255,0.1896300204569291
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,muskmelon,ph,6.3678,-0.18121872139790413,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,muskmelon,rainfall,26.5236,-1.4258176360860382,0.31190385961714034
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,orange,N,31.0,-0.5280545345276705,0.036535118273547114
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,orange,P,25.0,-0.8627686477601102,0.405991055386955
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,orange,K,12.0,-0.71471852538166,0.04612299490663437
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,orange,temperature,18.0514,-1.6487114704496622,0.29175838191989484
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,orange,humidity,90.0397,0.8351540042404187,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,orange,ph,7.0165,0.8753675383245089,0.051012366564816294
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,orange,rainfall,111.7794,0.15289527569324995,0.16858008292098195
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,papaya,N,36.0,-0.39273864111028567,0.11257436549712388
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,papaya,P,59.0,0.17177266813372624,0.1215278401516292
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,papaya,K,46.0,-0.04317540847061765,0.17248768515125662
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,papaya,temperature,34.2888,1.953979967566246,0.06524329616101815
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,papaya,humidity,93.6108,0.9949727069601821,0.259161517121281
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,papaya,ph,6.7211,0.3942274410191277,0.09153371345670372
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,papaya,rainfall,127.251,0.4393885663067267,0.17747158243655542
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pigeonpeas,N,33.0,-0.47392817716071656,0.0513673343647053
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pigeonpeas,P,58.0,0.14134498237214282,0.35037677096543324
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pigeonpeas,K,24.0,-0.47770330764835095,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pigeonpeas,temperature,35.4579,2.2133753486115118,0.20933394491600393
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pigeonpeas,humidity,68.7581,-0.11726897573799518,0.18673981288950195
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pigeonpeas,ph,5.2695,-1.9701021637489549,0.0255728903986838
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pigeonpeas,rainfall,108.6333,0.09463778832290326,0.17660924643046041
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pomegranate,N,12.0,-1.0422549295137327,0.0986088483073518
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pomegranate,P,29.0,-0.7410579047137765,0.20922281282156988
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pomegranate,K,40.0,-0.16168301733727217,0.19061633254720578
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pomegranate,temperature,19.6829,-1.286720567896116,0.0018904808075308392
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pomegranate,humidity,89.7527,0.8223097916222981,0.2536101932940632
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pomegranate,ph,6.594,0.1872101547377677,0.04148005714530501
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,pomegranate,rainfall,111.2819,0.14368288576071514,0.20457127504559527
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,rice,N,63.0,0.3379671833435922,0.03195595283292296
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,rice,P,44.0,-0.28464261829002513,0.04427046955985027
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,rice,K,41.0,-0.14193174919282975,0.14190203510750654
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,rice,temperature,24.173,-0.29047456632965707,0.15039129672107054
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,rice,humidity,83.7288,0.5527200620393736,0.23489027209556287
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,rice,ph,5.5834,-1.4588297313042717,0.09728937379133244
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,rice,rainfall,257.0344,2.842635375492918,0.2993005998667567
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,watermelon,N,119.0,1.8535051896183017,0.1669736654511633
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,watermelon,P,9.0,-1.349611619945445,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,watermelon,K,50.0,0.035829664107152034,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,watermelon,temperature,26.7455,0.280301772511286,0.1061149166760291
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,watermelon,humidity,83.9196,0.56125900199595,0.2695319006208429
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,watermelon,ph,6.2513,-0.370970994031882,0.0
+TabNet (Real + Mode C),TabNet,Real + Mode C,attention_feature_saliency_mask,watermelon,rainfall,40.7943,-1.1615618511408652,0.45737951722489223

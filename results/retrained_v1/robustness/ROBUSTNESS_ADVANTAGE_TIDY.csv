@@ -1,0 +1,61 @@
+architecture,regime,scenario,metric,shifted_score,unshifted_baseline,relative_retention,real_only_shifted_score,robustness_advantage,test_samples
+TabNet,Real-Only,Heat Stress (+5C),Macro F1,0.921067,0.977008,0.942743,0.921067,0.0,440
+TabNet,Real + Mode A,Heat Stress (+5C),Macro F1,0.972297,0.988534,0.983575,0.921067,0.05123,440
+TabNet,Real + Mode B,Heat Stress (+5C),Macro F1,0.937079,0.988595,0.94789,0.921067,0.016012,440
+TabNet,Real + Mode C,Heat Stress (+5C),Macro F1,0.919531,0.995443,0.923741,0.921067,-0.001536,440
+TabNet,Real-Only,Drought (-30% Rain),Macro F1,0.867409,0.977008,0.887822,0.867409,0.0,440
+TabNet,Real + Mode A,Drought (-30% Rain),Macro F1,0.78673,0.988534,0.795855,0.867409,-0.080679,440
+TabNet,Real + Mode B,Drought (-30% Rain),Macro F1,0.660036,0.988595,0.667651,0.867409,-0.207373,440
+TabNet,Real + Mode C,Drought (-30% Rain),Macro F1,0.763824,0.995443,0.767321,0.867409,-0.103585,440
+TabNet,Real-Only,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.869598,0.977008,0.890063,0.869598,0.0,440
+TabNet,Real + Mode A,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.85249,0.988534,0.862378,0.869598,-0.017109,440
+TabNet,Real + Mode B,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.742109,0.988595,0.75067,0.869598,-0.127489,440
+TabNet,Real + Mode C,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.795876,0.995443,0.799519,0.869598,-0.073722,440
+TabNet,Real-Only,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.903074,0.977008,0.924327,0.903074,0.0,440
+TabNet,Real + Mode A,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.895102,0.988534,0.905484,0.903074,-0.007973,440
+TabNet,Real + Mode B,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.861357,0.988595,0.871295,0.903074,-0.041717,440
+TabNet,Real + Mode C,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.807238,0.995443,0.810933,0.903074,-0.095837,440
+TabNet,Real-Only,Sensor Noise (15% Jitter),Macro F1,0.943096,0.977008,0.965291,0.943096,0.0,440
+TabNet,Real + Mode A,Sensor Noise (15% Jitter),Macro F1,0.945288,0.988534,0.956253,0.943096,0.002192,440
+TabNet,Real + Mode B,Sensor Noise (15% Jitter),Macro F1,0.926786,0.988595,0.937478,0.943096,-0.01631,440
+TabNet,Real + Mode C,Sensor Noise (15% Jitter),Macro F1,0.949707,0.995443,0.954055,0.943096,0.006611,440
+Random Forest,Real-Only,Heat Stress (+5C),Macro F1,0.995452,0.997726,0.997721,0.995452,0.0,440
+Random Forest,Real + Mode A,Heat Stress (+5C),Macro F1,0.99318,0.995455,0.997715,0.995452,-0.002271,440
+Random Forest,Real + Mode B,Heat Stress (+5C),Macro F1,0.986341,0.995455,0.990845,0.995452,-0.009111,440
+Random Forest,Real + Mode C,Heat Stress (+5C),Macro F1,0.988624,0.995455,0.993138,0.995452,-0.006828,440
+Random Forest,Real-Only,Drought (-30% Rain),Macro F1,0.888362,0.997726,0.890386,0.888362,0.0,440
+Random Forest,Real + Mode A,Drought (-30% Rain),Macro F1,0.831513,0.995455,0.835309,0.888362,-0.056849,440
+Random Forest,Real + Mode B,Drought (-30% Rain),Macro F1,0.832334,0.995455,0.836134,0.888362,-0.056028,440
+Random Forest,Real + Mode C,Drought (-30% Rain),Macro F1,0.848189,0.995455,0.852062,0.888362,-0.040173,440
+Random Forest,Real-Only,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.847529,0.997726,0.849461,0.847529,0.0,440
+Random Forest,Real + Mode A,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.821672,0.995455,0.825424,0.847529,-0.025857,440
+Random Forest,Real + Mode B,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.822975,0.995455,0.826733,0.847529,-0.024554,440
+Random Forest,Real + Mode C,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.845894,0.995455,0.849757,0.847529,-0.001635,440
+Random Forest,Real-Only,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.841026,0.997726,0.842943,0.841026,0.0,440
+Random Forest,Real + Mode A,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.841741,0.995455,0.845585,0.841026,0.000715,440
+Random Forest,Real + Mode B,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.840652,0.995455,0.844491,0.841026,-0.000374,440
+Random Forest,Real + Mode C,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.753301,0.995455,0.756741,0.841026,-0.087725,440
+Random Forest,Real-Only,Sensor Noise (15% Jitter),Macro F1,0.928142,0.997726,0.930257,0.928142,0.0,440
+Random Forest,Real + Mode A,Sensor Noise (15% Jitter),Macro F1,0.91148,0.995455,0.915642,0.928142,-0.016662,440
+Random Forest,Real + Mode B,Sensor Noise (15% Jitter),Macro F1,0.878499,0.995455,0.88251,0.928142,-0.049643,440
+Random Forest,Real + Mode C,Sensor Noise (15% Jitter),Macro F1,0.87805,0.995455,0.882059,0.928142,-0.050091,440
+XGBoost,Real-Only,Heat Stress (+5C),Macro F1,0.988683,0.995452,0.993201,0.988683,0.0,440
+XGBoost,Real + Mode A,Heat Stress (+5C),Macro F1,0.995452,0.997726,0.997721,0.988683,0.006768,440
+XGBoost,Real + Mode B,Heat Stress (+5C),Macro F1,0.995452,1.0,0.995452,0.988683,0.006768,440
+XGBoost,Real + Mode C,Heat Stress (+5C),Macro F1,0.988621,0.995452,0.993138,0.988683,-6.3e-05,440
+XGBoost,Real-Only,Drought (-30% Rain),Macro F1,0.867263,0.995452,0.871226,0.867263,0.0,440
+XGBoost,Real + Mode A,Drought (-30% Rain),Macro F1,0.84278,0.997726,0.844701,0.867263,-0.024483,440
+XGBoost,Real + Mode B,Drought (-30% Rain),Macro F1,0.83546,1.0,0.83546,0.867263,-0.031803,440
+XGBoost,Real + Mode C,Drought (-30% Rain),Macro F1,0.828679,0.995452,0.832465,0.867263,-0.038584,440
+XGBoost,Real-Only,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.901763,0.995452,0.905883,0.901763,0.0,440
+XGBoost,Real + Mode A,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.877141,0.997726,0.87914,0.901763,-0.024622,440
+XGBoost,Real + Mode B,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.881702,1.0,0.881702,0.901763,-0.020061,440
+XGBoost,Real + Mode C,"Extreme Climate (+4C, -25% Rain)",Macro F1,0.883815,0.995452,0.887853,0.901763,-0.017947,440
+XGBoost,Real-Only,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.669945,0.995452,0.673006,0.669945,0.0,440
+XGBoost,Real + Mode A,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.828707,0.997726,0.830596,0.669945,0.158762,440
+XGBoost,Real + Mode B,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.800695,1.0,0.800695,0.669945,0.130751,440
+XGBoost,Real + Mode C,"Soil Degradation (-25% NPK, +0.5 pH)",Macro F1,0.813388,0.995452,0.817105,0.669945,0.143444,440
+XGBoost,Real-Only,Sensor Noise (15% Jitter),Macro F1,0.874432,0.995452,0.878427,0.874432,0.0,440
+XGBoost,Real + Mode A,Sensor Noise (15% Jitter),Macro F1,0.876151,0.997726,0.878148,0.874432,0.001719,440
+XGBoost,Real + Mode B,Sensor Noise (15% Jitter),Macro F1,0.871412,1.0,0.871412,0.874432,-0.00302,440
+XGBoost,Real + Mode C,Sensor Noise (15% Jitter),Macro F1,0.865743,0.995452,0.869698,0.874432,-0.008689,440

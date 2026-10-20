@@ -205,5 +205,128 @@ class TestCropRecommendationPipeline(unittest.TestCase):
         )
         self.assertTrue(has_high_precision, "Explanation inputs appear rounded to 2 decimals!")
 
+    def test_15_forced_retraining_manifest_provenance(self):
+        """Test 15: Verify forced retraining manifest exists, records all 12 models, and logged positive durations."""
+        from config.project_config import RETRAINED_MANIFESTS_DIR, FORCE_RETRAIN
+        self.assertTrue(FORCE_RETRAIN, "FORCE_RETRAIN must be configured to True")
+        manifest_file = RETRAINED_MANIFESTS_DIR / "RETRAINED_TRAINING_MANIFEST.json"
+        self.assertTrue(manifest_file.exists(), "Missing RETRAINED_TRAINING_MANIFEST.json")
+        with open(manifest_file, "r") as f:
+            manifest = json.load(f)
+        self.assertEqual(manifest["models_retrained_count"], 12)
+        self.assertEqual(manifest["source_internal_train"]["rows"], 1408)
+        self.assertEqual(manifest["quarantined_validation"]["rows"], 352)
+        for m in manifest["models"]:
+            self.assertGreater(m["training_duration_s"], 0.0)
+            self.assertTrue((MODELS_DIR / m["artifact_file"]).exists())
+
+    def test_16_real_only_sample_count_provenance(self):
+        """Test 16: Verify real-only scaler and RF root node sample weight are fitted on exactly 1408 observations."""
+        scaler = joblib.load(PREPROC_DIR / "scaler_real_only.pkl")
+        self.assertEqual(float(scaler.n_samples_seen_), 1408.0)
+        
+        rf = joblib.load(MODELS_DIR / "random_forest_real_only.joblib")
+        root_weight = float(rf.estimators_[0].tree_.weighted_n_node_samples[0])
+        self.assertEqual(root_weight, 1408.0)
+
+    def test_17_real_plus_synthetic_sample_count_provenance(self):
+        """Test 17: Verify real-plus-synthetic scalers and RF models are fitted on exactly 166,408 observations."""
+        for suffix in ["mode_a", "mode_b", "mode_c"]:
+            scaler = joblib.load(PREPROC_DIR / f"scaler_{suffix}.pkl")
+            self.assertEqual(float(scaler.n_samples_seen_), 166408.0)
+            
+            rf = joblib.load(MODELS_DIR / f"random_forest_{suffix}.joblib")
+            root_weight = float(rf.estimators_[0].tree_.weighted_n_node_samples[0])
+            self.assertEqual(root_weight, 166408.0)
+
+    def test_18_generator_fitting_uses_only_internal_train(self):
+        """Test 18: Verify generator manifest proves fitting exclusively on INTERNAL_TRAIN.csv."""
+        from config.project_config import GENERATED_DATA_DIR
+        gen_manifest = GENERATED_DATA_DIR / "SYNTHETIC_GENERATION_MANIFEST.json"
+        self.assertTrue(gen_manifest.exists(), "Missing SYNTHETIC_GENERATION_MANIFEST.json")
+        with open(gen_manifest, "r") as f:
+            meta = json.load(f)
+        self.assertEqual(meta["source_training_file"], "INTERNAL_TRAIN.csv")
+        self.assertEqual(meta["source_training_rows"], 1408)
+        self.assertEqual(meta["source_training_sha256"], compute_sha256(INTERNAL_TRAIN_FILE))
+
+    def test_19_synthetic_generation_determinism(self):
+        """Test 19: Verify synthetic generation is deterministic with fixed seed."""
+        from src.synthetic_generation import EmpiricalGaussianRankCopula
+        df_int = pd.read_csv(INTERNAL_TRAIN_FILE)
+        rice_df = df_int[df_int[TARGET_COLUMN] == "rice"]
+        cop = EmpiricalGaussianRankCopula("rice", rice_df)
+        rng1 = np.random.RandomState(42)
+        s1 = cop.sample(n=20, rng=rng1, apply_micro_jitter=True)
+        rng2 = np.random.RandomState(42)
+        s2 = cop.sample(n=20, rng=rng2, apply_micro_jitter=True)
+        np.testing.assert_array_almost_equal(s1, s2)
+
+    def test_20_model_manifest_and_sha256_integrity(self):
+        """Test 20: Verify all 12 model artifacts on disk match hashes in RETRAINED_TRAINING_MANIFEST.json."""
+        from config.project_config import RETRAINED_MANIFESTS_DIR
+        with open(RETRAINED_MANIFESTS_DIR / "RETRAINED_TRAINING_MANIFEST.json") as f:
+            manifest = json.load(f)
+        for m in manifest["models"]:
+            model_path = MODELS_DIR / m["artifact_file"]
+            actual_sha = compute_sha256(model_path)
+            self.assertEqual(actual_sha, m["artifact_sha256"], f"Hash mismatch for {m['model_name']}")
+
+    def test_21_historical_benchmark_explicit_labeling(self):
+        """Test 21: Verify benchmark results are explicitly labeled as frozen historical benchmark."""
+        df_bm = pd.read_csv(METRICS_DIR / "BENCHMARK_METRICS.csv")
+        self.assertEqual(len(df_bm), 12)
+        self.assertTrue((df_bm["eval_split"] == "REAL_TEST (Frozen Benchmark)").all())
+
+    def test_22_independent_validation_metrics_recomputation(self):
+        """Test 22: Verify validation metrics match independent recalculation from saved val predictions."""
+        from sklearn.metrics import accuracy_score, f1_score
+        from config.project_config import RETRAINED_PRED_VAL_DIR
+        df_val_metrics = pd.read_csv(METRICS_DIR / "VALIDATION_METRICS.csv")
+        self.assertEqual(len(df_val_metrics), 12)
+        
+        regimes = [
+            ("TabNet", "tabnet", "real_only", "TabNet (Real-Only)"),
+            ("Random Forest", "random_forest", "real_only", "Random Forest (Real-Only)"),
+            ("XGBoost", "xgboost", "real_only", "XGBoost (Real-Only)"),
+            ("TabNet", "tabnet", "mode_a", "TabNet (Real + Mode A)"),
+            ("Random Forest", "random_forest", "mode_a", "Random Forest (Real + Mode A)"),
+            ("XGBoost", "xgboost", "mode_a", "XGBoost (Real + Mode A)"),
+            ("TabNet", "tabnet", "mode_b", "TabNet (Real + Mode B)"),
+            ("Random Forest", "random_forest", "mode_b", "Random Forest (Real + Mode B)"),
+            ("XGBoost", "xgboost", "mode_b", "XGBoost (Real + Mode B)"),
+            ("TabNet", "tabnet", "mode_c", "TabNet (Real + Mode C)"),
+            ("Random Forest", "random_forest", "mode_c", "Random Forest (Real + Mode C)"),
+            ("XGBoost", "xgboost", "mode_c", "XGBoost (Real + Mode C)")
+        ]
+        
+        for arch, arch_tag, suffix, model_name in regimes:
+            pred_file = RETRAINED_PRED_VAL_DIR / f"val_predictions_{arch_tag}_{suffix}.csv"
+            self.assertTrue(pred_file.exists(), f"Missing val prediction file: {pred_file}")
+            df_p = pd.read_csv(pred_file)
+            self.assertEqual(len(df_p), 352)
+            acc = accuracy_score(df_p["true_label"], df_p["pred_label"])
+            f1 = f1_score(df_p["true_label"], df_p["pred_label"], average="macro")
+            
+            row = df_val_metrics[df_val_metrics["model_name"] == model_name].iloc[0]
+            self.assertAlmostEqual(acc, row["val_accuracy"], places=5)
+            self.assertAlmostEqual(f1, row["val_macro_f1"], places=5)
+
+    def test_23_old_artifacts_substitution_prevention(self):
+        """Test 23: Verify new retrained artifacts are distinct from legacy flawed checkpoints."""
+        from config.project_config import ARTIFACTS_DIR
+        legacy_rf = ARTIFACTS_DIR / "random_forest_real_only.joblib"
+        if legacy_rf.exists():
+            legacy_sha = compute_sha256(legacy_rf)
+            new_sha = compute_sha256(MODELS_DIR / "random_forest_real_only.joblib")
+            self.assertNotEqual(legacy_sha, new_sha, "New RF real-only must not equal legacy checkpoint hash")
+        
+        legacy_scaler = ARTIFACTS_DIR / "scaler_real_only.pkl"
+        if legacy_scaler.exists():
+            legacy_sc_sha = compute_sha256(legacy_scaler)
+            new_sc_sha = compute_sha256(PREPROC_DIR / "scaler_real_only.pkl")
+            self.assertNotEqual(legacy_sc_sha, new_sc_sha, "New scaler must not equal legacy scaler hash")
+
 if __name__ == "__main__":
     unittest.main()
+

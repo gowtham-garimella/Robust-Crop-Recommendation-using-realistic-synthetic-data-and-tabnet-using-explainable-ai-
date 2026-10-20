@@ -1,0 +1,36 @@
+{
+  "generator_version": "2.0_leak_free",
+  "timestamp": "2026-10-20T14:49:33Z",
+  "random_seed": 42,
+  "source_training_file": "INTERNAL_TRAIN.csv",
+  "source_training_rows": 1408,
+  "source_training_sha256": "36c59c933929752cb1ed8985aec95b2f5ee27c42aec788dec240ec71dff9dad3",
+  "quarantined_files_excluded": [
+    "INTERNAL_VAL.csv",
+    "REAL_TEST.csv"
+  ],
+  "modes_generated": {
+    "Mode_A": {
+      "file": "SYNTHETIC_Mode_A.csv",
+      "rows": 165000,
+      "sha256": "6ad66b85ebb62e7bf46a6c91534b46f95d474e586911bbca09d313e2fbb275bd",
+      "duration_s": 2.13
+    },
+    "Mode_B": {
+      "file": "SYNTHETIC_Mode_B.csv",
+      "rows": 165000,
+      "sha256": "d68459f6a705192df92e3282a37847ee5448b6e7602345b93400fed1caa44f5d",
+      "duration_s": 2.18
+    },
+    "Mode_C": {
+      "file": "SYNTHETIC_Mode_C.csv",
+      "rows": 165000,
+      "sha256": "d1e74348b2f26b46e2c18a8ef3b7a2757bfa38d8912a6deb3729702e4e129249",
+      "duration_s": 2.17
+    }
+  },
+  "master_synthetic_file": "SYNTHETIC_CROP_DATA_MASTER.csv",
+  "master_synthetic_rows": 495000,
+  "master_synthetic_sha256": "5182a0ee401297bc9ee5222c9232c1530763d59752348fe8a348edfda163aad8",
+  "total_runtime_s": 12.95
+}

@@ -22,6 +22,7 @@ if str(root_dir) not in sys.path:
 
 from src.data_splitting import partition_and_quarantine_datasets
 from src.data_validation import run_comprehensive_validation
+from src.synthetic_generation import generate_reproducible_synthetic_datasets
 from src.training import run_training_pipeline
 from src.evaluation import run_evaluation_pipeline
 from src.robustness import run_robustness_pipeline
@@ -41,25 +42,29 @@ def run_master_pipeline():
     # Step 2: Validation & Leakage Audit
     print("\n>>> STEP 2: DATA VALIDATION & PHYSICAL INVARIANTS")
     run_comprehensive_validation()
+
+    # Step 3: Leak-Free Synthetic Data Generation
+    print("\n>>> STEP 3: LEAK-FREE SYNTHETIC DATA GENERATION (INTERNAL_TRAIN)")
+    generate_reproducible_synthetic_datasets()
     
-    # Step 3: Leak-Free Training
-    print("\n>>> STEP 3: 12-MODEL ARCHITECTURE TRAINING")
+    # Step 4: Leak-Free Training
+    print("\n>>> STEP 4: 12-MODEL ARCHITECTURE TRAINING")
     run_training_pipeline()
     
-    # Step 4: Benchmark Evaluation
-    print("\n>>> STEP 4: FROZEN BENCHMARK EVALUATION & ROW PREDICTIONS")
+    # Step 5: Benchmark Evaluation
+    print("\n>>> STEP 5: FROZEN BENCHMARK EVALUATION & ROW PREDICTIONS")
     run_evaluation_pipeline()
     
-    # Step 5: Distribution Shift Stress Testing
-    print("\n>>> STEP 5: DISTRIBUTION SHIFT EVALUATION")
+    # Step 6: Distribution Shift Stress Testing
+    print("\n>>> STEP 6: DISTRIBUTION SHIFT EVALUATION")
     run_robustness_pipeline()
     
-    # Step 6: Calibration Audit
-    print("\n>>> STEP 6: CALIBRATION AUDIT (BRIER, ECE, MCE)")
+    # Step 7: Calibration Audit
+    print("\n>>> STEP 7: CALIBRATION AUDIT (BRIER, ECE, MCE)")
     run_calibration_pipeline()
     
-    # Step 7: Explainability & TreeSHAP Additivity
-    print("\n>>> STEP 7: EXPLAINABILITY & TREESHAP AUDIT")
+    # Step 8: Explainability & TreeSHAP Additivity
+    print("\n>>> STEP 8: EXPLAINABILITY & TREESHAP AUDIT")
     run_explainability_pipeline()
     
     elapsed = time.time() - start_time
