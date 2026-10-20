@@ -1,244 +1,199 @@
 # Robust Crop Recommendation Using Realistic Synthetic Data, TabNet, and Explainable AI
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Audit Status: Passed](https://img.shields.io/badge/Audit-Passed%2014%2F14%20Tests-brightgreen.svg)]()
-[![Model Formats: Native JSON / Joblib / Zip](https://img.shields.io/badge/Artifacts-Validated-blue.svg)]()
-
-Canonical repository for the research study: **"Robust Crop Recommendation Using Realistic Synthetic Data, TabNet, and Explainable AI"**.
-
-This project provides an end-to-end, scientifically defensible machine learning pipeline evaluating Deep Tabular Learning (**TabNet**), Random Forest (**RF**), and Extreme Gradient Boosting (**XGBoost**) across real and synthetic data regimes. The system includes rigorous data partitioning, distribution-shift stress testing, multiclass calibration, TreeSHAP additivity verification, and TabNet attention saliency masks.
+A reproducible machine-learning research project evaluating deep tabular models and tree ensembles with agriculturally constrained synthetic data.
 
 ---
 
-## Table of Contents
+## 1. Project Title
+**Robust Crop Recommendation Using Realistic Synthetic Data, TabNet, and Explainable AI**
 
-1. [Project Overview](#project-overview)
-2. [Key Research Findings](#key-research-findings)
-3. [Repository Structure](#repository-structure)
-4. [Environment Setup](#environment-setup)
-5. [Reproducing the Pipeline](#reproducing-the-pipeline)
-6. [Automated Test Suite](#automated-test-suite)
-7. [Artifacts & Outputs](#artifacts--outputs)
-8. [Scientific Disclosures & Limitations](#scientific-disclosures--limitations)
-9. [Citation & License](#citation--license)
+This project provides a clean, rigorous, and fully reproducible machine-learning framework to recommend the most suitable crop for a given plot of land based on environmental and soil measurements. It explores whether biologically and physically constrained synthetic data can improve model robustness under standard conditions and controlled distribution shifts.
 
 ---
 
-## Project Overview
+## 2. Project Overview
+Choosing the right crop is one of the most critical decisions a farmer makes. If a farmer plants a crop that is not well suited to their local soil chemistry or climate, crop growth suffers, fertilizers are wasted, and financial losses follow. Machine-learning models can analyze historical agricultural conditions and recommend optimal crops.
 
-Agricultural decision-support systems require high predictive accuracy, robustness to environmental stress (e.g., climate change and soil degradation), and explainability for farmer trust. This study addresses three core questions:
-1. **Model Architecture Comparison**: How does deep tabular attention (TabNet) compare with tree ensembles (Random Forest, XGBoost) on multiclass crop recommendation?
-2. **Synthetic Data Augmentation**: Do domain-constrained synthetic datasets (Modes A, B, C) improve generalization or distribution-shift robustness?
-3. **Trust & Explainability**: Can TreeSHAP and TabNet attention masks provide consistent, feature-level agronomical justifications?
+### The Seven Input Features
+The model takes exactly seven numerical measurements:
+1. **Nitrogen (N):** Ratio of Nitrogen content in soil (kg/ha).
+2. **Phosphorus (P):** Ratio of Phosphorus content in soil (kg/ha).
+3. **Potassium (K):** Ratio of Potassium content in soil (kg/ha).
+4. **Temperature:** Ambient air temperature in degrees Celsius (°C).
+5. **Humidity:** Relative atmospheric humidity percentage (%).
+6. **Soil pH:** Acidity or alkalinity of the soil (measured on a 0 to 14 standard pH scale).
+7. **Rainfall:** Total rainfall precipitation volume in millimeters (mm).
 
-### Feature Schema & Target
-- **Input Features (7 continuous features)**:
-  1. `N`: Nitrogen ratio in soil (kg/ha)
-  2. `P`: Phosphorus ratio in soil (kg/ha)
-  3. `K`: Potassium ratio in soil (kg/ha)
-  4. `temperature`: Temperature in degrees Celsius (°C)
-  5. `humidity`: Relative humidity in percentage (%)
-  6. `ph`: Soil pH value (0 to 14)
-  7. `rainfall`: Rainfall in millimeters (mm)
-- **Target Label (22 agricultural crops)**:
-  `apple`, `banana`, `blackgram`, `chickpea`, `coconut`, `coffee`, `cotton`, `grapes`, `jute`, `kidneybeans`, `lentil`, `maize`, `mango`, `mothbeans`, `mungbean`, `muskmelon`, `orange`, `papaya`, `pigeonpeas`, `pomegranate`, `rice`, `watermelon`.
+### What the Model Predicts
+The model predicts a **crop category** (one of 22 supported crops: rice, maize, chickpea, kidneybeans, pigeonpeas, mothbeans, mungbean, blackgram, lentil, pomegranate, banana, mango, grapes, watermelon, muskmelon, apple, orange, papaya, coconut, cotton, jute, or coffee).
 
----
-
-## Key Research Findings
-
-All metrics were recomputed and verified from row-level predictions on the 440-sample frozen historical benchmark (`data/REAL_TEST.csv`, 20 samples per crop):
-
-| Model | Training Regime | Accuracy | Balanced Accuracy | Macro F1 | Weighted F1 | Model Artifact Format |
-|---|---|---|---|---|---|---|
-| **TabNet** | Real-Only | 95.91% (422/440) | 0.959091 | 0.956897 | 0.956897 | PyTorch ZIP (`tabnet_real_only.zip`) |
-| **TabNet** | Real + Mode A | 99.09% (436/440) | 0.990909 | 0.990886 | 0.990886 | PyTorch ZIP (`tabnet_mode_a.zip`) |
-| **TabNet** | Real + Mode B | 99.32% (437/440) | 0.993182 | 0.993086 | 0.993086 | PyTorch ZIP (`tabnet_mode_b.zip`) |
-| **TabNet** | Real + Mode C | 99.09% (436/440) | 0.990909 | 0.990861 | 0.990861 | PyTorch ZIP (`tabnet_mode_c.zip`) |
-| **Random Forest** | Real-Only | 100.00% (440/440) | 1.000000 | 1.000000 | 1.000000 | Scikit-Learn Joblib (`random_forest_real_only.joblib`) |
-| **Random Forest** | Real + Mode A | 92.05% (405/440) | 0.920455 | 0.916056 | 0.916056 | Scikit-Learn Joblib (`random_forest_mode_a.joblib`) |
-| **Random Forest** | Real + Mode B | 91.14% (401/440) | 0.911364 | 0.905530 | 0.905530 | Scikit-Learn Joblib (`random_forest_mode_b.joblib`) |
-| **Random Forest** | Real + Mode C | 91.82% (404/440) | 0.918182 | 0.913504 | 0.913504 | Scikit-Learn Joblib (`random_forest_mode_c.joblib`) |
-| **XGBoost** | Real-Only | 100.00% (440/440) | 1.000000 | 1.000000 | 1.000000 | Native JSON (`xgboost_real_only.json`) |
-| **XGBoost** | Real + Mode A | 100.00% (440/440) | 1.000000 | 1.000000 | 1.000000 | Native JSON (`xgboost_mode_a.json`) |
-| **XGBoost** | Real + Mode B | 100.00% (440/440) | 1.000000 | 1.000000 | 1.000000 | Native JSON (`xgboost_mode_b.json`) |
-| **XGBoost** | Real + Mode C | 100.00% (440/440) | 1.000000 | 1.000000 | 1.000000 | Native JSON (`xgboost_mode_c.json`) |
-
-*Note: Clean-test 100% tree accuracy reflects the wide margin separability of Kaggle crop clusters. Under environmental stress (Heat, Drought, Sensor Jitter), performance degrades significantly (see `results/robustness/`).*
+> **Important Clarification:** The model performs categorical **crop suitability recommendation**. It does **not** predict numerical crop yield (kg/hectare) or guarantee financial profit.
 
 ---
 
-## Repository Structure
-
-```text
-Robust-Crop-Recommendation/
-├── README.md                           # Canonical project documentation
-├── requirements.txt                     # Pinned dependencies
-├── CLEANUP_MANIFEST.csv                 # Audit log of archived/retained files (433 entries)
-├── config/
-│   └── project_config.py               # Deterministic paths, random seeds, and hyperparameters
-├── data/
-│   ├── README.md                       # Data dictionary, lineage, and SHA-256 hashes
-│   ├── Crop_recommendation.csv         # Full canonical dataset (2,200 rows)
-│   ├── REAL_TRAIN.csv                  # Real training partition (1,760 rows)
-│   ├── REAL_TEST.csv                   # Frozen historical benchmark (440 rows)
-│   ├── INTERNAL_TRAIN.csv              # Internal model training partition (1,408 rows)
-│   ├── INTERNAL_VAL.csv                # Internal model validation partition (352 rows)
-│   ├── SYNTHETIC_Mode_A.csv            # Mode A synthetic data (165,000 rows)
-│   ├── SYNTHETIC_Mode_B.csv            # Mode B domain-constrained synthetic data (165,000 rows)
-│   ├── SYNTHETIC_Mode_C.csv            # Mode C perturbation synthetic data (165,000 rows)
-│   └── manifests/
-│       └── DATA_VALIDATION_REPORT.json # Automated data integrity and schema validation
-├── src/
-│   ├── data_splitting.py               # Leak-free deterministic stratified splitting
-│   ├── data_validation.py              # Schema, range, null, and duplicate checks
-│   ├── training.py                     # Leak-free training pipeline for all 12 configurations
-│   ├── evaluation.py                   # Benchmark scoring, prediction CSVs, and confusion matrices
-│   ├── robustness.py                   # 5-scenario distribution shift stress testing
-│   ├── calibration.py                  # Multiclass Brier score, ECE, MCE computation
-│   ├── explainability.py               # TreeSHAP additivity verification & TabNet attention masks
-│   └── pipeline.py                     # Master execution orchestrator
-├── tests/
-│   └── test_audit_suite.py             # 14-point automated test suite
-├── artifacts/
-│   ├── models/                         # Serialized models (.json, .joblib, .zip)
-│   ├── preprocessing/                  # Fitted scalers (.pkl) and label encoder (.pkl)
-│   └── manifests/
-│       └── FINAL_ARTIFACT_MANIFEST.json# SHA-256 lineage manifest for all artifacts
-├── results/
-│   ├── metrics/                        # FINAL_MODEL_COMPARISON.csv, VALIDATION_METRICS.csv
-│   ├── predictions/                    # 12 row-level prediction CSVs with hashes
-│   ├── confusion_matrices/             # 12 22x22 confusion matrix CSVs (totals = 440)
-│   ├── robustness/                     # ROBUSTNESS_ADVANTAGE_TIDY.csv (60 shift scenarios)
-│   └── explainability/                 # TREESHAP_AUDIT.csv, attributions, calibration metrics
-├── reports/
-│   ├── FINAL_TECHNICAL_AUDIT.md        # Technical defect audit & code changes
-│   ├── FINAL_PUBLICATION_READINESS.md  # Comprehensive research methodology & peer-review readiness
-│   └── LIMITATIONS.md                  # Methodological boundaries & disclosures
-└── archive/                            # Historical legacy packages and prior audit outputs
-    └── README.md                       # Archive inventory and historical context
-```
+## 3. Project Objectives
+1. **Build a multiclass crop recommendation classifier** across 22 crop categories.
+2. **Compare three distinct machine-learning architectures:** Attentive deep learning (TabNet) versus tree-based ensembles (Random Forest, XGBoost).
+3. **Investigate realistic synthetic data augmentation:** Evaluate whether generating synthetic samples using empirical copulas and physiological constraints helps neural and tree models.
+4. **Evaluate predictive accuracy:** Rigorously test models using both quarantined internal validation and a frozen holdout benchmark.
+5. **Examine robustness under simulated distribution shifts:** Subject models to climate stress (heat waves, drought, combined volatility), soil degradation, and sensor noise.
+6. **Apply Explainable AI (XAI):** Audit feature contributions using exact TreeSHAP additivity and inspect TabNet sparse attention masks.
 
 ---
 
-## Environment Setup
+## 4. Models Used
 
-### Prerequisites
-- Python 3.10 or higher
-- Windows, Linux, or macOS
+### Models Compared
+| Model | Simple Explanation |
+|---|---|
+| **TabNet** | A neural-network architecture designed for tabular data that uses sequential attention mechanisms to select features at each decision step. |
+| **Random Forest** | A collection of decision trees whose predictions are combined (averaged) to reduce variance and improve generalization. |
+| **XGBoost** | A boosted-tree algorithm that builds trees sequentially to improve predictions, with each tree correcting errors from earlier iterations. |
 
-### Installation
-Clone the repository and install dependencies using `pip`:
-```powershell
-# Clone the repository
-git clone https://github.com/gowtham-garimella/Robust-Crop-Recommendation-using-realistic-synthetic-data-and-tabnet-using-explainable-ai-.git
-cd Robust-Crop-Recommendation-using-realistic-synthetic-data-and-tabnet-using-explainable-ai-
-
-# Create and activate virtual environment
-python -m venv venv
-.\venv\Scripts\Activate.ps1  # On Linux/macOS: source venv/bin/activate
-
-# Install pinned dependencies
-pip install -r requirements.txt
-```
+### Four Training Regimes
+Every model architecture is trained and compared across four distinct data regimes (12 configurations in total):
+1. **Real-Only:** Trained strictly on 1,408 internal real training records (64 records per crop).
+2. **Real + Synthetic Mode A (Pure Empirical Copula):** Real training data combined with synthetic samples generated via a class-conditional Empirical Gaussian Rank Copula, preserving nonlinear cross-feature correlations without parametric assumptions.
+3. **Real + Synthetic Mode B (Agronomically Constrained Copula):** Mode A samples subjected to institutional agronomic and physiological bounding rules (derived from Tamil Nadu Agricultural University and ICAR crop guides).
+4. **Real + Synthetic Mode C (Empirical Quantile Envelopes):** Synthetic samples generated within empirical 5th to 95th percentile envelopes derived per crop from the internal training data.
 
 ---
 
-## Reproducing the Pipeline
+## 5. Explainable AI
+In agricultural machine learning, farmers and agronomists need to understand *why* a model makes a specific crop recommendation.
 
-To execute the complete end-to-end research pipeline (data validation, splitting, model evaluation, distribution-shift stress testing, calibration, and explainability):
-
-```powershell
-python src/pipeline.py
-```
-
-To run individual pipeline stages:
-```powershell
-# 1. Stratified Data Splitting
-python src/data_splitting.py
-
-# 2. Data Validation & Schema Audit
-python src/data_validation.py
-
-# 3. Model Training (All 12 Configurations)
-python src/training.py
-
-# 4. Holdout Evaluation & Metrics Export
-python src/evaluation.py
-
-# 5. Distribution Shift Stress Testing
-python src/robustness.py
-
-# 6. Multiclass Calibration (Brier, ECE, MCE)
-python src/calibration.py
-
-# 7. Explainability & TreeSHAP Additivity Audit
-python src/explainability.py
-```
+- **TreeSHAP for Random Forest and XGBoost:**  
+  SHAP (SHapley Additive exPlanations) computes cooperative game-theoretic feature contributions. For Random Forest, TreeSHAP is evaluated in **probability space**; for XGBoost, it is evaluated in **raw margin space**. In both cases, exact local additivity is audited:
+  $$\sum_{j=1}^M \phi_j(x) + E[f(x)] = f(x)$$
+  The numerical residual between sum of SHAP values plus base value and model prediction is verified to be $\le 10^{-5}$.
+- **TabNet Attention Feature Saliency:**  
+  TabNet uses internal sparse attention masks ($M_b$) at each decision step. These masks indicate which features the neural network focused on for each sample. **These attention masks are strictly identified as attention-based feature saliency weights, not cooperative game-theoretic Shapley values.**
+- **Correlation vs. Causation:** Feature importance identifies which measurements the model relied on to separate classes in this dataset; it does not prove that changing a feature in real soil will cause higher yield.
 
 ---
 
-## Automated Test Suite
+## 6. Project Files
+The clean final deliverable folder contains **only three files**:
 
-A comprehensive 14-point test suite is provided in `tests/test_audit_suite.py` to verify data schemas, train/val disjointness, zero test contamination, model loading, TreeSHAP additivity, and confusion matrix totals:
-
-```powershell
-python -m unittest tests/test_audit_suite.py
-```
-
-### Test Results
-```text
-test_01_feature_schema_and_types .................... PASS
-test_02_target_label_mapping ........................ PASS
-test_03_train_val_disjointness ...................... PASS
-test_04_train_test_disjointness ..................... PASS
-test_05_synthetic_data_provenance ................... PASS
-test_06_model_artifact_loading ...................... PASS
-test_07_xgboost_json_prediction_equivalence ......... PASS
-test_08_probability_distribution_validity ........... PASS
-test_09_metric_recomputation_from_saved_predictions . PASS
-test_10_confusion_matrix_consistency ................ PASS
-test_11_robustness_missing_value_handling ........... PASS
-test_12_treeshap_additivity_in_declared_space ....... PASS
-test_13_tabnet_explanation_terminology .............. PASS
-test_14_exact_input_reproducibility_and_manifest .... PASS
-----------------------------------------------------------------------
-Ran 14 tests in ~19s - OK
-```
+| File Name | Purpose |
+|---|---|
+| `crop_recommendation_modified.ipynb` | **The Final Modified Notebook:** Streamlined, clean, modular Google Colab research pipeline implementing the 8 core research phases with step-by-step documentation. |
+| `crop_recommendation_updated.ipynb` | **The Final Updated Notebook:** Comprehensive, high-throughput academic edition featuring expanded theory, automated 10-point dataset validation, memorization audits, and master archive export. |
+| `README.md` | **Documentation:** This comprehensive guide explaining project concepts, execution instructions, metrics, limitations, and troubleshooting. |
 
 ---
 
-## Artifacts & Outputs
+## 7. Requirements
 
-- **Models**: Saved in `artifacts/models/`. XGBoost models are saved in native `.json` format to eliminate pickle vulnerabilities. Random Forest models are stored as `.joblib`, and TabNet models as PyTorch `.zip`.
-- **Predictions**: Saved in `results/predictions/`. Each row-level CSV contains `sample_id`, `true_label`, `predicted_label`, `correct`, `confidence`, `model_artifact_hash`, and `dataset_hash`.
-- **Confusion Matrices**: Saved in `results/confusion_matrices/`. Every matrix sums exactly to 440, with diagonal elements reproducing model accuracy.
-- **Explainability**: `results/explainability/TREESHAP_AUDIT.csv` records additivity residuals ($\le 10^{-5}$ tolerance verified). TabNet attention masks are stored in `results/explainability/TABNET_SALIENCY_MASKS.csv`.
+### Standard Python Libraries (Built-in)
+`os`, `sys`, `json`, `time`, `random`, `pathlib`, `shutil`, `urllib`, `importlib`, `subprocess`
+
+### External Third-Party Packages
+| Package | Version Tested | Purpose |
+|---|---|---|
+| `numpy` | `>= 1.24, < 3.0` | Numerical matrix and vector operations |
+| `pandas` | `>= 2.0, < 4.0` | Tabular data manipulation and storage |
+| `scipy` | `>= 1.10` | Rank statistics and Gaussian copula transformations |
+| `scikit-learn` | `>= 1.2` | Data splitting, metrics, and Random Forest classifier |
+| `pytorch-tabnet`| `>= 4.0` | TabNet attentive tabular deep neural network |
+| `torch` | `>= 2.0` | PyTorch backend for TabNet (CPU or CUDA) |
+| `xgboost` | `>= 1.7` | Extreme gradient boosting classifier |
+| `shap` | `>= 0.42` | TreeSHAP exact attribution explainer |
+| `matplotlib` | `>= 3.7` | Plotting and visualization |
+| `seaborn` | `>= 0.12` | Statistical data plotting |
 
 ---
 
-## Scientific Disclosures & Limitations
+## 8. How to Run the Project in Google Colab
 
-1. **Historical Benchmark Reuse**: `data/REAL_TEST.csv` was previously evaluated in early development phases and cannot be claimed as an untouched prospective cohort. It serves as a frozen benchmark.
-2. **Synthetic Data Boundaries**: Synthetic observations are statistically generated samples, not biological field trials. Synthetic augmentation acts as a geometric regularizer, improving TabNet and stress robustness while slightly altering tree ensemble boundaries.
-3. **External Generalizability**: The model has not been validated against unobserved geographic soil survey stations. Field-level deployment requires prospective multi-season trial validation.
-4. **Suitability vs. Yield**: The model predicts physiological suitability for 22 crops; it does not forecast crop yield, market prices, or farming profitability.
+Follow these simple step-by-step instructions:
 
-For full details, consult [reports/LIMITATIONS.md](reports/LIMITATIONS.md) and [reports/FINAL_PUBLICATION_READINESS.md](reports/FINAL_PUBLICATION_READINESS.md).
+1. **Open Google Colab:**  
+   Navigate to [colab.research.google.com](https://colab.research.google.com/) in your web browser.
+2. **Upload the Notebook:**  
+   Click `File` > `Upload notebook`, then select either:
+   - `crop_recommendation_modified.ipynb` (recommended for standard demonstration, ~5-10 minutes).
+   - `crop_recommendation_updated.ipynb` (recommended for full academic paper reproduction).
+3. **Select Runtime:**  
+   Click `Runtime` > `Change runtime type`. Standard CPU works well; GPU (T4) accelerates TabNet training.
+4. **Execute Cell 1 (Dependencies):**  
+   Run the first code cell to install and verify all necessary packages.
+5. **Execute Cell 2 & 3 (Data Loading & Splitting):**  
+   The notebook will automatically download `Crop_recommendation.csv` from GitHub raw or you can upload your own copy to `/content/`. The notebook partitions the data into 1,408 internal training, 352 internal validation, and 440 benchmark rows.
+6. **Run Remaining Cells in Sequence:**  
+   Click `Runtime` > `Run after` or press `Shift + Enter` on each cell in order.
+7. **Inspect Outputs:**  
+   View generated metric tables, confusion matrices, distribution-shift retention plots, and TreeSHAP waterfall charts directly in the notebook.
 
 ---
 
-## Citation & License
+## 9. Dataset Information
+- **Canonical Dataset:** Kaggle Crop Recommendation Dataset (`Crop_recommendation.csv`).
+- **Total Records:** 2,200 rows across 22 crops (exactly 100 rows per crop).
+- **Schema:** 7 continuous numerical features (`N`, `P`, `K`, `temperature`, `humidity`, `ph`, `rainfall`) and 1 string label (`crop`).
+- **Are Datasets Bundled?** No. To keep this deliverable clean and lightweight, CSV datasets are not bundled in this folder. The notebooks automatically download `Crop_recommendation.csv` at runtime from the GitHub repository.
 
-This project is licensed under the MIT License. If you use this codebase, methodology, or synthetic datasets in your research, please cite:
+---
 
-```bibtex
-@misc{garimella2026croprecommendation,
-  author = {Garimella, Gowtham},
-  title = {Robust Crop Recommendation Using Realistic Synthetic Data, TabNet, and Explainable AI},
-  year = {2026},
-  publisher = {GitHub},
-  howpublished = {\url{https://github.com/gowtham-garimella/Robust-Crop-Recommendation-using-realistic-synthetic-data-and-tabnet-using-explainable-ai-}}
-}
-```
+## 10. Data Splitting and Leakage Prevention
+To guarantee complete scientific integrity and prevent data snooping:
+- **`INTERNAL_TRAIN.csv` (1,408 rows, 64 per crop):** The **only** dataset used to fit models, train scalers, and estimate copula distributions.
+- **`INTERNAL_VAL.csv` (352 rows, 16 per crop):** Quarantined exclusively to evaluate models after training. It is never seen during model fitting or synthetic generation.
+- **`REAL_TEST.csv` (440 rows, 20 per crop):** Evaluated strictly as a **frozen historical benchmark**. It has been queried during earlier research and is therefore disclosed as a baseline comparison set, not an untouched prospective field test.
+
+---
+
+## 11. Evaluation Metrics
+- **Accuracy:** Proportion of total predictions that were exactly correct.
+- **Balanced Accuracy:** Average recall across all 22 classes, preventing dominant classes from masking minority errors.
+- **Macro Precision:** Unweighted average of precision across all classes (how many predicted instances of a crop were truly that crop).
+- **Macro Recall:** Unweighted average of recall across all classes (how many true instances of a crop were correctly detected).
+- **Macro F1-Score:** Harmonic mean of macro precision and macro recall.
+- **Matthews Correlation Coefficient (MCC):** A balanced correlation metric between observed and predicted multiclass classifications (ranges from -1 to +1).
+- **Brier Score:** Mean squared difference between predicted probability vectors and one-hot true class vectors (lower is better calibrated).
+- **Expected Calibration Error (ECE):** Weighted absolute difference between model confidence and actual accuracy across probability bins.
+
+> **Evaluation Disclosures:** High accuracy on this curated benchmark does not prove identical performance across diverse real-world farms, unmeasured microclimates, or varying soil conditions.
+
+---
+
+## 12. Results
+When executed in Google Colab, results will be printed and exported to `./crop_rec_colab_workspace/results/`:
+- `VALIDATION_METRICS.csv`: Performance on the 352 quarantined validation records.
+- `BENCHMARK_METRICS.csv`: Performance on the 440 benchmark records.
+- `ROBUSTNESS_ADVANTAGE_TIDY.csv`: Retention under 5 distribution shift scenarios.
+- `CALIBRATION_METRICS.csv`: Brier scores and ECE values.
+- `TREESHAP_AUDIT.csv`: Exact additivity residuals verifying explainability math.
+
+Readers running the notebook will generate fresh, verified metrics directly in their session.
+
+---
+
+## 13. Limitations
+1. **Synthetic Data is Not Real Soil:** Synthetic generation expands coverage of covariance space, but cannot invent unobserved biological phenomena.
+2. **Benchmark Familiarity:** The historical benchmark dataset was evaluated during iterative research.
+3. **No External Farm Data:** All records originate from the single historical 2,200-row repository. Real-world agricultural deployment requires prospective multi-farm field testing across distinct geographic regions.
+4. **Agronomic Advice:** Recommendations from this model must be validated by agricultural extension officers or certified agronomists before planting.
+
+---
+
+## 14. Reproducibility
+- **Global Seed:** Fixed to `42` across Python `random`, NumPy `RandomState`, and PyTorch `manual_seed`.
+- **Deterministic Copula:** Sampling with a fixed seed produces identical synthetic numbers down to floating-point precision.
+- **Manifests:** Generated models and datasets record sample counts and cryptographic SHA-256 hashes.
+
+---
+
+## 15. Troubleshooting
+| Issue | Cause | Practical Fix |
+|---|---|---|
+| `FileNotFoundError: Crop_recommendation.csv` | Dataset download blocked by network policy | Upload `Crop_recommendation.csv` manually to `/content/` in Colab. |
+| `OutOfMemoryError` on TabNet | Large batch size on low-memory runtime | Reduce `batch_size` in the training cell from 1024 to 256. |
+| TabNet Training Takes Too Long | Running on CPU with 165k synthetic rows | In Colab, go to `Runtime` > `Change runtime type` and select `T4 GPU`. |
+| `ImportError: pytorch_tabnet` | Dependency installation cell was skipped | Run Cell 1 (`pip install pytorch-tabnet xgboost shap`) before running model cells. |
+| TreeSHAP Additivity Warning | Different output margin space | TreeSHAP for XGBoost is computed in `raw_margin` space; for RF in `probability` space. |
+
+---
+
+## 16. Research Disclaimer
+This software, notebooks, and models are published solely for academic research, education, and algorithmic reproducibility. They are not certified for commercial farming, financial lending, or automated agricultural decision-making without qualified expert supervision.

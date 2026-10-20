@@ -1,3 +1,0 @@
-distance_comparison,sample_size,min_distance,p05_distance,p25_distance,median_distance,mean_distance,p75_distance,p95_distance,max_distance
-SYNTHETIC -> Nearest REAL_TRAIN,165000,0.0269,0.1953,0.2855,0.3667,0.3889,0.4653,0.6629,1.401
-REAL_TRAIN -> Nearest Other REAL_TRAIN (Baseline),1760,0.1156,0.2155,0.3056,0.3937,0.4189,0.5014,0.701,1.2695

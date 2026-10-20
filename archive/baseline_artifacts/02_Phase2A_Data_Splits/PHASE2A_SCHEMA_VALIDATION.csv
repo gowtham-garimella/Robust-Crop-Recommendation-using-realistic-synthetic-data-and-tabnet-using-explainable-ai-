@@ -1,6 +1,0 @@
-dataset_name,row_count,features_ok,target_ok,null_values,inf_values,crops_count,status
-REAL_TRAIN,1760,True,True,0,0,22,PASSED
-REAL_TEST,440,True,True,0,0,22,PASSED
-SYNTHETIC_Mode_A,165000,True,True,0,0,22,PASSED
-SYNTHETIC_Mode_B,165000,True,True,0,0,22,PASSED
-SYNTHETIC_Mode_C,165000,True,True,0,0,22,PASSED

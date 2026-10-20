@@ -1,4 +1,0 @@
-Mode,Mean_KS_Statistic,Mean_Wasserstein_Distance,Correlation_Frobenius_Distance,Fidelity_Verdict
-Mode A (Pure Copula),0.0342,0.0418,0.1842,EXCELLENT
-Mode B (TNAU/ICAR Constraints),0.0389,0.0452,0.1915,EXCELLENT
-Mode C (Envelope Expansion),0.0512,0.0611,0.2281,CONTROLLED_EXPANSION

@@ -1,4 +1,0 @@
-Model,Input Preprocessing,Multiclass Brier Score,Expected Calibration Error (ECE),Maximum Calibration Error (MCE)
-TabNet (Real + Mode B),StandardScaler (TabNet-only),0.01227,0.01134,0.47964
-Random Forest (Real + Mode B),RAW Unscaled Features,0.56054,0.60459,0.90569
-XGBoost (Real + Mode B),RAW Unscaled Features,0.0015,0.00306,0.49711
