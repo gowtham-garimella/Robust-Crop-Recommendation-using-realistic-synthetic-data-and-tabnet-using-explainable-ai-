@@ -131,7 +131,7 @@ Follow these simple step-by-step instructions:
 - **Canonical Dataset:** Kaggle Crop Recommendation Dataset (`Crop_recommendation.csv`).
 - **Total Records:** 2,200 rows across 22 crops (exactly 100 rows per crop).
 - **Schema:** 7 continuous numerical features (`N`, `P`, `K`, `temperature`, `humidity`, `ph`, `rainfall`) and 1 string label (`crop`).
-- **Are Datasets Bundled?** No. To keep this deliverable clean and lightweight, CSV datasets are not bundled in this folder. The notebooks automatically download `Crop_recommendation.csv` at runtime from the GitHub repository.
+- **Are Datasets Bundled?** Yes. The canonical raw dataset (`data/Crop_recommendation.csv`, 2,200 records, ~146 KB) is hosted directly in this repository. In Google Colab, the notebooks automatically fetch this file via GitHub raw URL without requiring manual uploads.
 
 ---
 
