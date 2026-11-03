@@ -145,6 +145,7 @@ To guarantee complete scientific integrity and prevent data snooping:
 
 ## 11. Evaluation Metrics
 - **Accuracy:** Proportion of total predictions that were exactly correct.
+- **Multi-Class Cross-Entropy Loss (Log-Loss):** Logarithmic loss penalizing confident incorrect probability assignments (lower indicates higher probabilistic certainty and superior calibration).
 - **Balanced Accuracy:** Average recall across all 22 classes, preventing dominant classes from masking minority errors.
 - **Macro Precision:** Unweighted average of precision across all classes (how many predicted instances of a crop were truly that crop).
 - **Macro Recall:** Unweighted average of recall across all classes (how many true instances of a crop were correctly detected).
